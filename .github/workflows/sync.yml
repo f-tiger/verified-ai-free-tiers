@@ -1,0 +1,22 @@
+name: Daily sync from baipiaoji.com
+on:
+  schedule:
+    - cron: '30 23 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node sync.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name 'Claude'
+          git config user.email 'noreply@anthropic.com'
+          git add -A
+          git diff --cached --quiet || git commit -m 'chore: daily sync from baipiaoji.com'
+          git push

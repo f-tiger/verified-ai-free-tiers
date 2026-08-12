@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.f-tiger/verified-ai-free-tiers",
+  "description": "Verified free-tier limits, quota comparisons and commercial-use verdicts for 162 AI tools.",
+  "version": "1.1.0",
+  "websiteUrl": "https://baipiaoji.com/mcp.html",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://baipiaoji.com/api/mcp"
+    }
+  ]
+}

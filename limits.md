@@ -1,0 +1,928 @@
+# 已核实的免费额度上限 / Verified free-tier limits — 白嫖计 (baipiaoji.com)
+
+本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 162 个工具，本清单只含已核实额度上限的 115 个）。
+Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (115 of 162 listed tools qualify so far).
+
+## DeepSeek
+
+- 额度上限 / Quota: 网页与 App 端对话免费使用，支持文件上传与长文本对话；官方页面未公布具体条数上限。官方协议里明确的另一件事更重要：输入与输出可用于个人使用、学术研究、衍生产品开发乃至训练其他模型——这个使用权范围在免费对话产品里相当宽松。
+- 撞墙表现 / What happens at the wall: 免费对话的额度以「产品页面与平台网站公示为准」（官方协议原文口径）；开放平台 API 侧是预充值付费，与网页免费档是两条线，不要混为一谈。
+- 来源 / Source: DeepSeek 官方用户协议、开放平台服务协议与官网（deepseek.com，经搜索索引引文核实；免费档条数官方未公布）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/deepseek.html ｜ EN: https://baipiaoji.com/en/tools/deepseek.html
+
+## Kimi（月之暗面）
+
+- 额度上限 / Quota: 官方帮助中心明确：会话入口的主力模型（现为 K2.6）对所有用户免费、不消耗会员额度；单轮上下文约 128K tokens（官方口径约 5–6 万汉字）。免费档在官方会员体系里有正式名称——Adagio（慢板），往上是 Andante（行板，49 元）与 Moderato（中速，99 元）。会员额度池是另一套：所有高级功能共享同一个池（Agent 系列、深度研究、PPT、文档、表格、Kimi Code、Kimi Work、Kimi Claw 等），按实际 token 消耗扣除，不是每个功能各给一份。
+- 撞墙表现 / What happens at the wall: 上下文触及 128K 后模型无法继续读入新内容——长文场景的墙是上下文而不是次数。要用深度研究/PPT/代码等增值功能则需要会员额度，且这些功能吃的是同一个共享池，用哪个都在花同一份。余额可自查：Web 端左下角头像 → 设置 → 订阅，可见当前额度余额（百分比）、下次刷新时间与最近 1000 条使用明细——这在不公布固定条数的对话产品里算是少见的透明度。
+- 来源 / Source: Kimi 官方帮助中心（会员体系介绍、会员套餐价格与权益对比、会员权益更新规则、Kimi Code 权益与计费说明等页，kimi.com/zh-cn/help/membership，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-12
+- 详情页 / Page: https://baipiaoji.com/tools/kimi.html ｜ EN: https://baipiaoji.com/en/tools/kimi.html
+
+## 通义千问
+
+- 额度上限 / Quota: 开发者侧（阿里云百炼）官方明码：千问系列每款模型赠送 100 万免费 tokens，官方另有免费额度有效期的调整公告（现行有效期以该公告页为准）。对话端网页/App 免费使用，但免费档的具体限制官方未在文档中明示——阿里云开发者社区文章提到的高峰排队、文件大小、绘图张数等属社区口径，不是官方文档，本站不采信。
+- 撞墙表现 / What happens at the wall: API 侧免费 tokens 用尽或过有效期后按量计费；对话端的付费会员主要买的是优先调度与更大文件/更多创作额度，具体权益以官网当期页面为准。
+- 来源 / Source: 阿里云百炼官方帮助中心（千问系列免费额度与有效期调整公告，help.aliyun.com，经搜索索引引文核实）；对话端免费档限制官方未明示，社区文章不采信
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/tongyi.html ｜ EN: https://baipiaoji.com/en/tools/tongyi.html
+
+## ChatGPT
+
+- 额度上限 / Quota: 2026-08-06 官方公告：免费档默认模型改为 GPT-5.6 Luna，并获得「无限日常文本对话」（unlimited text chats），另加一个用于难题的 Think 按钮。时序要看清——官方原文说 Luna 成为免费档与 Go 档默认模型是「本周」，无限文本对话与 Think 按钮则是「下周起」，所以看到这条时未必已经全量到你账号。而且「无限」有两处明确的边界：一是仅限文本，文件上传、图片与其他工具的额度限制照旧；二是官方写明受滥用防护（abuse guardrails）约束。此前的口径仍然成立并继续适用于非文本部分：官方帮助中心明确「免费档的模型用量有限制」且不公布具体条数——官方口径是「达到上限时会在界面提示上限与重置时间」。未登录用户无法使用最新旗舰模型。任何第三方流传的「免费版每 X 小时 Y 条」都没有官方出处。
+- 撞墙表现 / What happens at the wall: 触顶后界面会提示重置时间或引导升级；免费档在高峰期还可能被降级到较小的模型。官方同时说明「默认模型与可用额度会随时间变化」——这也是我们不写死数字的原因，而 2026-08-06 这次变更恰好是这句话的注脚。新的墙换了位置：文本对话这道墙官方称已经拿掉，剩下的墙集中在文件上传、图片与工具调用上，官方同样不公布这些的具体数额。付费侧的对照：Plus 与 Pro 用户拿到的是更可靠的 GPT-5.6 Sol 与一个可调「思考强度」的滑杆，Go 档（官方定价 $8/月）与免费档一样吃到 Luna 与无限文本。
+- 来源 / Source: OpenAI 官方博客《Improving GPT-5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users》（openai.com/index/improving-gpt-5-6-sol-in-chatgpt，2026-08-06）、ChatGPT Go 公告（openai.com/index/introducing-chatgpt-go）与官方帮助中心 ChatGPT Free Tier FAQ、模型说明页（help.openai.com，经搜索索引引文核实；具体条数官方不公布）
+- 核实于 / Checked: 2026-08-07
+- 详情页 / Page: https://baipiaoji.com/tools/chatgpt.html ｜ EN: https://baipiaoji.com/en/tools/chatgpt.html
+
+## Google Gemini
+
+- 额度上限 / Quota: 免费档按「算力用量」计量而非固定条数：官方明示用量取决于提示词的长度与复杂度、上传文件的数量与大小、对话长度、所用模型与功能。限额每 5 小时刷新一次，另有周度上限。
+- 撞墙表现 / What happens at the wall: 触及 5 小时或周度上限后需等待刷新；订阅用户可在触顶后继续用更轻量的模型对话，免费档则要等窗口重置。官方社区里「Pro 用量从 100 掉到 25」这类反馈也印证了额度是浮动的——所以我们不写死条数。
+- 来源 / Source: Google 官方 Gemini Apps 帮助中心用量与升级说明（support.google.com，经搜索索引引文核实；免费档固定条数官方不公布）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/gemini.html ｜ EN: https://baipiaoji.com/en/tools/gemini.html
+
+## GitHub Copilot Free
+
+- 额度上限 / Quota: Copilot Free 档每月 2,000 次代码补全 + 50 次对话请求（对话含 Edits、按高级请求计），官方文档与官方博客双确认；无需订阅、VS Code 内直接开通。
+- 撞墙表现 / What happens at the wall: 当月未用完不结转、月初重置；触顶后补全/对话暂停到次月，或升级 Pro（学生与知名开源维护者可免费拿 Pro）。
+- 来源 / Source: GitHub 官方文档与官方博客（docs.github.com / github.blog，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/github-copilot.html ｜ EN: https://baipiaoji.com/en/tools/github-copilot.html
+
+## 通义灵码
+
+- 额度上限 / Quota: 已于 2026-05-20 更名为 Qoder CN（官方公告）：社区版免费，基础代码补全与问答明确不计费；个人专业版每月 2,000 Credits（用于 Repowiki、Quest、Subagent、多文件生成、长文本等高级能力），当月有效不结转。
+- 撞墙表现 / What happens at the wall: 个人专业版免费试用已于 2026 年 5 月结束、存量用户自动转社区版；高级能力触发 Credits 消耗，用尽等次月或升级。基础补全问答没有墙。
+- 来源 / Source: 阿里云帮助中心（Qoder CN 计费说明/公测结束公告）与官方定价页（help.aliyun.com / lingma.aliyun.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/tongyi-lingma.html ｜ EN: https://baipiaoji.com/en/tools/tongyi-lingma.html
+
+## Trae（字节跳动）
+
+- 额度上限 / Quota: 注意区分两个版本：国际版（trae.ai）免费档为每月 5,000 次代码补全 + 最多 2 个并发云任务（官方定价页明码），Pro $20/月不限补全；国内版（trae.com.cn）为独立 SKU，本条数字不适用于国内版。
+- 撞墙表现 / What happens at the wall: 国际版免费档补全数用尽等次月或升 Pro；高级模型与更多并发均为付费档权益。
+- 来源 / Source: TRAE 国际版官方定价页与文档（trae.ai / docs.trae.ai，经搜索索引引文核实；国内版权益未在本条核实范围内）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/trae.html ｜ EN: https://baipiaoji.com/en/tools/trae.html
+
+## Windsurf
+
+- 额度上限 / Quota: 免费档每月 25 个 prompt credits（官方文档明码）；Tab 补全免费使用。注意：Windsurf 已并入 Cognition（Devin）体系，官方定价与文档页现以 Devin 品牌展示。
+- 撞墙表现 / What happens at the wall: 当月 25 个 credits 用尽后 Cascade/Agent 类功能受限，可按 $10/250 credits 加购或订阅付费档；补全不受影响。
+- 来源 / Source: Windsurf/Devin 官方定价页与文档（windsurf.com / docs.windsurf.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/windsurf.html ｜ EN: https://baipiaoji.com/en/tools/windsurf.html
+
+## 即梦 AI
+
+- 额度上限 / Quota: 官方站内多处功能页给出同一口径：每天最多可获得 150 个免费积分；按官方举例，图像类操作约 3 积分一次（约 50 次生成/天），图像扩展每天最多 50 张。
+- 撞墙表现 / What happens at the wall: 当日积分用完等次日重置或购买；视频类操作消耗远高于图像，官方未在可核实引文中给出视频的单次积分，因此本站不写视频侧数字。授权维度是「给了产权、没给结论」这一类：官方用户服务协议写明，在法律允许范围内，你的输入内容、生成内容及发布内容的知识产权与其他财产权益归属于你（或依法享有该权利的人），同时要求输入内容须为你原创或已获合法授权；但若输入/生成内容包含平台自有知识产权（训练数据、模型素材等），相关权利仍归平台。协议既未明确禁止商用、也未明示用户享有完整商用权——本站因此不下结论，商用前建议就具体用途向平台确认。
+- 来源 / Source: 即梦 AI 官方用户服务协议与免责声明、官方站功能页（协议正文见字节 CDN 托管页 lf9-cdn-tos.draftstatic.com，jimeng.jianying.com，经搜索索引引文核实；视频单次消耗与完整商用权官方均未明示）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/jimeng.html ｜ EN: https://baipiaoji.com/en/tools/jimeng.html
+
+## LiblibAI 哩布哩布
+
+- 额度上限 / Quota: 免费用户每日登录赠送 20 积分，约可生成 40 张图或 2 个视频（官方会员页口径），可用平台上百个图像/视频模型，另含 3GB 云存储。
+- 撞墙表现 / What happens at the wall: 当日积分用完等次日登录再领，或订阅会员获得更多算力与并发；本地客户端可免算力跑图（吃自己显卡）。授权维度平台有专门的《创作图片商业使用规范》，规则比「能不能商用」细得多：产权侧，生成内容完全归用户，知识产权及其他财产权益归用户或相关权利人；平台授予你的是个人的、可撤销、不可转让、非排他的使用权。但商用与否不由平台决定，而由你所用模型的授权范围决定——官方明确要求所用模型须获合法授权，商用须符合该模型的使用范围与限制。最关键的一条是模型组合的短板规则：一张图叠了底模与多个 LoRA 时，只要其中任一组件禁止商用，这张图就不可商用。此外，若模型本身存在侵权问题，用其产出商用可能构成侵权使用；故意输入可能侵犯第三方知识产权的关键词，所生成的图同样不可商用。
+- 来源 / Source: LiblibAI 官方《创作图片商业使用规范》、用户协议与会员/积分说明页（liblib.art/activities/…/Commercial_Guidelines、liblib.art/document/article_member、liblib.art，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/liblib.html ｜ EN: https://baipiaoji.com/en/tools/liblib.html
+
+## Canva 可画
+
+- 额度上限 / Quota: 设计基础功能免费不限；AI 功能两套额度（官方帮助中心明码）：Magic Write 免费档共 50 次——是终身总量不是每月；其余 AI 工具走按月发放的 AI 用量池（免费档具体数额官方帮助中心按功能列示，随版本调整）。另有一条独立于 AI 的官方额度：免费档可上传 5GB 素材。
+- 撞墙表现 / What happens at the wall: Magic Write 的 50 次用完即永久到顶，只能升级 Pro/Teams；月度 AI 用量池次月刷新。基础设计功能没有墙。另一条官方机制值得记：免费档的 AI 用量池在每月 1 日 UTC 00:00 统一重置（不是按注册日滚动），且不同 AI 工具消耗速度不同、提示词越复杂耗得越多——所以月底额度紧张时优先做简单任务。授权维度：可商用，但有两条厂商自己点明的坑。官方内容授权协议写明 AI 生成内容的使用方式与免费/Pro 素材一致，站内免费图片、音乐、视频可用于商业与非商业用途。但官方同时明说：(1) 用于商业项目时你可能不享有排他权——包括美国在内的多个法域不对纯 AI 生成物提供著作权保护，这是生成式 AI 的通例而非 Canva 特有，后果是你未必能阻止别人使用或复制同样的产出；(2) 产出是否适合商用由你自己负责，包括判断画面里出现的艺术作品、照片、商标或标识是否需要另行取得许可。官方建议若打算售卖 AI 产出应寻求法律意见。
+- 来源 / Source: Canva 官方内容授权协议、AI 产品条款、使用条款与帮助中心（canva.com/policies/content-license-agreement、canva.com/policies/ai-product-terms、canva.com/help 的「Copyright ownership of designs made in Canva」「Understanding your AI usage」等页，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/canva.html ｜ EN: https://baipiaoji.com/en/tools/canva.html
+
+## Recraft
+
+- 额度上限 / Quota: 免费档每天自动发放积分（官方页面同时出现 30/天与 50/天两种口径，以账户内实际到账为准）；栅格图 1 积分/张、矢量图 2 积分/张，日积分不结转。
+- 撞墙表现 / What happens at the wall: 当日积分用完等 24 小时刷新；更大量需订阅（Basic 1,000 积分/月起）或加购（400 积分 $4、不过期）。授权维度是本站目前核实到最严的一档，而且严在所有权本身：官方明确免费档产出（Free Tier Assets）归 Recraft 所有，用户仅获得有限的、非排他的个人用途许可——不得商用，也不得出售、授权或转让；免费档产出还会公开显示在社区画廊；另禁止用这些产出去训练 AI 模型或类似系统。官方举了个具体后果：因此它们通常不能上架图库平台，因为那类平台要求你能证明所有权。付费订阅后才对订阅期内生成的作品拥有完整所有权与商用权（可用于市场营销、品牌、产品包装等）。
+- 来源 / Source: Recraft 官方所有权与商用 FAQ、信任与安全文档 Ownership 页、服务条款与定价页（recraft.ai/blog/ownership-and-commercial-use-faq、recraft.ai/docs/trust-and-security/ownership、recraft.ai/legal/terms、recraft.ai/pricing，经搜索索引引文核实；每日积分官方口径不一故不取单一数字）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/recraft.html ｜ EN: https://baipiaoji.com/en/tools/recraft.html
+
+## 可灵 AI（快手）
+
+- 额度上限 / Quota: 非会员每日登录赠送 66 灵感值，约够生成 6 个标准模式视频（每个 5 秒）；当日不用不结转。
+- 撞墙表现 / What happens at the wall: 灵感值用完当天就到头了，等次日登录再领；要更长/更高质量的生成需开会员（黄金档 660 灵感值/月起）。授权是另一道墙，比额度更硬：官方服务条款写明免费档产出不可商用——未经书面许可不得为任何商业目的使用、复制、分发、修改或据以创作衍生作品；Pro / Premier / Ultra 付费档才获得商用权。还有一条几乎无人提及：即使产出上因客观原因没有品牌标记，使用时也必须自行显著标明「由 Kling AI 生成」（加 Kling logo，或在标题等显著位置标注）——所以「导出没水印」既不等于可商用，也不等于可以不标注。
+- 来源 / Source: 可灵官方服务条款与会员方案页（klingai.com/global/docs/user-policy、app.klingai.com 会员页；额度数字另经量子位等多家独立媒体交叉印证）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/kling.html ｜ EN: https://baipiaoji.com/en/tools/kling.html
+
+## 海螺 AI（MiniMax）
+
+- 额度上限 / Quota: 官方口径：新模型上线期可能提供每日免费试用积分（当日刷新、不累积）；2025-06-18 起注册的新用户另有一次性欢迎积分包，授予后 3 天到期、每人限一份。官方同时给出积分消耗参考：768p 6 秒 25 积分、768p 10 秒 50 积分、1080p 6 秒 50 积分。
+- 撞墙表现 / What happens at the wall: 每日免费积分的具体数额随活动变动、官方不写死，所以本站不写这个数字；免费用户排队上限为同时 3 个生成任务、并行只跑 1 个。欢迎积分 3 天不用即作废——这条最容易亏。授权维度：官方用户协议未就「免费档生成的视频能否商用」作出明确表述，本站因此不下结论；协议里明确的是另外两件事——(1) 音频/音乐服务中，只有标注「商用授权」的订阅档，其订阅期内生成的内容才可商用；(2) 一旦你选择公开发布产出，其他用户不仅能看到内容，还能看到对应的提示词并直接拿去生成，不接受就别公开发布。输入素材须为你自有或已获授权，责任在用户。
+- 来源 / Source: 海螺 AI 官方用户协议与付费服务协议、MiniMax 用户协议与平台文档（hailuoai.com/doc/zh/user-agreement.html、hailuoai.video / platform.minimax.io，经搜索索引引文核实；每日免费额度数额官方不固定，免费档视频商用权官方未明示）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/hailuo.html ｜ EN: https://baipiaoji.com/en/tools/hailuo.html
+
+## Runway
+
+- 额度上限 / Quota: 免费计划为一次性发放 125 积分：不过期、但用完永不续发（官方帮助中心专页明码，注意不是「每月 125」）；可用模型范围也少于付费档。
+- 撞墙表现 / What happens at the wall: 125 积分用完后免费计划无法单独购买积分，继续生成必须升级 Standard 及以上；免费档定位就是「付费前试玩」。授权维度是本站目前见到的最宽松一档，也正好戳破「无水印才可商用」这个等式：官方明确所有档位（含免费档）的用户都保留自己上传与生成内容的所有权与全部权利，且享有商用权——官方专页逐条列举了适用场景：YouTube 变现与非变现投稿、Reels/TikTok 等短视频、社交媒体发布、电影节参赛、产品广告等。免费档确实带 Runway 水印，去水印需升级 Standard 及以上——但水印只是外观，商用权在免费档就已经给了。
+- 来源 / Source: Runway 官方帮助中心「Free plan details」「Usage rights」「Can I use the content I made in Runway for commercial purposes?」等专页与使用条款（help.runwayml.com / runwayml.com/terms-of-use，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/runway.html ｜ EN: https://baipiaoji.com/en/tools/runway.html
+
+## Gamma
+
+- 额度上限 / Quota: 注册即得 400 credits，一次性发放，不按月刷新。官方给出的消耗量级参考：10 页卡片 + 5 张基础模型配图约 20–60 credits；20 页卡片 + 15 张高级模型配图约 320–1,070 credits——所以「够做几份演示」的说法只在用基础模型时成立。
+- 撞墙表现 / What happens at the wall: credits 用完后 AI 功能锁死，只能靠邀请好友（官方口径每邀一人 +200 credits）或升级付费；已生成的内容仍可编辑、演示、导出。消耗量随生成长度与所选模型浮动，用高级图像模型时会快得多。
+- 来源 / Source: Gamma 官方帮助中心 How do credits work in Gamma 与定价页（help.gamma.app / gamma.app/pricing，经搜索索引引文核实；2026-08-04 复核确认 400 credits 与不刷新机制不变，并新增消耗量级与邀请积分）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/gamma.html ｜ EN: https://baipiaoji.com/en/tools/gamma.html
+
+## 讯飞星火
+
+- 额度上限 / Quota: 开发者侧（讯飞开放平台）默认免费版含一定免费资源、可按需升级；官方用户协议明确写着：免费套餐的规则、可免费使用的产品与配置会随业务需求随时调整，不同时期的用户可能拿到不同规格，部分产品限量领取。因此本站不写具体数额——不是查不到，是官方明说它会变。
+- 撞墙表现 / What happens at the wall: 官方另有一条要留意的条款：对恶意刷抢免费资源（如创建多账号）的用户，平台有权收回免费套餐使用资格。对话端网页/App 免费使用，具体限制官方文档未明示。
+- 来源 / Source: 讯飞开放平台官方文档与 SparkDesk 用户协议（xfyun.cn / xinghuo.xfyun.cn，经搜索索引引文核实；免费套餐规格官方声明随时调整）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/xinghuo.html ｜ EN: https://baipiaoji.com/en/tools/xinghuo.html
+
+## WPS AI
+
+- 额度上限 / Quota: 免费版每日约 10 次 AI 额度（官方文章口径「10 次左右」），覆盖 AI 写作、改写、总结、生成 PPT 等基础场景。
+- 撞墙表现 / What happens at the wall: 当日额度用完即停；高级功能与更大用量需 WPS 会员或 AI 权益包。官方注明额度会随版本调整，以客户端当前展示为准。
+- 来源 / Source: WPS 官网文章（wps.cn，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-02
+- 详情页 / Page: https://baipiaoji.com/tools/wps-ai.html ｜ EN: https://baipiaoji.com/en/tools/wps-ai.html
+
+## Google AI Studio
+
+- 额度上限 / Quota: 免费层按模型区分 RPM/RPD 限额、按项目计算、太平洋时间零点重置（官方文档明示，具体数字以官方 rate-limits 页实时表为准）。重要：2025 年 12 月免费层大幅缩水——如 Flash 由 250 次/天降至 20 次/天（官方开发者论坛多帖证实），网上大量攻略仍在引用缩水前的旧数字。
+- 撞墙表现 / What happens at the wall: 触顶返回 429，当日该模型不再可用、次日太平洋时间零点重置；重度使用要么升级付费层，要么叠加其他免费 API 做 fallback（见站内 0 元方案）。
+- 来源 / Source: Google AI 官方文档 rate-limits 页 + 官方开发者论坛（ai.google.dev，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/google-ai-studio.html ｜ EN: https://baipiaoji.com/en/tools/google-ai-studio.html
+
+## 硅基流动 SiliconFlow
+
+- 额度上限 / Quota: 新用户注册即送 14 元平台额度（官方口径约合 2,000 万 Qwen1.5-14B tokens）；完成实名认证再得 16 元通用代金券（官方「推荐官」计划页，可用于 API 调用、批量推理、微调乃至 Pro 模型）。另有部分小模型长期免费调用（见官方价格页）。
+- 撞墙表现 / What happens at the wall: 赠送额度与代金券用完后按量计费；免费模型不占额度可继续用。注意代金券属活动权益、有时效性，以官方活动页当期规则为准。
+- 来源 / Source: 硅基流动官网定价页 + 官方新闻与推荐官计划页（siliconflow.cn，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/siliconflow.html ｜ EN: https://baipiaoji.com/en/tools/siliconflow.html
+
+## Groq
+
+- 额度上限 / Quota: 免费层不限总量、按速率限流，无需绑卡。各模型限额不同，常被引用的典型档位约 30 次/分钟、6,000 tokens/分钟、14,400 次/天；以控制台 rate-limits 页的实时数字为准。
+- 撞墙表现 / What happens at the wall: 超过速率的请求会被拒绝，等窗口重置即可继续用，不会产生费用；绑卡升级 Developer 档可大幅提高限额。限额按组织计，多开 API key 绕不过去。
+- 来源 / Source: Groq 官方文档 console.groq.com/docs/rate-limits（限额按模型区分且会调整，具体数字经多个独立来源交叉印证）
+- 核实于 / Checked: 2026-08-02
+- 详情页 / Page: https://baipiaoji.com/tools/groq.html ｜ EN: https://baipiaoji.com/en/tools/groq.html
+
+## 智谱开放平台
+
+- 额度上限 / Quota: 官方文档设有专门的「免费模型」板块：GLM-4-Flash-250414、GLM-4.7-Flash（30B 级，200K 上下文、最长 128K 输出）等 Flash 系列 API 调用免费。
+- 撞墙表现 / What happens at the wall: 免费模型不按量计费，但有并发限制；高并发或更强模型需切换到付费系列。
+- 来源 / Source: 智谱 BigModel 官方文档 docs.bigmodel.cn/cn/guide/models/free/glm-4.7-flash
+- 核实于 / Checked: 2026-08-01
+- 详情页 / Page: https://baipiaoji.com/tools/zhipu-glm.html ｜ EN: https://baipiaoji.com/en/tools/zhipu-glm.html
+
+## Cloudflare Workers AI
+
+- 额度上限 / Quota: 每天 10,000 Neurons 免费（Neurons 是 Cloudflare 统一的推理计量单位，token/图块/音频分钟都折算进去），Workers Free 与 Paid 计划都含这份额度，每天 00:00 UTC（北京时间 08:00）重置。
+- 撞墙表现 / What happens at the wall: 免费计划下当天用完即停，等次日重置；要继续用需升级 Workers Paid，超出部分按 $0.011 / 1000 Neurons 计费。
+- 来源 / Source: Cloudflare 官方定价文档 developers.cloudflare.com/workers-ai/platform/pricing
+- 核实于 / Checked: 2026-08-01
+- 详情页 / Page: https://baipiaoji.com/tools/cloudflare-workers-ai.html ｜ EN: https://baipiaoji.com/en/tools/cloudflare-workers-ai.html
+
+## 豆包（字节跳动）
+
+- 额度上限 / Quota: 登录即免费使用对话、写作、翻译、编程等核心功能，官方未公布对话条数上限；今日复核另确认可免费使用 Seedance 2.0 视频生成。官方明确区分「普通账号」与「会员账号」：云盘（AI 空间）向普通账号提供一定额度的免费云存储，需要更多空间才买扩容；云盘服务仅限登录用户使用。免费云存储的具体额度官方未明示，不写数字。
+- 撞墙表现 / What happens at the wall: 免费档的可见边界主要在云存储与会员增值功能，不在对话本身；付费扩容有期限，到期未续或降档时云存储空间会相应减少——存了重要文件的要留意这条，与稿定设计「素材随会员到期失效」同属「付费停止即权益回收」这一类。
+- 来源 / Source: 豆包官方付费服务协议与云盘使用须知（doubao.com/legal，经搜索索引引文核实；对话条数与免费云存储额度官方未公布）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/doubao.html ｜ EN: https://baipiaoji.com/en/tools/doubao.html
+
+## Claude
+
+- 额度上限 / Quota: 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说可发条数随需求量浮动，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。
+- 撞墙表现 / What happens at the wall: 接近上限时界面提示「Approaching 5-hour limit」，触顶显示「5-hour limit reached — resets [时间]」并停止回复，等窗口重置或升级 Pro。实用技巧：长对话比短对话更耗额度，开新会话往往比在超长上下文里追问更划算。
+- 来源 / Source: Claude 官方帮助中心「How do usage and length limits work?」与用量最佳实践页（support.claude.com，经搜索索引引文核实；固定条数官方不公布）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/claude.html ｜ EN: https://baipiaoji.com/en/tools/claude.html
+
+## Cursor
+
+- 额度上限 / Quota: Hobby 免费档存在且无需绑卡：可用 Agent、Chat 与 Tab 补全（Auto 模型），官方口径为「有限的 Agent 请求与补全」——现行官方页面不公布具体数字。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。
+- 撞墙表现 / What happens at the wall: 触及隐性限额后 Agent/补全受限，升级 Pro（$20/月）解锁；实际余量以账户设置页显示为准。
+- 来源 / Source: Cursor 官方定价页与文档（cursor.com，经搜索索引引文核实；官方现行页面不公布免费档具体数额，旧数字已过时）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/cursor.html ｜ EN: https://baipiaoji.com/en/tools/cursor.html
+
+## 文心快码 Comate（百度）
+
+- 额度上限 / Quota: 个人免费版：轻量模型不限量使用；智能体（Agent）请求按各模型消耗的 token 计额度，额度用尽后自动切换回轻量模型继续可用——不是直接停摆。个人免费版智能体额度的具体数值官方未在可核实页面明示，因此不写数字。
+- 撞墙表现 / What happens at the wall: 墙是「降级」不是「断供」：智能体额度耗尽后仍能用轻量模型写代码，只是能力档位下降。官方另说明额度消耗有优先级顺序（赠送券 > 企业会员券按月有效 > 单独购买券永久有效），个人专业版可加购智能体请求包。
+- 来源 / Source: 文心快码官方定价与计费说明页（comate.baidu.com、百度智能云 COMATE 文档，经搜索索引引文核实；个人免费版智能体额度数值官方未明示）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/comate.html ｜ EN: https://baipiaoji.com/en/tools/comate.html
+
+## Cline
+
+- 额度上限 / Quota: 扩展本身开源免费、对个人开发者完全免费，无订阅、无速率限制、对推理不加价；代码在本机运行、用你自己的 Key，不经过官方服务器。新用户另有一份免费额度（官方称无需绑卡，具体数额未在可核实引文中给出）。
+- 撞墙表现 / What happens at the wall: 真正的花费在模型侧：自带 Key 就按各家原价付，成本上限由你选的 provider 决定——所以把 Cline 配上站内 api 分类里那些免费额度（如 Groq、Cloudflare Workers AI），整条链路可以是 0 元。另有 Cline Provider 按量与 ClinePass 月费两种可选付费路径。
+- 来源 / Source: Cline 官方定价页与文档（cline.bot / docs.cline.bot，经搜索索引引文核实；新用户赠额数额官方未明示）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/cline.html ｜ EN: https://baipiaoji.com/en/tools/cline.html
+
+## Qoder（阿里）
+
+- 额度上限 / Quota: 新用户免费试用两周，含 1000 Credits、不限量代码补全、Next Edits、Quest 模式与 Repo Wiki。正式免费档的额度官方未公布明确数字，本站不写没锚点的数。
+- 撞墙表现 / What happens at the wall: 试用结束后需订阅（Pro $20/月含 2000 Credits，Pro+ $60/月含 6000）或降回功能有限的免费档。对话/Agent/任务按所用模型与 token 量扣 Credits。
+- 来源 / Source: Qoder 官方发布的定价方案（2025-09 起收费），经腾讯新闻、知乎等多方独立报道交叉印证
+- 核实于 / Checked: 2026-08-02
+- 详情页 / Page: https://baipiaoji.com/tools/qoder.html ｜ EN: https://baipiaoji.com/en/tools/qoder.html
+
+## 通义万相
+
+- 额度上限 / Quota: 走阿里云百炼开通时自动发放新人免费额度，额度按「成功生成的输出图片数量」计，有效期 90 天（官方 FAQ 口径；具体张数官方未在可核实引文中给出，不猜测）。网页版每日赠送次数官方同样未公布。
+- 撞墙表现 / What happens at the wall: 调用失败或处理错误不计费、也不消耗免费额度（官方明示）——这条对反复调参的人很关键；额度用尽或过 90 天后按量计费。授权维度：官方未在可核实引文中就「免费额度生成的图片能否商用」作出明确表述，本站因此不下结论。 但这里有一层中国市场特有、且与厂商授权无关的合规要求值得先知道：阿里云官方文档专门写有「基于通义模型的 AI 应用上架合规操作」——把生成能力做进应用或小程序对外提供时，需要满足算法备案等监管要求，官方指引提到协议中需包含算法名称、应用产品或备案编号等信息。也就是说，在国内做商用时「厂商许不许」之外还有「监管备不备案」这一层。另注意通义万相在阿里云百炼（开发者 API）与通义网页版是两条线，额度与条款不能互相搬运。
+- 来源 / Source: 阿里云百炼「新人免费额度与计费 FAQ」、万相 API 文档、百炼相关协议页与「千问大模型应用上架合规操作」指引（help.aliyun.com、tongyi.aliyun.com，经搜索索引引文核实；免费额度产出的商用权官方未明示）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/tongyi-wanxiang.html ｜ EN: https://baipiaoji.com/en/tools/tongyi-wanxiang.html
+
+## 文心一格（百度）
+
+- 额度上限 / Quota: 电量通过任务免费领取：首次登录、每日签到、分享任务等（官方口径明确机制）；单次任务的电量数额官方未公布，第三方数字不采信。
+- 撞墙表现 / What happens at the wall: 电量用尽需继续做任务攒或付费购买/开会员（会员享高清多尺寸、海报与艺术字、AI 改图等）。注意：文心一格已于 2025-04-01 迁移合并至文心一言官网，独立站点仅作跳转。授权维度是少见的「允许商用、但先过审」：官方口径为消耗电量生成的图片经过审核后支持下载，允许个人使用以及合法合规范围内的商用用途。所以这里的门不是付费档，而是审核——没过审就下载不了，也就谈不上商用。另需与另一件事分开：官方同时声明「百度在本服务中提供的内容」的知识产权归百度所有，那指的是平台提供的素材与服务内容，不是你的生成结果。开发者侧的 AI 作画接口另有《AI 作画服务协议》，与网页版是两条线。
+- 来源 / Source: 百度官方（文心一格/文心一言官网、百度智能云《AI 作画服务协议》与官方收费说明文章，经搜索索引引文核实；电量数额官方未公布）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/yige.html ｜ EN: https://baipiaoji.com/en/tools/yige.html
+
+## Leonardo AI
+
+- 额度上限 / Quota: 免费档每天发放 150 个快速 tokens，每 24 小时重置；当天没用完不结转、过期作废（官方帮助中心明码）。
+- 撞墙表现 / What happens at the wall: 当日 tokens 用尽后需等次日重置；更高额度、更快队列与商用相关权益需订阅付费档。
+- 来源 / Source: Leonardo.Ai 官方帮助中心 Tokens FAQ 与定价页（leonardo.ai / intercom.help，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/leonardo.html ｜ EN: https://baipiaoji.com/en/tools/leonardo.html
+
+## Ideogram
+
+- 额度上限 / Quota: 免费档每周 10 个慢速积分——最多 10 次生成、约 40 张图，每周六 00:00 UTC 重置（官方文档明码）；慢速队列逐个排队处理，等待时长看平台负载。
+- 撞墙表现 / What happens at the wall: 当周积分用完只能等周六重置；要更快队列与更大量需订阅（Basic 起 400 积分/月）或按 $4/100 积分加购。授权维度与 Runway 同属最宽松一档：官方授权页与服务条款写明 Ideogram 不主张对你的输入与产出的所有权，也不限制你将产出用于自己的目的（含商业用途），且这一条适用于包括免费档在内的所有档位。三条附带条件仍需遵守：须遵循可接受使用政策、须尊重第三方权利（是否需要额外授权由你自行判断）、以及不得用产出去训练与 Ideogram 竞争的模型。
+- 来源 / Source: Ideogram 官方授权页、服务条款、可接受使用政策与文档 FAQ（ideogram.ai/licensing、ideogram.ai/legal/tos、ideogram.ai/legal/usage-policy、docs.ideogram.ai，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/ideogram.html ｜ EN: https://baipiaoji.com/en/tools/ideogram.html
+
+## Krea AI
+
+- 额度上限 / Quota: 免费档为每日补充的算力额度（用完等次日刷新），可用图像/视频/3D/口型的基础模型——机制为官方定价页明示，但具体数额官方未公布，第三方数字不采信。
+- 撞墙表现 / What happens at the wall: 当日算力用尽后等待次日补充或订阅（Basic 4,000 算力/月起）；免费档模型范围也小于付费档。另可单次加购算力包（90 天有效）。授权维度：免费档产出不含商用授权，且这条覆盖各项功能——官方明确免费档的生成图、编辑图与放大增强图均未获商用许可；订阅任一付费档后，生成结果即获商用授权。另有两条独立于订阅的口径：Krea 的开源商用许可允许把模型产出用于商业用途且 Krea 不主张对产出的所有权；企业版则明示团队创作的一切归团队所有、可自由使用修改分发与变现。所以「Krea 能不能商用」取决于你走的是免费档、付费订阅、开源自部署还是企业版这四条不同的线，不能一概而论。
+- 来源 / Source: Krea 官方定价页、Krea 2 社区许可协议、开源许可页与企业版页（krea.ai/pricing、krea.ai/krea-2-licensing、krea.ai/open-source-pricing、krea.ai/enterprise，经搜索索引引文核实；免费档算力数额官方未公布）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/krea.html ｜ EN: https://baipiaoji.com/en/tools/krea.html
+
+## Vidu（生数科技）
+
+- 额度上限 / Quota: 免费档每月发放免费积分（官方页面同时出现 40 与 80 两种口径，具体以站内到账为准），另有错峰模式（Off-Peak）不消耗积分即可生成。
+- 撞墙表现 / What happens at the wall: 高峰期积分用完即无法即时生成，可改用错峰模式或订阅（Standard 约 $8/月起）。授权维度覆盖三种产出、且一律不给商用：官方口径为免费档生成的视频不可商用——不能用于变现的 YouTube 投稿、付费广告投放或客户交付，仅授权个人非商业使用；图片同样是免费用户不含商用权、付费用户才可在其服务条款与商业授权指引范围内商用；音效亦然，免费用户生成的 AI 音效未获商用授权。注意错峰模式只是省积分，不改变授权档位。
+- 来源 / Source: Vidu 官方使用条款、定价页与官方博客（platform.vidu.com/docs/terms-of-use、vidu.com/pricing、vidu.studio/terms、vidu.com/blog，经搜索索引引文核实；积分数额官方口径不一，故不取单一数字）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/vidu.html ｜ EN: https://baipiaoji.com/en/tools/vidu.html
+
+## PixVerse（爱诗科技）
+
+- 额度上限 / Quota: 免费档每日赠送积分，官方博客口径为每天 30–60 积分、具体数额以应用内为准；生成结果带水印。
+- 撞墙表现 / What happens at the wall: 积分当日用完需等次日发放或订阅；免费档产出仅限个人非商业用途。
+- 来源 / Source: PixVerse 官方博客与平台文档（pixverse.ai，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-02
+- 详情页 / Page: https://baipiaoji.com/tools/pixverse.html ｜ EN: https://baipiaoji.com/en/tools/pixverse.html
+
+## 智谱清影
+
+- 额度上限 / Quota: 免费版开放使用（发布时官方口径为「免费不限量」），生成需排队，单次约 5 秒、分辨率 1440×960，带水印。
+- 撞墙表现 / What happens at the wall: 免费档排队等待且无法去水印；会员 19 元/月享优先生成与去水印，另有付费加速选项。授权维度：官方未在可核实引文中就「清影免费档产出能否商用」作出明确表述，本站因此不下结论。 这里有个必须拦住的混淆——智谱开放平台的 CogVideoX 模型文档写有「支持广告、短视频等商业应用场景」，但那是面向开发者的 API 产品线，与 chatglm.cn 上的清影是两条线，额度与授权都不能互相搬运（同一厂商两条线的判例另见站内智谱清言与智谱开放平台两个条目）。要商用请就清影这条线单独向官方确认。
+- 来源 / Source: 智谱清言用户协议与付费服务协议、清影产品页（chatglm.cn/agreement、chatglm.cn/pay/policy/vipservice、chatglm.cn/video，经搜索索引引文核实；免费档商用权官方未明示）＋ 发布时额度口径经多家独立媒体交叉一致
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/qingying.html ｜ EN: https://baipiaoji.com/en/tools/qingying.html
+
+## Luma Dream Machine
+
+- 额度上限 / Quota: 免费档为限量试用积分（按月发放），官方页面未公布具体数额；第三方流传的「每天 5 次」在官方定价与帮助页均查不到，不予采信。生成结果带水印。
+- 撞墙表现 / What happens at the wall: 积分用完需升级订阅（付费档另含更高分辨率与商用权）；免费档产出仅限个人非商业用途，无法去水印。
+- 来源 / Source: Luma 官方定价页与学习中心（lumalabs.ai，经搜索索引引文核实；官方未公布具体数额）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/luma.html ｜ EN: https://baipiaoji.com/en/tools/luma.html
+
+## Google Flow
+
+- 额度上限 / Quota: 没有订阅的账号每天 50 个 Google Flow 积分，官方帮助中心明码，用于试用；合格的 Workspace 套餐（Business Starter/Standard/Plus、Enterprise Starter/Standard/Plus、G Suite Legacy 免费版、Education Standard/Plus、Google AI Pro for Education）同样是 50 积分/天，不额外收费。免费积分只能用于 Veo 3.1 的 Lite、Fast、Quality 三档生成。各档消耗的积分数不同，但官方帮助页在可核实引文中没有列出每档具体数字，第三方文章流传的数字不予采信。
+- 撞墙表现 / What happens at the wall: 三条机制值得记。一、免费是日配额，不是月池：50 分按天发放，当天没用完不结转——账面上 50×30 比 AI Pro 的 1,000 分/月还大，但你做一条长片时，一天就只有 50 分，攒不起来。二、月度积分同样不累积到下月，付费档也一样。三、升级会没收你手上的免费余额：一旦订阅付费档，免费 Flow 积分余额立即失效，由套餐月度积分取代，所以「先攒免费分再升级叠加」这条路是不通的。付费档官方明码：AI Plus 200 分/月、AI Pro 1,000 分/月、AI Ultra（$100 档）10,000 分/月、AI Ultra（$200 档）25,000 分/月；付费档另含完整功能（官方称 Pro 可用最新的 Gemini Omni Flash 模型）。另有两道与积分无关的硬门槛：须年满 18 岁并完成年龄验证，且身处支持地区。
+- 来源 / Source: Google Flow 官方帮助中心「管理 Google Flow 积分」与「开始使用 Google Flow」页（support.google.com/flow/answer/16526234、support.google.com/flow/answer/16353333，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/google-flow.html ｜ EN: https://baipiaoji.com/en/tools/google-flow.html
+
+## 飞书妙记
+
+- 额度上限 / Quota: 基础版每个自然月、每位用户可累计使用 300 分钟妙记语音转文字（涵盖会议录制、录音、本地文件上传、云文件导入四个场景），每月 1 号恢复额度。会中字幕不占用这份额度。
+- 撞墙表现 / What happens at the wall: 300 分钟用完后会议录制仍可继续，只是新生成的妙记不再提供文字记录——功能不断，少的是转写。商业版/企业版转写不限额，但受企业存储空间约束。
+- 来源 / Source: 飞书官方公告与帮助中心（feishu.cn，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/feishu-miaoji.html ｜ EN: https://baipiaoji.com/en/tools/feishu-miaoji.html
+
+## AiPPT
+
+- 额度上限 / Quota: 免费档官方三条明码：600MB 文件存储、每月 150 次 AI 生图、每天 1000 次 AI 助手调用。生成的作品可下载 PDF 或在线预览。
+- 撞墙表现 / What happens at the wall: 两道墙比额度更容易挡住人：免费档不支持直接下载 .ppt/.pptx 源文件（需在编辑器内导出，官方称通常 2 分钟内完成）；另官方声明使用 AI 生成 PPT、AI 生图、创意助手与模板下载时可能遇到频率限制——频率限制没有公开数值，实际能跑多快只能自己试。
+- 来源 / Source: AiPPT 官网帮助中心与增值服务协议（aippt.cn，经搜索索引引文核实；频率限制数值官方未公布）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/aippt.html ｜ EN: https://baipiaoji.com/en/tools/aippt.html
+
+## Notion AI
+
+- 额度上限 / Quota: 免费与 Plus 计划的工作区可获得一份「体验用」的 AI 回复额度（官方帮助中心专页 complimentary AI responses），但具体条数官方未在当前页面公布——网上流传的「每人 20 次」出自 2023 年的活动、早已结束，不可采信。Notion AI 现按 $10/人/月 作为加购项提供（年付约 8 折）。
+- 撞墙表现 / What happens at the wall: 计数方式要留意：每次 AI 动作（生成、改写、AI 区块、自动填充属性、提问等）算一次回复，点「重试」也另算一次——所以体验额度比想象中消耗得快。用完即需加购。
+- 来源 / Source: Notion 官方帮助中心（complimentary AI responses、AI FAQ、定价页，notion.com，经搜索索引引文核实；当前免费条数官方未公布）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/notion-ai.html ｜ EN: https://baipiaoji.com/en/tools/notion-ai.html
+
+## OpenRouter
+
+- 额度上限 / Quota: 免费账户可用 20+ 个 $0 模型（ID 带 :free）：每天 50 次请求、每分钟 20 次。一次性充值 $10 后，免费模型上限提升至每天 1,000 次（每分钟仍为 20 次），且该笔存款不过期、可用于付费模型。
+- 撞墙表现 / What happens at the wall: 达到日请求数后返回 429、次日重置；重度使用的正解是充一次 $10 解锁 20 倍日限——这不是订阅，是永久门槛。
+- 来源 / Source: OpenRouter 官方文档 limits 页与官方博客（openrouter.ai，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/openrouter.html ｜ EN: https://baipiaoji.com/en/tools/openrouter.html
+
+## Cerebras
+
+- 额度上限 / Quota: 新账号绑定并验证支付方式后获得 $5 免费额度，自发放起 30 天到期，可用于全部公开模型；免费档上下文长度 8,192 tokens。官方文档明确写明：目前不提供会自动续期的免费档，也没有任何模型的「永久免费」额度。
+- 撞墙表现 / What happens at the wall: $5 额度用尽或过期后必须购买额度才能继续调用公开端点；购买后进入 Developer 档，速率上限显著提高且取消按小时/按天的 token 上限。注意：网上广泛流传的「每天 100 万 tokens 免费」出自上线期公告，与现行官方口径不符，本站因此不采用该数字。
+- 来源 / Source: Cerebras 官方定价页与推理文档速率限制/定价页（cerebras.ai/pricing、inference-docs.cerebras.ai/support/rate-limits 与 /support/pricing，经搜索索引引文核实，本轮无法直连官方页）
+- 核实于 / Checked: 2026-08-05
+- 详情页 / Page: https://baipiaoji.com/tools/cerebras.html ｜ EN: https://baipiaoji.com/en/tools/cerebras.html
+
+## NVIDIA NIM
+
+- 额度上限 / Quota: 加入免费的 NVIDIA Developer Program 后，可免费调用 NVIDIA 托管的 NIM API 端点做开发与测试（官方措辞「unlimited prototyping」），无需信用卡，覆盖 DeepSeek / Llama / Qwen 等百余个模型。
+- 撞墙表现 / What happens at the wall: 网页试用发放的 API credits 用完后可在个人资料页申请更多；具体 credits 数字各来源口径不一（1000 与 5000 都有），官方文档未统一标注，所以这里不写死。
+- 来源 / Source: NVIDIA 官方开发者页 developer.nvidia.com/nim（credits 数字无统一官方标注，如实说明）
+- 核实于 / Checked: 2026-08-01
+- 详情页 / Page: https://baipiaoji.com/tools/nvidia-nim.html ｜ EN: https://baipiaoji.com/en/tools/nvidia-nim.html
+
+## Cohere
+
+- 额度上限 / Quota: Trial（试用）API Key 每月 1,000 次调用免费，注册即得、无需绑卡。不同端点另有每分钟速率限制：Embed 每分钟 5 次、Chat 每分钟 20 次——月额度没用完也会被分钟级限速卡住。
+- 撞墙表现 / What happens at the wall: 官方明确禁止把 Trial Key 用于生产或商业用途；要上线必须换成 Production Key 并按量计费。这类工具的墙不是额度，是授权边界。
+- 来源 / Source: Cohere 官方文档 Rate Limits 与 FAQ 页（docs.cohere.com/docs/rate-limits，经搜索索引引文核实，本轮无法直连官方页）
+- 核实于 / Checked: 2026-08-05
+- 详情页 / Page: https://baipiaoji.com/tools/cohere.html ｜ EN: https://baipiaoji.com/en/tools/cohere.html
+
+## Hugging Face
+
+- 额度上限 / Quota: 官方说明每个 Hugging Face 账号每月都会获得一笔 Inference Providers 额度用于试用，可跨多家推理服务商使用——但免费档的具体金额官方未在可核实页面写明。有明码的是 PRO：每月 $2 推理额度，官方另称 PRO 的包含额度是免费档的 20 倍。
+- 撞墙表现 / What happens at the wall: 额度用尽后转为按量付费，官方声明 Hugging Face 不在推理服务商价格上加价。模型仓库、数据集与 Spaces 的免费使用不受这笔推理额度影响，属于另一套限制。
+- 来源 / Source: Hugging Face 官方文档 Inference Providers 定价页与 PRO 页（huggingface.co/docs/inference-providers/pricing、huggingface.co/pro，经搜索索引引文核实，本轮无法直连官方页）
+- 核实于 / Checked: 2026-08-05
+- 详情页 / Page: https://baipiaoji.com/tools/huggingface.html ｜ EN: https://baipiaoji.com/en/tools/huggingface.html
+
+## Suno
+
+- 额度上限 / Quota: 免费档每天刷新 50 积分，官方口径约可创作 10 首短曲；音频上传上限 1 分钟；作品可设为仅链接可见或发布到个人页。
+- 撞墙表现 / What happens at the wall: 免费档作品仅限个人非商业用途、不能变现（官方帮助页专门有一页讲免费档权利）——这条比每天 50 积分重要得多：拿免费档产出去做有收益的视频，踩的是授权而不是额度。另一条同样容易踩：付费订阅带来的商用权只覆盖订阅期内生成的歌，退订前生成的不因退订失效、但订阅期外生成的也不因付过费而获得商用权。
+- 来源 / Source: Suno 官方帮助中心「What rights do I have with the free plan?」与定价页（help.suno.com / suno.com/pricing，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/suno.html ｜ EN: https://baipiaoji.com/en/tools/suno.html
+
+## ElevenLabs
+
+- 额度上限 / Quota: 免费档每月 10,000 credits，约合 10 分钟 Multilingual v2 高质量语音合成（Flash/Turbo 系按 0.5–1 credit/字符折算，能换更多分钟数）。
+- 撞墙表现 / What happens at the wall: 用完等下月刷新或付费升级。免费档没有商用权：公开发布必须注明 ElevenLabs 出处，且不能用于变现内容——这条比额度更容易踩坑。
+- 来源 / Source: ElevenLabs 官方定价页 elevenlabs.io/pricing
+- 核实于 / Checked: 2026-08-02
+- 详情页 / Page: https://baipiaoji.com/tools/elevenlabs.html ｜ EN: https://baipiaoji.com/en/tools/elevenlabs.html
+
+## Fish Audio
+
+- 额度上限 / Quota: 免费档每月 8,000 积分、每月重置，约合 7 分钟 S1 高质量音频（每分钟约 600–625 积分，官方定价页明码）；另有官方博客宣布的 S2.1 Pro 免费 TTS API（合理使用范围内不限量）。
+- 撞墙表现 / What happens at the wall: 与 ElevenLabs/Suno 同款陷阱：免费档仅限个人用途，YouTube/播客等商用变现需付费档拿商用权；模型本身开源，彻底可控可走本地部署。
+- 来源 / Source: Fish Audio 官方定价页与官方博客（fish.audio，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/fish-audio.html ｜ EN: https://baipiaoji.com/en/tools/fish-audio.html
+
+## DeepL
+
+- 额度上限 / Quota: 开发者 API Free 档每月 500,000 字符，无每日限制、用完当月即停（官方文档明示）。网页免费版单次翻译有字符上限，但官方未公布具体数字，超长文本需分段。
+- 撞墙表现 / What happens at the wall: API 达到月度 50 万字符后停止翻译、次月重置；网页版超长文本会被截断，需分段粘贴或升级 Pro。
+- 来源 / Source: DeepL 官方开发者文档与帮助中心（经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-02
+- 详情页 / Page: https://baipiaoji.com/tools/deepl.html ｜ EN: https://baipiaoji.com/en/tools/deepl.html
+
+## 彩云小译
+
+- 额度上限 / Quota: 网页/文本翻译基础功能免费使用；开发者侧官方明码：开放平台注册即送 100 万字符翻译额度、有效期 1 个月、到期自动清零（按原文字符计、含空格标点）。
+- 撞墙表现 / What happens at the wall: 免费 100 万字符用尽或到期后按量付费——官方文档两处超额单价口径不一（39 元与 20 元/百万字符并存），以当期计费页为准；App 端文档翻译另按篇幅计。
+- 来源 / Source: 彩云科技官方文档与开放平台协议（docs.caiyunapp.com / open.caiyunapp.com，经搜索索引引文核实；超额价格官方口径不一故并陈）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/caiyun.html ｜ EN: https://baipiaoji.com/en/tools/caiyun.html
+
+## QuillBot
+
+- 额度上限 / Quota: 免费版按「单次输入」限长：改写器（Paraphraser）单次最多 125 词；摘要器（Summarizer）单次最多 1,200 词（均为官方帮助中心明码）。改写模式也仅开放基础两种。
+- 撞墙表现 / What happens at the wall: 超长文本需手动分段贴入；解锁不限词数、全部改写模式与更强语法建议需订阅 Premium。
+- 来源 / Source: QuillBot 官方帮助中心（help.quillbot.com，免费 vs Premium 词数专页，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/quillbot.html ｜ EN: https://baipiaoji.com/en/tools/quillbot.html
+
+## Grammarly
+
+- 额度上限 / Quota: 免费档每月 100 次生成式 AI prompts（官方支持中心明码；Premium 为 1,000 次/月，Pro/教育版 2,000 次）；基础语法与拼写检查不占该额度。
+- 撞墙表现 / What happens at the wall: 当月 prompts 用尽后界面会显示距下次刷新的天数，只能等刷新或升级；改写/生成类 AI 功能在此期间不可用，纯检查功能不受影响。
+- 来源 / Source: Grammarly 官方支持中心「How many generative AI prompts do I have?」等专页（support.grammarly.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/grammarly.html ｜ EN: https://baipiaoji.com/en/tools/grammarly.html
+
+## Perplexity
+
+- 额度上限 / Quota: 免费账户基础搜索不限次数；Pro Search（高级模型深度检索）与文件上传为有限次，官方帮助中心与定价页当前只写「limited」而不给具体数字（另有页面提到免费用户按月计的有限次数）。本站 2026-08-03 曾记录「每天 5 次 Pro Search、3 次文件上传」，2026-08-04 复核未能在官方页面重新确认该数字，因此撤下不再断言。
+- 撞墙表现 / What happens at the wall: Pro Search 次数用完后自动回落到基础搜索，等窗口重置或订阅 Pro。由于官方当前不公布具体次数、且曾出现按日/按月两种表述，规划用量前请以账号内实际显示为准。
+- 来源 / Source: Perplexity 官方帮助中心与定价页（perplexity.ai，经搜索索引引文核实；具体次数官方当前未公布，历史记录的数字未能复现）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/perplexity.html ｜ EN: https://baipiaoji.com/en/tools/perplexity.html
+
+## NotebookLM（Google）
+
+- 额度上限 / Quota: 免费档官方明码四组数字：最多 100 个笔记本、每本 50 个来源（单源上限 50 万词）、每天 50 次对话提问、每天 3 次音频概览（AI 播客）生成。
+- 撞墙表现 / What happens at the wall: 对话与音频按日重置；笔记本/来源数触顶需删旧或升级（Pro 档扩容五倍并解锁更高日额）。
+- 来源 / Source: Google NotebookLM 官方帮助中心 FAQ 与 Upgrade 专页（support.google.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/notebooklm.html ｜ EN: https://baipiaoji.com/en/tools/notebooklm.html
+
+## Felo Search
+
+- 额度上限 / Quota: 免费档高速搜索（Quick Search）不限次数，专业搜索（Pro Search，可调用高级模型）每天 5 次。
+- 撞墙表现 / What happens at the wall: 专业搜索当日用完后可继续用不限量的高速搜索，或升级 Pro（$14.99/月，专业搜索提至每天 300 次）。官方已推出积分制订阅升级，权益细节以定价页当期展示为准。
+- 来源 / Source: Felo 官方定价页与官方博客（felo.ai，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/felo.html ｜ EN: https://baipiaoji.com/en/tools/felo.html
+
+## Consensus
+
+- 额度上限 / Quota: 免费档提供按月重置的 AI 积分（官方帮助中心确认月度重置机制，但具体数额未在可核实的官方引文中给出，不猜测）；基础文献搜索免费可用。
+- 撞墙表现 / What happens at the wall: 积分用完等次月重置，或升级 Pro（$20/月、年付 $144）解锁无限 Pro 搜索与每月 15 次深度搜索（Deep Search）——付费档数字为官方定价页口径。
+- 来源 / Source: Consensus 官方定价页与帮助中心（consensus.app，经搜索索引引文核实；免费档数额官方未在引文中明示）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/consensus.html ｜ EN: https://baipiaoji.com/en/tools/consensus.html
+
+## Grok（xAI）
+
+- 额度上限 / Quota: 免费档可用，但官方不公布具体条数——x.ai 定价页与 Grok 官方 FAQ 都只说「Grok 免费起步」，没有给出免费档每天/每周多少条。任何第三方流传的「免费版每 X 小时 Y 条」都没有官方出处，本站不转述。真正写明的是额度的结构：付费 SuperGrok 各档共用一个按周结算的用量池（跨产品共享，不是每个功能各给一份）。另有一个常见的张冠李戴要避开：xAI 文档里能查到的速率限制（RPS/TPM）是 API 团队配额，不是网页版与 App 的免费额度，两者不能互相代入——按 API 的 RPS 去推网页版每天能聊多少，得出的数字没有意义。
+- 撞墙表现 / What happens at the wall: 这里有一条几乎无人提及、但对判断「要不要升级」最关键的官方口径：免费档额度与付费周额度是两套独立的池。官方 FAQ 明写——周用量额度用尽时付费功能暂停，但你仍然保有 Chat 与 Voice 的免费档额度，且它按自己的周期重置，与周额度无关。换句话说，付费用户撞墙不等于归零，你会掉回免费档而不是掉到零。另一条：撞上周额度不是硬停，官方给三条路——买 Extra Usage Credits 立即继续、升到更高档换更大的周额度、或打开 Auto Top Up 自动续。用量明细在官方 Usage 标签页按产品拆分可查。
+- 来源 / Source: xAI 官方 Grok FAQ 与定价页（docs.x.ai/grok/faq、x.ai/pricing，经搜索索引引文核实；免费档具体条数官方未公布）
+- 核实于 / Checked: 2026-08-08
+- 详情页 / Page: https://baipiaoji.com/tools/grok.html ｜ EN: https://baipiaoji.com/en/tools/grok.html
+
+## 微软 Copilot
+
+- 额度上限 / Quota: 免费档每天 15 个 boosts（加速额度）用于生成图片，每 24 小时刷新；官方同时说明免费用户在非高峰时段可使用最新 AI 模型。boosts 用尽后仍可继续生成图片，只是速度变慢——官方未对免费出图给出每日总量上限。
+- 撞墙表现 / What happens at the wall: boosts 用完后出图排队变慢；对话本身官方未公布条数上限。付费升级通道已变更：Copilot Pro 已停售、旧订阅支持于 2026-08-01 终止，官方指引的继任方案是 Microsoft 365 Premium（$19.99/月）——官方措辞是「最高使用额度」，但未公布 Premium 具体的每日 boosts 数字（Pro 时代的 100/天口径随停售作废）。
+- 来源 / Source: 微软官方支持页（About Microsoft Copilot Pro、Introducing Microsoft 365 Premium，support.microsoft.com）与 Microsoft 365 官方博客（microsoft.com，2025-10 公告；经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-08
+- 详情页 / Page: https://baipiaoji.com/tools/ms-copilot.html ｜ EN: https://baipiaoji.com/en/tools/ms-copilot.html
+
+## Poe
+
+- 额度上限 / Quota: 免费用户每日发放计算积分、每 24 小时重置；官方帮助中心确认这套机制但不公布固定数额（第三方口径从 300 到 3000 互相打架，一概不采信）。不同模型扣分差异很大。
+- 撞墙表现 / What happens at the wall: 积分用完等次日重置；要更多就订阅（低档 $9.99/月、每日 10,000 积分起）。
+- 来源 / Source: Poe 官方帮助中心 help.poe.com（官方确认每日发放与重置机制、未公布具体数额，如实说明）
+- 核实于 / Checked: 2026-08-02
+- 详情页 / Page: https://baipiaoji.com/tools/poe.html ｜ EN: https://baipiaoji.com/en/tools/poe.html
+
+## GitHub Models
+
+- 额度上限 / Quota: 免费用量按模型分档限流（RPM/RPD/单次 tokens/并发四个维度，官方文档明示机制）：常被引用的典型档位为低档模型约 150 次/天（如 GPT-4o mini 档）、高档约 50 次/天（如 GPT-4o 档）；各模型实时限额以官方 rate limits 表为准。
+- 撞墙表现 / What happens at the wall: 触顶返回限流错误、按日重置；需要更高限额、更大上下文时可在组织内开通付费用量。定位是原型试验，不是生产额度。
+- 来源 / Source: GitHub Models 官方文档与官方社区答复（docs.github.com / github.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/github-models.html ｜ EN: https://baipiaoji.com/en/tools/github-models.html
+
+## MarsCode（字节）
+
+- 额度上限 / Quota: 产品线已合并：豆包 MarsCode 编程助手于 2025 年正式升级为「Trae 插件」，原网站并入 Trae 入口、账号体系互通（字节官方公告）；免费权益随 Trae 体系走，插件形态的基础补全与问答免费。
+- 撞墙表现 / What happens at the wall: 独立的 MarsCode 权益不再单独演进；高级能力以 Trae 体系的档位为准（见 Trae 条目——国际版免费档每月 5,000 次补全，国内版为独立 SKU）。
+- 来源 / Source: 字节跳动官方渠道（火山引擎开发者社区产品更新公告与 Trae 官方 FAQ，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/marscode.html ｜ EN: https://baipiaoji.com/en/tools/marscode.html
+
+## Continue
+
+- 额度上限 / Quota: Apache 2.0 开源（仓库 LICENSE 可查），VS Code / JetBrains 插件与 CLI 全部免费，无额度概念；支持自带任意模型供应商（OpenAI、Anthropic、Azure、Mistral 等）用于对话、改写、补全与向量化，官方文档还给出自托管开源模型的部署指引。
+- 撞墙表现 / What happens at the wall: 扩展本身没有墙，成本完全取决于你接的模型：接站内已核实的免费 API（如 Groq、Cloudflare Workers AI）或本地 Ollama，整条链路 0 元；接商业 API 则按对方计价。2026-08-04 复核新增：官方站资源页提到 Continue 已于 2026 年 6 月被 Cursor 收购——不改变今天的开源与免费性，但影响「值不值得长期依赖」的判断，长期依赖前建议看一眼仓库与文档的更新节奏。
+- 来源 / Source: Continue 官方仓库 LICENSE 与官方文档、资源页（github.com/continuedev/continue、docs.continue.dev、resources.continue.dev，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/continue.html ｜ EN: https://baipiaoji.com/en/tools/continue.html
+
+## Aider
+
+- 额度上限 / Quota: Apache 2.0 开源、经 PyPI 分发，工具本身完全免费无额度概念；BYO-LLM 设计：自带各家 API Key，或直接指向本地 Ollama / LM Studio / 任意 OpenAI 兼容端点——跑本地模型时整条链路零成本。直接在本地 Git 仓库里改代码并自动提交。
+- 撞墙表现 / What happens at the wall: 墙同样在模型侧而非工具侧。官方文档另有一条重要提醒：aider 与能力较弱的模型配合效果不佳——所以「用免费小模型白嫖」这条路有下限，本地模型选型要够格才跑得动多文件架构级修改。
+- 来源 / Source: Aider 官方站与官方仓库文档（aider.chat / github.com/Aider-AI/aider，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/aider.html ｜ EN: https://baipiaoji.com/en/tools/aider.html
+
+## v0（Vercel）
+
+- 额度上限 / Quota: 免费档现按 tokens 折算 credits 计量（官方博客明示新定价：输入/输出 tokens 计费，并称新制下免费档可用量比旧制更多）；旧口径「每天 7 条消息」已被 token 计量取代，攻略再引用即过时。具体免费 credits 数额以账户页实时显示为准。
+- 撞墙表现 / What happens at the wall: 免费 credits 用尽后等发放或升级（Premium $30/月含 $30 月度 credits + 每日登录 $2）；付费档未用完的月度 credits 可结转、65 天过期。
+- 来源 / Source: v0/Vercel 官方定价页、文档与官方博客（v0.app / vercel.com，经搜索索引引文核实；免费档具体数额官方以账户内显示为准）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/v0.html ｜ EN: https://baipiaoji.com/en/tools/v0.html
+
+## Bolt.new
+
+- 额度上限 / Quota: 免费档双重上限（官方支持文档明码）：每天最多 300,000 tokens、每月总量 1,000,000 tokens——注意网上流传的「每天 150K」是旧口径。
+- 撞墙表现 / What happens at the wall: 触及日上限等次日、触及月上限等下月或升级付费档（更大 token 池且可结转规则见官方页）；生成中断时项目仍保留可手动续做。
+- 来源 / Source: Bolt 官方支持文档 Tokens 专页与定价页（support.bolt.new / bolt.new，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/bolt.html ｜ EN: https://baipiaoji.com/en/tools/bolt.html
+
+## Lovable
+
+- 额度上限 / Quota: 免费工作区每天发 5 个 build credits，但每自然月上限 30 个（官方文档明码）——实际等于每月只有前 6 天有发放、之后当月归零，这是攻略普遍漏掉的关键机制；另送 4 个应用内 AI 功能试用 credits。
+- 撞墙表现 / What happens at the wall: 月内 30 个 credits 触顶后当月不再发放，只能等下个自然月或订阅（Pro $25/月起，含每日 5 build credits + 每月 20 Cloud credits）。
+- 来源 / Source: Lovable 官方文档 Credits and usage 页与定价页（docs.lovable.dev / lovable.dev，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/lovable.html ｜ EN: https://baipiaoji.com/en/tools/lovable.html
+
+## Replit
+
+- 额度上限 / Quota: Starter 免费档：Agent 用量为每日发放 credits、月度封顶（官方文档明示机制，数额未公布不采信第三方）；另有月度发布 credits，可免费发布 1 个应用。
+- 撞墙表现 / What happens at the wall: 最大的坑不是额度：免费发布的应用 30 天后链接自动下线（官方文档明码）——拿它做长期在线的作品集或给客户看的 demo 会翻车；长期在线需付费档。
+- 来源 / Source: Replit 官方文档 Starter Plan 页与官方博客（docs.replit.com / replit.com，经搜索索引引文核实；credits 数额官方未公布）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/replit.html ｜ EN: https://baipiaoji.com/en/tools/replit.html
+
+## CodeBuddy（腾讯）
+
+- 额度上限 / Quota: 新用户免费试用 Pro 两周：500 Credits + 每日 50 Credits（每日零点重置）。正式免费档的额度官方未公布明确数字。
+- 撞墙表现 / What happens at the wall: 试用后高级模型与 BuddyTab / Next Edit Prediction 等功能需订阅：个人版 $10/月，含 1000 Credits + 每日 100。
+- 来源 / Source: CodeBuddy 官方定价文档 codebuddy.ai/docs/zh/ide/Account/pricing（官方域名直连被代理拦截，数字经多方报道交叉印证）
+- 核实于 / Checked: 2026-08-02
+- 详情页 / Page: https://baipiaoji.com/tools/codebuddy.html ｜ EN: https://baipiaoji.com/en/tools/codebuddy.html
+
+## 无界 AI
+
+- 额度上限 / Quota: 新用户 AI 魔法体验卡每日 0 点补足 15 次免费创作（官方文章明码）；积分获取同样官方明码：注册 +50、实名认证 +100、绑卡 +150、邀请注册 +20/人（实名 +30），2 积分兑 1 次生成（通用/动漫/色彩模型）。
+- 撞墙表现 / What happens at the wall: 体验卡每日 15 次用完等次日 0 点；积分路径攒完一次性任务后主要靠邀请，重度使用需购买积分或权益卡。授权维度是本站见到的唯一「分档授权」模式：官方《AI 作品授权许可协议》把商用拆成可选的授权类型——标准授权 / 扩展授权 / 商品类授权，用户按需取得对应类型的作品许可使用权；另设有单独的《所有权购买协议》。版权侧官方明确作者版权属于创作人（即用户），但同时约定你授予无界及其关联公司全球范围、不可撤销的非独家使用许可，官方有权在市场营销活动中合理使用你的生成作品——与 Haiper 属同一类反向条款。责任侧全部在用户：不得用于诽谤、色情或其他非法用途，不得侵犯第三方版权商标等权利，作为素材上传的画作/照片/视频须确保无版权瑕疵，因不当使用致第三方权益受损的责任由用户自行承担。
+- 来源 / Source: 无界官方《AI 作品授权许可协议》《AI 创作服务协议》《所有权购买协议》与站内权益说明文章（wujiebantu.com/us/ai-use、wujieai.com/us/ai-agreement、wujiebantu.com/us/ownership、wujieai.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/wujie.html ｜ EN: https://baipiaoji.com/en/tools/wujie.html
+
+## Bing 图像创作
+
+- 额度上限 / Quota: 官方帮助页口径：每天 15 次「快速生成」免费，用完后快速生成需消耗 Microsoft Rewards 积分（约 10 分一次）；标准速度生成始终不限量且免费——这条最实用，不赶时间就没有额度概念。
+- 撞墙表现 / What happens at the wall: 快速额度用尽后要么等次日、要么用 Rewards 积分换、要么改用标准速度慢慢排。注意：微软已把 Designer 与 Bing 图像生成拆成两套体系，Designer 侧是另一套按月刷新的 AI 额度，别把两边的数字混着看。授权维度是「给了权限、没给保障」这一类：官方使用条款写明在遵守条款的前提下，你可以将生成结果用于任何合法目的，包括商业用途，微软也不主张对提示词与生成物的所有权。但同一份条款把风险留给了你——微软不保证生成内容不侵犯他人权利，也不保证生成结果在用户之间是唯一的；若产出无意中与既有版权角色、商标或真实人物形象相似，责任由使用者承担，条款不为你挡第三方侵权索赔。所以这里可商用是真的，「安全」不是。
+- 来源 / Source: Bing Image Creator / Video Creator 官方使用条款与官方帮助页（bing.com/new/termsofuseimagecreator、bing.com/images/create/help，经搜索索引引文核实）；社区问答中的额度变动说法不作为来源
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/bing-image.html ｜ EN: https://baipiaoji.com/en/tools/bing-image.html
+
+## Playground AI
+
+- 额度上限 / Quota: 免费档官方明码三条：自家模型每 3 小时可做 10 次图像编辑（滚动窗口，随时间逐步回血、不是每日一刀切）；接入的第三方高级模型每月仅 3 次；下载每天 10 张。
+- 撞墙表现 / What happens at the wall: 真正的墙常常是下载而不是生成——生成靠滚动窗口回血，一天下来能做不少，但每天只能下载 10 张，做得再多也带不走。第三方高级模型每月 3 次基本只够试。授权维度：免费档官方明确限个人使用，不含商用。官方帮助中心的版权专页写明你拥有用本服务创作的全部资产、平台将全部权利、所有权与利益转让给你，可用于个人或商业用途——但这份完整商用许可随付费档（Pro 起）才生效；免费档在官方限制说明里被明确标注为「仅限个人使用」。另有一条通用义务：输入不得侵犯第三方知识产权，也不得用提示词去复制特定艺术家或受保护作品。所以这里是「下载额度」与「商用许可」两道墙叠在一起——两道都得升级才解开。
+- 来源 / Source: Playground AI 官方帮助中心「What are the limits on the Free plan?」「How does copyright work? Do I own the designs I create?」「Content Policy」、服务条款与定价页（help.playgroundai.com、playgroundai.com/terms、playgroundai.com/design/pricing，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/playground-ai.html ｜ EN: https://baipiaoji.com/en/tools/playground-ai.html
+
+## Civitai
+
+- 额度上限 / Quota: 免费白嫖 Buzz 的三条官方路径：每日登录打开生成器即送；浏览带广告页面被动攒蓝 Buzz（0.25/条广告，上限 100/小时、400/天）；每日任务最多再赚 225/天。消耗侧：SD1.5 一张约 1–2 Buzz、SDXL 约 4–6，草稿模式半价（均为官方文章口径）。
+- 撞墙表现 / What happens at the wall: Buzz 攒的速度赶不上重度生成就得买 Buzz 或开会员；开广告拦截或 NSFW 过滤会停掉广告蓝 Buzz 收益。授权维度在这里最特殊：没有站级统一答案，逐个模型不同。官方授权指引说明，模型上传者自行设定权限，分两组——合并/分享类，与商用类；商用类可逐项开关：能否售卖生成图、能否用站内生成器、能否让其他生成服务提供该模型、能否售卖模型或其合并版。有的模型明确禁止任何形式的商业化（含模型、衍生模型及其产出）。最要命的一条是官方自己写的：这些许可设置属于「honor system（自觉遵守）」、是请求而非正式授权，Civitai 不会代任何人追责；真正可执行的授权取决于底层模型是否采用 CreativeML Open RAIL-M 等正式协议。所以看了模型页的许可标记不等于拿到了法律意义上的授权——商用前需回到底层模型的正式协议本身。
+- 来源 / Source: Civitai 官方授权指引、服务条款与授权文本页（education.civitai.com/guide-to-licensing-options-on-civitai、civitai.com/content/tos、civitai.com/content/licenses/CreativeML Open RAIL-M，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/civitai.html ｜ EN: https://baipiaoji.com/en/tools/civitai.html
+
+## remove.bg
+
+- 额度上限 / Quota: 网页版抠图预览分辨率（最高 0.25 兆像素，约 625×400）不限次免费下载；注册送 1 个积分可测试一次高清导出；API 与桌面/插件端每月另有 50 次免费预览调用（官方帮助中心明码）。
+- 撞墙表现 / What happens at the wall: 高清导出（最高 50 兆像素）每张消耗 1 积分，积分需订阅或按量购买——社交媒体配图用预览分辨率通常够，印刷/电商主图才需要买积分。注意这里有两道彼此独立的墙，很多人只看见分辨率那道：官方帮助中心专页写明免费档「100% 免费」的适用范围是低分辨率图片 + 个人用途，免费档不允许商用；商用许可随付费订阅或按量购买档随附。官方举的例子很具体：把处理后的图当护照照片属个人用途，而放到自己网站上卖货就属于商业用途。所以做电商主图时，买积分买到的不只是分辨率，还有那份商用许可。
+- 来源 / Source: remove.bg 官方帮助中心「Can I use remove.bg for commercial purposes?」「What is the difference between the free plan, subscription, and Pay-as-you-go?」与定价页（remove.bg/help、remove.bg/pricing，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/removebg.html ｜ EN: https://baipiaoji.com/en/tools/removebg.html
+
+## Upscayl
+
+- 额度上限 / Quota: 后端 AGPLv3 开源、完全免费、无额度概念：全部张量计算通过 Vulkan 在本机 GPU 上跑，不联网、不上传，因此不限张数也没有隐私顾虑。最高可放大到 16 倍，内置 Real-ESRGAN、Remacri、Ultramix 等多种模型分别适配照片/纹理/2D 插画。
+- 撞墙表现 / What happens at the wall: 墙在显卡不在额度：官方要求最低 2GB 显存，高分辨率图的「二次放大」建议 8GB 以上显存。支持 AMD / NVIDIA / Intel / Apple Silicon，不绑定 CUDA。授权维度是本地工具特有的三层结构，别把「开源」直接读成「随便商用」：软件本身采用 AGPL-3.0，该协议允许商业使用；但内置的部分模型并不适合商用——这是官方自己在仓库讨论区承认的，也正是他们做 Upscayl Cloud（提供明确可商用的模型）的原因。所以要商用产出，必须落到你实际选用的那个模型的许可上，而不是停在软件协议这一层。
+- 来源 / Source: Upscayl 官方站、官方仓库 README 与官方仓库讨论区（upscayl.org / github.com/upscayl/upscayl 及其 Discussions 中关于模型商用的官方答复，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/upscayl.html ｜ EN: https://baipiaoji.com/en/tools/upscayl.html
+
+## Pixlr
+
+- 额度上限 / Quota: 基础在线修图免费使用（带广告）；新用户赠送 20 个 AI 积分、约生成 20 张图（官方博客口径）。免费档另有保存次数限制——机制官方明示，但具体数字未公布，不采信第三方口径。
+- 撞墙表现 / What happens at the wall: AI 积分按月发放、当月有效不结转；免费档保存受限且带广告，去广告+无限保存需 Plus（$0.75/月起，含 80 积分/月），Premium（$4.90/月起）含 1,000 积分/月。授权维度有三层，其中两层很少被别处提到：(1) 官方允许将 AI 生成图用于商业用途，前提是遵守其条款与指引；(2) 但官方同时坦承——Pixlr 不对用户生成内容主张版权，却也无法向用户授予或许可该产出的使用权，并说明 AI 产出的版权归属在全球范围仍是开放问题。换句话说它没法给你它自己也没有的权利；(3) 免费用户不适用 Pixlr 的责任与法律保护条款——也就是说付费档买到的不只是功能，还有法律保护。另需注意：当你把 AI 内容上传或发布到 Pixlr 平台上时，即授予其不可撤销、非排他、免版税、全球范围的复制、公开展示、分发、演绎及再授权许可。
+- 来源 / Source: Pixlr 官方《License and Services Agreement》《Terms of Use》、定价页与官方博客（pixlr.com/license-and-services-agreement、pixlr.com/terms-of-use、pixlr.com/pricing、pixlr.com/blog，经搜索索引引文核实；免费档保存上限官方未公布具体数字）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/pixlr.html ｜ EN: https://baipiaoji.com/en/tools/pixlr.html
+
+## 吐司 AI
+
+- 额度上限 / Quota: 社区端可免费在线出图（支持 SD 1.5 / SDXL / 混元 DiT 等底模与 LoRA、ComfyUI 工作流），但每日免费算力的具体数额官方未在可核实页面公布，不写数字。开发者侧 API 官方明码：算力单价 0.01 元/点，无需自建 SD 环境与显卡。
+- 撞墙表现 / What happens at the wall: 免费算力用完后等次日或购买算力；社区端与 API 是两条线，API 按点计费不受免费额度影响。授权维度：官方商用条款与用户协议未在可核实引文中出现，本站因此不下结论。 有一点可以作为判断方向、但请注意它不是吐司的官方口径——本站已核实的两个同型模型社区（Civitai、哩布哩布）都把商用权交给所用模型的授权决定，哩布更明确规定底模与 LoRA 组合时任一组件禁止商用则整张图不可商用。吐司同样是「模型分享 + 在线出图」形态，因此商用前请逐一确认你实际用到的底模与 LoRA 各自的许可，不要默认平台免费即等于产出可商用。
+- 来源 / Source: 吐司官网与 API 说明页（tusiart.com / tusi.cn，经搜索索引引文核实；每日免费算力数额与商用条款官方均未在可核实页面明示）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/tusiart.html ｜ EN: https://baipiaoji.com/en/tools/tusiart.html
+
+## Pika
+
+- 额度上限 / Quota: 免费档可用 Pika 2.5 模型、分辨率限 480p，含 Pikascenes、Pikadditions、Pikaswaps 等特效（Pikaffects 仅图生视频）——以上为官方定价页明示；具体积分数额官方页未公布，第三方流传的数字一律不采信。
+- 撞墙表现 / What happens at the wall: 免费档的主要边界是分辨率（480p）与功能范围而非明码额度；要更高清晰度与完整功能需订阅付费档。授权维度是「所有权 ≠ 使用权」的典型：服务条款一方面写明 Pika 不主张对输入与产出的所有权，并把产出的全部权利、所有权与利益转让给用户；另一方面又明确规定，在你没有「允许商用的订阅档」期间，不得将产出变现或用于任何商业目的，只许个人非商业使用。即：东西是你的，但合同不让你拿去挣钱。另有一条：除非另行约定，你的输入、产出与使用交互可被 Pika 用于训练和改进其模型。API 侧产出则按 API 协议获得商用授权。
+- 来源 / Source: Pika 官方服务条款、可接受使用政策、定价页与 FAQ（pika.art/terms-of-service、pika.art/acceptable-use-policy、pika.art，经搜索索引引文核实；积分数额官方未公布）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/pika.html ｜ EN: https://baipiaoji.com/en/tools/pika.html
+
+## Haiper
+
+- 额度上限 / Quota: 可免费试用视频生成（官方口径为「一定数量」，每日/总量的具体数额未在可核实页面明示，因此不写数字）；官方给出的消耗参考：生成 5 秒视频需 50 积分。官方文档同时说明因新功能上线，定价结构正在调整。
+- 撞墙表现 / What happens at the wall: 免费产出带 Haiper 水印，去水印必须成为会员。授权比水印更硬：EULA 写明免费档授予的是「非商业用途」许可，只有付费订阅者才被允许将本应用用于商业目的。还有一条反向条款几乎无人提及——你接收产出的同时，等于免费、无限制地授权 Haiper 把你的产出用于它自己的业务，包括对外营销等商业活动。另因官方自述定价正在调整，任何流传的免费额度数字都可能已经失效，以站内当日展示为准。
+- 来源 / Source: Haiper 官方 EULA/使用条款、可接受使用政策、FAQ 与定价页（static2.haiper.ai 条款页、haiper.ai / docs.haiper.ai / book.haiper.ai，经搜索索引引文核实；免费额度数额官方未明示且定价调整中）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/haiper.html ｜ EN: https://baipiaoji.com/en/tools/haiper.html
+
+## OpusClip
+
+- 额度上限 / Quota: 免费档（free-forever）每月 60 分钟视频处理时长，按月刷新；新用户另有 7 天 Pro 试用（约 90 分钟处理时长）。
+- 撞墙表现 / What happens at the wall: 水印这条官方口径不一致：官方博客称免费档 60 分钟处理「无水印」，另一处又说升级付费会自动去除 OpusClip 水印——本站因此不下结论，发布前请在自己账号里导出一条确认。60 分钟用完等次月刷新或升级。授权维度比水印明确得多，方向也相反：服务条款写明用户只可将本服务用于自身内部的、个人的、非商业用途，且不得代表第三方或为第三方利益使用——「不得为第三方利益使用」这一句对接单剪辑的人尤其关键。你对上传素材（User Submissions）的所有权不受影响，OpusClip 取得的只是为运行服务所需的翻译、修改与复制许可。要商用需升级付费档。
+- 来源 / Source: OpusClip 官方服务条款、帮助中心 Plans and credits 与定价页（opus.pro/terms-of-service、help.opus.pro/docs/article/plans-and-credits、opus.pro/pricing，经搜索索引引文核实；水印口径官方不一致）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/opusclip.html ｜ EN: https://baipiaoji.com/en/tools/opusclip.html
+
+## HeyGen
+
+- 额度上限 / Quota: 免费档每月最多 3 条视频、1080p，另含 Avatar IV、Video Agent、口型翻译等高级功能的有限试用；注册无需绑卡。所有免费档导出带水印。
+- 撞墙表现 / What happens at the wall: 单条时长上限官方口径不一（定价页与帮助中心分别出现 1 分钟与 3 分钟的说法），本站因此不写这个数字——以官方定价页当日展示为准。当月 3 条用完即等次月或升级；水印只有付费档能去。授权维度是本站见过限制最细的一档：条款写明免费档产出不得出售、再授权、再分发、变现，也不得用于商业活动、广告、客户委托、创收产品或任何其他服务——「客户委托」被单独点名，接单的人尤其要注意。商用权自付费档起随附（官方口径为 $24/月起），付费档同时去水印。
+- 来源 / Source: HeyGen 官方条款、定价页与帮助中心（heygen.com/terms、heygen.com/pricing、help.heygen.com，经搜索索引引文核实；单条时长官方口径不一致，故不采信任一数字）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/heygen.html ｜ EN: https://baipiaoji.com/en/tools/heygen.html
+
+## D-ID
+
+- 额度上限 / Quota: 免费试用赠送 12 个积分，每个积分对应最多 15 秒视频（合计约 3 分钟）；试用期 14 天，试用结束前取消不扣费。积分不累积，按月刷新、未用完即作废。
+- 撞墙表现 / What happens at the wall: 试用档的水印是全屏覆盖（官方帮助中心明示，属其合成内容透明度政策），不是角标——所以试用产出基本只能自用，不能直接发布。想去水印必须转付费档。授权维度与水印是两道各自独立的门：官方帮助中心专页写明试用档仅限个人使用，产出可以分享到社交媒体，但不得用于商业用途；EULA 进一步把试用者定义为「访客用户」，自注册起两周内以受限功能仅作非商业使用。商用权自付费档（Pro / Advanced / Enterprise 等）起随附，官方明确其涵盖广告、市场营销与商业内容。
+- 来源 / Source: D-ID 官方帮助中心「What are the copyright and commercial use rights for my videos?」、最终用户协议/EULA 与定价页（help.d-id.com、d-id.com/studio-end-user-license-agreement、d-id.com/eula、d-id.com/pricing/studio，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/d-id.html ｜ EN: https://baipiaoji.com/en/tools/d-id.html
+
+## Udio
+
+- 额度上限 / Quota: 免费档每天 10 积分，用完后可从每月 100 积分的补充池扣（官方帮助中心明码）；1 积分对应约 30 秒音轨，每次生成同时出 2 条即耗 2 积分；积分一律不结转。
+- 撞墙表现 / What happens at the wall: 日额度与月补充池都见底后只能等刷新或订阅（Standard $10/月 1,200 积分起）。授权维度可商用，但附着一条极易被忽略的时点规则：官方写明 Udio 不主张对你生成内容的所有权，你可以商用——前提是内容不含你并不拥有、也未获明确许可的受版权保护素材。真正的坑在这里：如果你创作这首歌时不是订阅者（即用免费档做的），哪怕你今天已经订阅，仍必须标明该内容由 Udio 生成——需以署名、声明或其他方式显著标示。也就是说标注义务绑定的是「创作那一刻的档位」，不是「现在的档位」，事后补订阅并不能消除它。
+- 来源 / Source: Udio 官方帮助中心「Usage rights & ownership」「Answers to common usage questions」「Credits and credit limits」与服务条款（help.udio.com、udio.com/terms-of-service，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/udio.html ｜ EN: https://baipiaoji.com/en/tools/udio.html
+
+## TTSMaker
+
+- 额度上限 / Quota: 免费档每周 20,000 字符，部分标注「不限量」的音色不计入周额度、可无限使用；官方设有专门的商用许可条款页，明确免费生成的音频可商用、无需额外授权。
+- 撞墙表现 / What happens at the wall: 普通音色达到每周字符上限后需等待重置或升级 Pro；商用前建议保存官方商用许可条款页的当期版本作为凭证。
+- 来源 / Source: TTSMaker 官网与官方商用许可条款页（ttsmaker.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-02
+- 详情页 / Page: https://baipiaoji.com/tools/ttsmaker.html ｜ EN: https://baipiaoji.com/en/tools/ttsmaker.html
+
+## ProcessOn
+
+- 额度上限 / Quota: 免费账号可编辑的文件数为 9 个（按最近使用计）；超出 9 个的旧文件仍可查看与下载，但不能继续编辑。
+- 撞墙表现 / What happens at the wall: 墙的形态很特别：不是不给你存，是不给你改——文件不会被删，只是老文件变成只读。想继续编辑要么升级会员，要么把不用的文件导出后清理，让它退出「最近 9 个」。
+- 来源 / Source: ProcessOn 官方帮助中心与升级页（processon.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/processon.html ｜ EN: https://baipiaoji.com/en/tools/processon.html
+
+## Napkin AI
+
+- 额度上限 / Quota: 免费档面向个人与小团队：可用核心功能，AI 生成积分有限（官方未公布具体数额，第三方数字不采信），导出选项为基础档。
+- 撞墙表现 / What happens at the wall: 免费用户生成的图示带水印——升级任一付费档（Plus/Pro）即全部去水印；积分与自定义上限也随付费档提升。年付较月付省 25%。
+- 来源 / Source: Napkin AI 官方定价页与帮助中心（napkin.ai，经搜索索引引文核实；免费档积分数官方未公布）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/napkin.html ｜ EN: https://baipiaoji.com/en/tools/napkin.html
+
+## 歌者 PPT
+
+- 额度上限 / Quota: 官方公告口径：永久免费生成 PPT，且可免费下载 PPTX 源文件——这一条正是 AiPPT 免费档做不到的（后者只能导 PDF 或在编辑器内导出）。功能含任意话题一键生成、导入资料转 PPT、PPT 智能翻译。
+- 撞墙表现 / What happens at the wall: 官方未公布免费档的次数或频率上限，因此不写数字。会员版覆盖话题生成、资料转换、PPT 翻译等能力的更高档位；具体差异以官网当期展示为准。
+- 来源 / Source: 歌者 PPT 官网与官方公告博客（gezhe.com，含「官宣！歌者 AIPPT 免费，立即生效！」一文，经搜索索引引文核实；免费档次数上限官方未公布）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/gezhe.html ｜ EN: https://baipiaoji.com/en/tools/gezhe.html
+
+## 腾讯 ima
+
+- 额度上限 / Quota: 免费提供 1GB 个人云存储（官方口径约可存 200 份标准论文）。另有三条免费扩容路径：把知识库发布到「知识库广场」共享可获免费无限扩容且不占个人空间；广场里别人的内容同样不占你的空间；通过邀请新用户与活动 CDkey 累计最高可得 100GB。
+- 撞墙表现 / What happens at the wall: 个人私有空间的 1GB 是硬上限，想突破基本要走「公开共享」这条路——也就是用隐私换空间：知识库公开到广场才不占额度。另 ima 正在商业化探索，已推出 copilot 算力付费与知识库付费加入机制，免费权益可能随之调整。
+- 来源 / Source: 腾讯 ima 官网与腾讯云开发者社区官方文章（ima.qq.com、cloud.tencent.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/ima.html ｜ EN: https://baipiaoji.com/en/tools/ima.html
+
+## 沉浸式翻译
+
+- 额度上限 / Quota: 基础翻译引擎（微软/谷歌等）免费不限次；登录后可领取 5 万 AI 高级模型 tokens（官方入门页口径），用于 ChatGPT/DeepL/Gemini 等 20+ 引擎的高级翻译；也可自带各家 API Key 走自己的额度。
+- 撞墙表现 / What happens at the wall: 高级模型 tokens 用尽后回落到基础引擎（翻译照常、质量档位下降），或开 Pro 会员/绑自有 Key；基础功能本身没有墙。
+- 来源 / Source: 沉浸式翻译官网、官方入门引导页与文档（immersivetranslate.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/immersive-translate.html ｜ EN: https://baipiaoji.com/en/tools/immersive-translate.html
+
+## 有道翻译
+
+- 额度上限 / Quota: 开发者侧（有道智云）明码：新注册账号系统赠送 50 元体验金，先扣体验金、用尽后按接口调用量计费。云笔记侧提供 3GB 免费存储空间。
+- 撞墙表现 / What happens at the wall: 网页版翻译与云笔记 AI 助手的免费使用上限官方未公布，本站不写数字；体验金用尽后即转为按量付费，注意这是余额制不是月度额度——不会自动刷新。
+- 来源 / Source: 有道智云 AI 开放平台文档与有道云笔记官方页（ai.youdao.com / note.youdao.com，经搜索索引引文核实；网页版与云笔记 AI 的免费上限官方未公布）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/youdao.html ｜ EN: https://baipiaoji.com/en/tools/youdao.html
+
+## Wordvice AI
+
+- 额度上限 / Quota: 免费 Basic 档（需注册）：改写单次最多 500 词；AI 翻译单次最多 500 字符；各修订工具合计可处理 5,000 词文本（均为官方 plans 页口径；官方未明示 5,000 词的刷新周期，故不写周期）。
+- 撞墙表现 / What happens at the wall: 超出单次限长需分段；总量见底或要解锁全部 5 种改写模式与百万词/月额度需 Premium（$19.95/月）。
+- 来源 / Source: Wordvice AI 官方 plans 页与工具页（wordvice.ai，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/wordvice.html ｜ EN: https://baipiaoji.com/en/tools/wordvice.html
+
+## Devv AI
+
+- 额度上限 / Quota: 免费档按月发放积分（官方文档确认月度额度机制与积分制，但免费档具体数额未在可核实引文中明示，不猜测）；积分主要被编程智能体消耗。
+- 撞墙表现 / What happens at the wall: 当月积分用完可购买一次性积分包突破（加购积分不过期），或升级 Pro/Team；订阅内月度积分当期未用完会过期。
+- 来源 / Source: Devv 官方定价页与文档 FAQ（devv.ai，经搜索索引引文核实；免费档数额官方未明示）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/devv.html ｜ EN: https://baipiaoji.com/en/tools/devv.html
+
+## Fireworks AI
+
+- 额度上限 / Quota: 新用户注册自动获得 $1 免费额度（约合 70B 级模型 100 万 token），无需绑卡即可开始调用。
+- 撞墙表现 / What happens at the wall: 没有长期免费档——$1 是一次性试用金，用完后按 token 计费（小模型约 $0.10/百万 token 起）。
+- 来源 / Source: Fireworks 官方文档 docs.fireworks.ai/faq-new/billing-pricing/how-much-does-fireworks-cost（$1 数额经多个独立来源交叉印证）
+- 核实于 / Checked: 2026-08-02
+- 详情页 / Page: https://baipiaoji.com/tools/fireworks.html ｜ EN: https://baipiaoji.com/en/tools/fireworks.html
+
+## 阿里云百炼
+
+- 额度上限 / Quota: 新用户每款模型各赠 100 万免费 Tokens（不同模型、乃至同一模型不同版本的额度相互独立，不互通不共享），覆盖平台 70+ 款模型；官方帮助中心明示有效期为开通日起 90 天。官方文章对「总额度」口径不一（超 5,000 万与超 7,000 万并存），故不取总数。
+- 撞墙表现 / What happens at the wall: 90 天后剩余额度自动作废，不补发、不延期、不重置；免费额度只抵扣实时推理，Batch 调用、上下文缓存、模型调优不适用；额度用尽或过期后按量计费。
+- 来源 / Source: 阿里云帮助中心「新人免费额度与计费 FAQ」+ 官方开发者社区文章（aliyun.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-03
+- 详情页 / Page: https://baipiaoji.com/tools/bailian.html ｜ EN: https://baipiaoji.com/en/tools/bailian.html
+
+## DeepInfra
+
+- 额度上限 / Quota: 通过 Hugging Face Inference Provider 接入时，免费用户享有一份每月小额配额（官方博客口径，未给具体数值）；DeepStart 创业计划可申请最高 10 亿 tokens 的免费推理额度，需申请审核。
+- 撞墙表现 / What happens at the wall: 直接注册使用需绑卡或预付才能调用；官方页面未公布「注册即送」的具体数额，本站不写数字。
+- 来源 / Source: DeepInfra 官方定价页、文档与官方博客（deepinfra.com，经搜索索引引文核实；注册赠额官方未明示）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/deepinfra.html ｜ EN: https://baipiaoji.com/en/tools/deepinfra.html
+
+## 扣子 Coze（字节）
+
+- 额度上限 / Quota: 个人版分五档（含免费档），按「资源点」计量。免费档具体资源点数官方未在可核实页面明示，因此不写数字；团队版于 2026-06-22 正式上线，另有多档。
+- 撞墙表现 / What happens at the wall: 官方明确的一条差异值得记：个人版与团队版的资源点归零后即不可用，而企业版归零后从账户现金余额继续扣款——也就是说个人档撞墙是「停」，企业档撞墙是「开始花钱」。规划前先确认自己在哪一档。
+- 来源 / Source: 扣子官方文档（docs.coze.cn 订阅套餐与计费概览，经搜索索引引文核实；免费档资源点数官方未明示）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/coze.html ｜ EN: https://baipiaoji.com/en/tools/coze.html
+
+## Dify
+
+- 额度上限 / Quota: 开源版自部署完全免费、无额度限制。云端 Sandbox 免费档：赠送 200 次模型调用额度（官方口径 200 OpenAI calls）、无需绑卡，团队人数与资源有上限，额度内可体验当前版本全部功能。
+- 撞墙表现 / What happens at the wall: 赠送额度按模型类型消耗，用完后可改填自己的 API Key 继续用（官方明示这条退路），或升级付费档；也可以直接转自部署，功能不打折。
+- 来源 / Source: Dify 官方定价页与文档（dify.ai，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/dify.html ｜ EN: https://baipiaoji.com/en/tools/dify.html
+
+## n8n
+
+- 额度上限 / Quota: 社区版（自托管）永久免费、功能近乎完整：工作流数量、步骤数、执行次数与用户数均不限。用邮箱注册社区版可免费拿一个 license key，额外解锁三项：文件夹整理、编辑器内调试（复制与固定执行数据）、自定义执行元数据。
+- 撞墙表现 / What happens at the wall: 墙不在额度而在协作：社区版只有实例所有者与工作流/凭证的创建者能访问它们，工作流与凭证的共享需要 Business/Enterprise 付费档。自托管的运行成本则取决于你自己的服务器。
+- 来源 / Source: n8n 官方文档社区版功能页与定价页（docs.n8n.io / n8n.io/pricing，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/n8n.html ｜ EN: https://baipiaoji.com/en/tools/n8n.html
+
+## FastGPT
+
+- 额度上限 / Quota: 开源社区版自部署免费，含 Agent 构建、工作流、知识库全部核心功能。云端免费版有 AI 积分与知识库索引额度（官方文档确认这两种计量存在，但免费档具体数值未在可核实引文中给出，不猜测）。
+- 撞墙表现 / What happens at the wall: 云端免费版最硬的一条是「30 天不登录清空知识库」——这不是额度问题而是数据保全问题；知识库索引超限后无法新增或更新内容；付费套餐到期会自动切回免费版并清空 AI 积分。要长期留存数据就走自部署。
+- 来源 / Source: FastGPT 官方文档与定价页（fastgpt.cn / doc.tryfastgpt.ai，经搜索索引引文核实；免费档数值官方未明示）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/fastgpt.html ｜ EN: https://baipiaoji.com/en/tools/fastgpt.html
+
+## RAGFlow
+
+- 额度上限 / Quota: Apache 2.0 开源、自托管完全免费、无额度概念。官方文档给出的是技术上限而非商业额度：单次上传总大小 1GB（docker/.env 里 MAX_CONTENT_LENGTH 可自行调大）、批量上传单批 32 个文件，账号文件总数不设上限；改用 HTTP API 或 Python SDK 上传时，32 个的批量限制自动解除。
+- 撞墙表现 / What happens at the wall: 墙在部署与体验版的差异：官方演示站 demo.ragflow.io 不支持 API 调用，API 只能在自托管实例上用。想用 API 就必须自己部署，服务器成本由你承担。
+- 来源 / Source: RAGFlow 官方文档 FAQ、官网与仓库 LICENSE（ragflow.io/docs/faq、github.com/infiniflow/ragflow，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/ragflow.html ｜ EN: https://baipiaoji.com/en/tools/ragflow.html
+
+## Figma
+
+- 额度上限 / Quota: Starter 免费档：1 个团队、1 个项目、团队内最多 3 个设计文件、每个文件最多 3 页；个人草稿（Drafts）文件数不限；协作者/编辑者人数不限。
+- 撞墙表现 / What happens at the wall: 团队文件或页数触顶时，可把新文件放进不限量的个人草稿区继续做（但草稿不支持团队项目组织），或升级付费席位。授权维度是设计类里最宽松的：官方明确 Starter 免费档可用于商业项目，付费买的是 Professional 档的进阶功能，不是商用资格；服务协议同时写明你拥有在 Figma 中创作的作品的全部权利、所有权与利益（Figma 拥有的是 Figma 社区与 Figma 服务本身）。需要留意的是 Figma 社区素材另有自己的版权与授权规则，引用他人社区文件时按那套规则走，与你自己作品的归属是两回事。
+- 来源 / Source: Figma 官方服务条款与软件服务协议、帮助中心「Figma Community copyright and licensing」与定价页（figma.com/legal/tos、figma.com/ssa、help.figma.com、figma.com/pricing，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/figma.html ｜ EN: https://baipiaoji.com/en/tools/figma.html
+
+## 即时设计
+
+- 额度上限 / Quota: 官方口径：基础版永久免费，文件数、图层数、资源库容量、云端字体数、文件协作者、团队数量均不限；模板、插件与内置工具对个人及中小团队免费。
+- 撞墙表现 / What happens at the wall: 免费档本身几乎不设墙——分档按对象走：大型团队与企业需要的是私有化部署版（另有企业版）。注意这些表述出自官方站点自述页，具体权益仍以下单页当期为准。授权维度必须拆成两件事，官方只回答了其中一件：(1) 内置设计资源——官方站点明确称站内设计资源可免费使用并支持商用，套用无版权纠纷；(2) 你自己创作的设计稿——其权利归属与商用范围未在可核实的官方服务条款引文中出现，本站因此不下结论。这两件事经常被混为一谈：素材库允许商用，不等于平台已就你的作品权属作出承诺。若用于客户交付，建议就第 (2) 点直接向官方确认。
+- 来源 / Source: 即时设计官网产品与说明页（js.design 及其 special/article 系列官方页，经搜索索引引文核实；服务条款正文未在引文中出现，作品权属故不下结论）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/jsdesign.html ｜ EN: https://baipiaoji.com/en/tools/jsdesign.html
+
+## Motiff 妙多
+
+- 额度上限 / Quota: ⚠ 该产品已停止服务，本条目仅作存档与迁移指引，不再是可用的免费额度。 官方关停说明：因业务调整停运；官方两处日期不一致——英文帮助页写 2026-06-23，中文「妙多关停说明」写 2026-07-31，本站两个都列、不替厂商选，但无论按哪个，截至本条核实日均已过期。2026-05-13 起已关闭新注册与续订，存量账号可登录使用至关停日。付费用户按官方口径自动退款（月付全额退最近一期并加赠一个月、年付全额退年费并加赠一个月），退款于 2026-05-31 前处理。
+- 撞墙表现 / What happens at the wall: 现在唯一还有意义的动作是导出。 官方上线了批量导出：可将团队、项目与草稿导出为 Figma 格式，另支持 Sketch、PDF 与多种图片格式。历史记录（关停前口径，仅供理解此前状态）：免费档的 AI 功能曾属限时 Beta 对所有档位免费，UI 导出与可交付代码文件属付费解锁项。授权维度已无实际意义——服务停运后不存在「免费档能不能商用」的问题；已导出的设计文件按你与原平台条款下既有的权利处理，如涉商用交付建议以导出后的 Figma/Sketch 源文件为准。
+- 来源 / Source: 妙多官方「关停说明」与 Motiff 官方帮助页「Motiff is shutting down」（miaoduo.com/help/others/489912186378811、motiff.com/help/others/462390803479041，经搜索索引引文核实；关停日期官方中英两处不一致，故两个都列）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/motiff.html ｜ EN: https://baipiaoji.com/en/tools/motiff.html
+
+## 稿定 AI
+
+- 额度上限 / Quota: 在线设计与编辑功能可免费使用，模板与素材分为免费与会员两类（会员分模板会员、素材下载会员、大会员三档）。免费档具体下载额度官方未在可核实页面明示，因此不写数字。
+- 撞墙表现 / What happens at the wall: 这条比额度重要得多：会员期内下载的素材，会员到期后不能继续使用——想再编辑、下载或使用需重新授权付费；商用授权同样只在会员有效期内成立。也就是说素材是「租」不是「买」，做完的成品若含会员素材，退会员后再改动会有授权问题。
+- 来源 / Source: 稿定设计官方帮助文章与会员说明页（gaoding.com，经搜索索引引文核实；免费档下载额度官方未明示）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/gaoding.html ｜ EN: https://baipiaoji.com/en/tools/gaoding.html
+
+## Framer
+
+- 额度上限 / Quota: 免费档官方明码：10 个 CMS 集合、1,000 页、单文件上传 5MB、1 个免费语言区域可试。站点发布在 framer.website 免费域名下，并带「Made in Framer」标识。
+- 撞墙表现 / What happens at the wall: 两道墙决定它能不能当正式站用：绑自定义域名必须升级付费，且免费域名下强制显示 Made in Framer 标识。带宽按月计量，官方未公布免费档具体额度；超量第一个月只发邮件与站内提示，连续第二个月才会被要求升级——不是当场断流。授权维度：官方定价页把免费档定位为「适合非商业用途」，即免费档不面向商业使用；把站点用于生意需升级付费档。另需分清两件事：你自己做的站，与你从 Framer 社区市场取用的素材是两套规则——社区条款写明创作者授予终端用户的是有限、非排他、不可转让、不可再授权且可撤销的许可，免费创作者素材可用于商业或非商业用途，但你不得主张对该素材的所有权、也不得声称是自己原创。
+- 来源 / Source: Framer 官方定价页、服务条款与社区条款（framer.com/pricing、framer.com/legal/terms-of-service、framer.com/legal/community-terms，经搜索索引引文核实；免费档带宽数额官方未公布）
+- 核实于 / Checked: 2026-08-06
+- 详情页 / Page: https://baipiaoji.com/tools/framer.html ｜ EN: https://baipiaoji.com/en/tools/framer.html
+
+## Elicit
+
+- 额度上限 / Quota: Basic 免费档三项不限量：检索 1.38 亿+ 篇论文、跨论文摘要、与有全文的论文对话；Research Agent 与研究报告走按月重置的共享用量池，免费档池内具体数额官方未明示（不猜测）。
+- 撞墙表现 / What happens at the wall: 月度用量池耗尽后，不限量的检索/摘要/对话仍可用；重度使用 Research Agent 需升级 Pro（$49/月，年付约 65 折）。
+- 来源 / Source: Elicit 官方定价页与官方博客（elicit.com，经搜索索引引文核实；免费档池数额官方未明示）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/elicit.html ｜ EN: https://baipiaoji.com/en/tools/elicit.html
+
+## SciSpace
+
+- 额度上限 / Quota: 免费档官方三条明码：每份 PDF 最多 120 页、每天 3 份 PDF、每天 50 个提问。Plus 档 $5/月（每份 2000 页、每天 50 份、每天 1000 问）作为对照。
+- 撞墙表现 / What happens at the wall: 三道限制里最先撞上的通常是单份 120 页——长篇论文与学位论文直接超限，不是问题数不够。每天 3 份的额度对通读文献偏紧，但对精读足够。
+- 来源 / Source: SciSpace 官方定价页与帮助中心（scispace.com，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/scispace.html ｜ EN: https://baipiaoji.com/en/tools/scispace.html
+
+## 豆包爱学
+
+- 额度上限 / Quota: 登录即可免费使用（官方口径：登录即免费使用豆包提供的各项功能，爱学属其学习辅助方向）。具体使用次数或额度官方未在可核实页面公布，因此不写数字。
+- 撞墙表现 / What happens at the wall: 官方在算法备案公示里写明的边界更值得注意，且不是额度：生成内容不保证真实性、准确性、可靠性，可能提供不正确或虚假的输出；明确声明不能替代专业老师，也不能替代教材教辅。用于学习时，这条比任何次数上限都关键——尤其是给孩子用。
+- 来源 / Source: 豆包官方算法及模型备案公示说明与产品页（doubao.com/legal/instructions，经搜索索引引文核实；使用额度官方未公布）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/doubao-aixue.html ｜ EN: https://baipiaoji.com/en/tools/doubao-aixue.html
+
+## 国家反诈中心
+
+- 额度上限 / Quota: 「AI 内容鉴定」完全免费、每日最多 10 次，覆盖图像/视频/文本/音频四类。单次输入上限：图片 30KB–5MB、视频 100KB–100MB、文本 10–5000 字、人声音频不超过 10 分钟。
+- 撞墙表现 / What happens at the wall: 当日 10 次用完等次日重置——这是防骗工具，够用不代表可以拿来批量检测；官方定位是遇到可疑内容时的核验手段。
+- 来源 / Source: 公安部刑事侦查局官方发布（多家独立媒体交叉一致：IT之家、新浪科技、腾讯新闻、网易、东方财富）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/guojia-fanzha.html ｜ EN: https://baipiaoji.com/en/tools/guojia-fanzha.html
+
+## Ollama
+
+- 额度上限 / Quota: 无任何额度概念：MIT 许可开源（仓库 LICENSE 可查），本地运行、不限次数、不限 token、无需联网、数据不出本机。2026-08-04 复核新增：Ollama 现另有云端服务（Cloud / Turbo 预览），用数据中心级硬件跑 gpt-oss:20b、gpt-oss:120b、deepseek-v3.1:671b 等模型，官方称免费档也有完整上下文长度与「宽松」额度——但免费档的具体数额未在可核实页面明示，因此不写数字。本地跑与云端跑是两条线，本地那条依然没有任何额度概念。
+- 撞墙表现 / What happens at the wall: 墙不是额度而是内存——官方 README 给出的推荐门槛：7B 模型至少 8GB 内存、13B 至少 16GB、70B 至少 64GB；GPU 非必需但显著影响速度。硬件不够时不是「用完了」，是模型根本加载不起来（会直接报内存不足）。云端那条线的墙则未知：官方只说免费档额度「宽松」，没给数字，用之前请在 ollama.com/pricing 确认当期口径。
+- 来源 / Source: Ollama 官方仓库 LICENSE 与 README 系统要求，以及官方 Cloud/Turbo 与定价页（github.com/ollama/ollama、ollama.com/cloud、ollama.com/pricing，经搜索索引引文核实；云端免费档数额官方未明示）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/ollama.html ｜ EN: https://baipiaoji.com/en/tools/ollama.html
+
+## LM Studio
+
+- 额度上限 / Quota: 客户端本身免费、无额度概念：个人一直免费，且官方已取消商用需单独申请许可的要求——公司/团队直接用即可，不必填表或联系官方。团队可免费建公开 Hub 组织配合使用。
+- 撞墙表现 / What happens at the wall: 没有额度墙，本地跑取决于硬件（与 Ollama 同型）。收费的是可选服务：Teams 计划（团队内私有共享）、Enterprise（SSO、模型与 MCP 门禁、私有协作），以及云推理服务按 token 计费。
+- 来源 / Source: LM Studio 官方博客「free for use at work」与定价页（lmstudio.ai，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/lm-studio.html ｜ EN: https://baipiaoji.com/en/tools/lm-studio.html
+
+## AnythingLLM
+
+- 额度上限 / Quota: 桌面版 MIT 开源、完全免费，官方口径是「无需账号、无需 API Key、无 token 限制」，在本机运行（macOS / Windows / Linux 均有）。云端版由官方团队托管在隔离的 AWS 实例上，供试用或规模化使用；云端定价与用量上限官方未在可核实页面明示，因此不写数字。
+- 撞墙表现 / What happens at the wall: 桌面版没有额度墙，能力取决于你接的模型与本机硬件（与 Ollama、LM Studio 同型）。要多人协作或托管运维就走云端版，费用与限制以官方 cloud 页当期为准。
+- 来源 / Source: AnythingLLM 官网与文档（anythingllm.com、docs.anythingllm.com，经搜索索引引文核实；云端版额度官方未明示）
+- 核实于 / Checked: 2026-08-04
+- 详情页 / Page: https://baipiaoji.com/tools/anythingllm.html ｜ EN: https://baipiaoji.com/en/tools/anythingllm.html
+
+## Gemini CLI
+
+- 额度上限 / Quota: 用 Google 账号登录的免费档：每天 1,000 次模型请求，Flash 上限 60 次/分钟，默认走 Gemini Flash。官方文档同时明确两件容易被误读的事：这 1,000 次是 Pro 与 Flash 混合计的，不等于每天 1,000 次 Gemini 2.5 Pro 请求；而且一次提问可能触发几十次模型请求——「1,000 次」不是 1,000 轮对话。
+- 撞墙表现 / What happens at the wall: 额度用尽即被限流（官方 issue 里大量「Free tier limits have been reached」即此）。改用 API Key 认证时适用的是另一套额度规则，两者不能互相换算。要更高上限需接 Gemini Code Assist 付费档或按量计费的 Gemini API。
+- 来源 / Source: Gemini CLI 官方仓库配额文档与 Gemini API 速率限制页（github.com/google-gemini/gemini-cli/blob/main/docs/resources/quota-and-pricing.md、ai.google.dev/gemini-api/docs/rate-limits，经搜索索引引文核实）
+- 核实于 / Checked: 2026-08-05
+- 详情页 / Page: https://baipiaoji.com/tools/gemini-cli.html ｜ EN: https://baipiaoji.com/en/tools/gemini-cli.html
+
+> 本数据以 **CC BY 4.0** 开放转载（含商用）：注明来源「白嫖计（https://baipiaoji.com）」并附回链即可。机器可读版：https://baipiaoji.com/limits.json
+> 额度政策变动频繁，以官方页面为准。引用请注明「白嫖计（https://baipiaoji.com）」与核实日期。
+> Free-tier terms change often; the official page wins. Please attribute citations to "白嫖计 (https://baipiaoji.com)" with the check date.
