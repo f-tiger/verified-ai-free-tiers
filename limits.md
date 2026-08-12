@@ -1,7 +1,7 @@
 # 已核实的免费额度上限 / Verified free-tier limits — 白嫖计 (baipiaoji.com)
 
-本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 162 个工具，本清单只含已核实额度上限的 115 个）。
-Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (115 of 162 listed tools qualify so far).
+本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 218 个工具，本清单只含已核实额度上限的 115 个）。
+Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (115 of 218 listed tools qualify so far).
 
 ## DeepSeek
 
@@ -205,10 +205,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## Claude
 
-- 额度上限 / Quota: 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说可发条数随需求量浮动，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。
+- 额度上限 / Quota: 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说可发条数随需求量浮动，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。2026-08-12 复核：机制与官方措辞均未变化，第三方广为流传的「每 5 小时 40 条」仍然只有第三方出处、官方从未公布，本站继续不采信。
 - 撞墙表现 / What happens at the wall: 接近上限时界面提示「Approaching 5-hour limit」，触顶显示「5-hour limit reached — resets [时间]」并停止回复，等窗口重置或升级 Pro。实用技巧：长对话比短对话更耗额度，开新会话往往比在超长上下文里追问更划算。
-- 来源 / Source: Claude 官方帮助中心「How do usage and length limits work?」与用量最佳实践页（support.claude.com，经搜索索引引文核实；固定条数官方不公布）
-- 核实于 / Checked: 2026-08-04
+- 来源 / Source: Claude 官方帮助中心「How do usage and length limits work?」、用量最佳实践页与报错排查页（support.claude.com，经搜索索引引文核实；固定条数官方不公布）
+- 核实于 / Checked: 2026-08-12
 - 详情页 / Page: https://baipiaoji.com/tools/claude.html ｜ EN: https://baipiaoji.com/en/tools/claude.html
 
 ## Cursor

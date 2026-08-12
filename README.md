@@ -18,7 +18,7 @@ No auth, streamable HTTP, nothing to install. Full setup docs for Claude Code / 
 
 | Tool | What it answers |
 |---|---|
-| `search_ai_tools` | Search the 162-tool directory: category / fully-free / works-in-China / keyword |
+| `search_ai_tools` | Search the 218-tool directory: category / fully-free / works-in-China / keyword |
 | `get_free_tier_limit` | The verified ceiling, what happens at the wall, official source, check date |
 | `compare_free_tiers` | Compare a whole category side by side (chat / coding / video / api) — what is metered, when it resets, whether a figure is published at all |
 | `check_free_tier_claim` | Fact-check a circulating claim against official sources — many popular figures have none |
@@ -38,8 +38,8 @@ Most "best free AI tools" lists repeat figures nobody can trace. This dataset do
 
 多数「免费 AI 工具榜单」转述的数字查不到出处。这份数据集反过来做：**只有官方页面写明的数字才发布**，并带上核实日期；官方没公布的如实标注「未公布」，而不是填一个猜的数——比如对话助手这一类，10 家里只有 1 家真的公布了条数。
 
-Figures that cannot be traced to an official page are deliberately absent — 115 of the 162 listed tools have a verified ceiling.
-查不到官方来源的数字一律缺席：目前 162 个工具中 115 条已核实。
+Figures that cannot be traced to an official page are deliberately absent — 115 of the 218 listed tools have a verified ceiling.
+查不到官方来源的数字一律缺席：目前 218 个工具中 115 条已核实。
 
 - 📄 In this repo: [limits.json](./limits.json) ｜ [limits.md](./limits.md) — synced daily from [baipiaoji.com](https://baipiaoji.com/en/)（每日自动同步）
 - 🧮 Structured comparison data（可比较的结构化对照，非散文）: https://baipiaoji.com/en/quotas.json — what each vendor meters, when it resets, whether a figure is published
@@ -76,7 +76,7 @@ Figures that cannot be traced to an official page are deliberately absent — 11
 | [Zhipu Open Platform](https://baipiaoji.com/en/tools/zhipu-glm.html) | The official docs carry a dedicated free-models section: GLM-4-Flash-250414 and GLM-4.7-Flash (30B-class, 200K context, up to 128K output) are free to call via API. | 2026-08-01 |
 | [Cloudflare Workers AI](https://baipiaoji.com/en/tools/cloudflare-workers-ai.html) | 10,000 Neurons free per day (Neurons are Cloudflare's unified inference unit — tokens, image tiles and audio minutes all convert into them). Included on both Workers Free and Paid; resets daily at 00:00 UTC. | 2026-08-01 |
 | [Doubao (ByteDance)](https://baipiaoji.com/en/tools/doubao.html) | Signing in unlocks chat, writing, translation and coding for free, with **no message cap published officially**; today's re-check also confirms free access to Seedance 2.0 video generation. Officials distinguish ordinary from member accounts: the AI Space cloud drive gives ordinary accounts a free storage allowance, with upgrades sold separately, and it is available to signed-in users only. The free storage size isn't officially stated, so we publish no figure. | 2026-08-04 |
-| [Claude](https://baipiaoji.com/en/tools/claude.html) | The free tier is metered on a rolling five-hour session window: once you're out, you wait for the window to reset. Anthropic states plainly that the number of messages varies with demand and depends on conversation length and complexity, the features used, the model chosen and the effort level — which is why no fixed count is published. | 2026-08-04 |
+| [Claude](https://baipiaoji.com/en/tools/claude.html) | The free tier is metered by a rolling five-hour session window: once the allowance is spent you wait for the window to reset. Anthropic states outright that **the number of messages fluctuates with demand**, and depends on conversation length and complexity, the features used, the model chosen and the reasoning effort — which is why no fixed count is published. Rechecked 2026-08-12: the mechanism and the official wording are unchanged, and the widely repeated "40 messages per 5 hours" still traces only to third parties and has never been published officially, so we continue not to repeat it. | 2026-08-12 |
 | [Cursor](https://baipiaoji.com/en/tools/cursor.html) | The Hobby tier is real and needs no card: Agent, Chat and Tab completions (Auto model) with officially "limited" usage — **current official pages publish no figures**. The "2,000 completions + 50 requests" numbers still circulating come from an older pricing structure and are outdated, so we don't repeat them. | 2026-08-03 |
 | [Baidu Comate](https://baipiaoji.com/en/tools/comate.html) | Personal free tier: **unlimited use of the lightweight models**; agent requests draw on a token-based quota, and **when it runs out the tool falls back to the lightweight models rather than stopping**. The exact agent quota on the free tier isn't stated on any verifiable official page, so we publish no figure. | 2026-08-04 |
 | [Cline](https://baipiaoji.com/en/tools/cline.html) | The extension is open source and completely free for individual developers — no subscription, no rate limits, no markup on inference. It runs on your machine with your own keys, so your code never passes through their servers. New users also get free credits (officially stated as needing no card; the amount isn't given in verifiable quotes). | 2026-08-04 |
@@ -196,7 +196,7 @@ Figures that cannot be traced to an official page are deliberately absent — 11
 | [智谱开放平台](https://baipiaoji.com/tools/zhipu-glm.html) | 官方文档设有专门的「免费模型」板块：GLM-4-Flash-250414、GLM-4.7-Flash（30B 级，200K 上下文、最长 128K 输出）等 Flash 系列 API 调用免费。 | 2026-08-01 |
 | [Cloudflare Workers AI](https://baipiaoji.com/tools/cloudflare-workers-ai.html) | 每天 10,000 Neurons 免费（Neurons 是 Cloudflare 统一的推理计量单位，token/图块/音频分钟都折算进去），Workers Free 与 Paid 计划都含这份额度，每天 00:00 UTC（北京时间 08:00）重置。 | 2026-08-01 |
 | [豆包（字节跳动）](https://baipiaoji.com/tools/doubao.html) | 登录即免费使用对话、写作、翻译、编程等核心功能，**官方未公布对话条数上限**；今日复核另确认可免费使用 Seedance 2.0 视频生成。官方明确区分「普通账号」与「会员账号」：云盘（AI 空间）向普通账号提供一定额度的免费云存储，需要更多空间才买扩容；云盘服务仅限登录用户使用。免费云存储的具体额度官方未明示，不写数字。 | 2026-08-04 |
-| [Claude](https://baipiaoji.com/tools/claude.html) | 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说**可发条数随需求量浮动**，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。 | 2026-08-04 |
+| [Claude](https://baipiaoji.com/tools/claude.html) | 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说**可发条数随需求量浮动**，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。2026-08-12 复核：机制与官方措辞均未变化，第三方广为流传的「每 5 小时 40 条」仍然只有第三方出处、官方从未公布，本站继续不采信。 | 2026-08-12 |
 | [Cursor](https://baipiaoji.com/tools/cursor.html) | Hobby 免费档存在且无需绑卡：可用 Agent、Chat 与 Tab 补全（Auto 模型），官方口径为「有限的 Agent 请求与补全」——**现行官方页面不公布具体数字**。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。 | 2026-08-03 |
 | [文心快码 Comate（百度）](https://baipiaoji.com/tools/comate.html) | 个人免费版：**轻量模型不限量使用**；智能体（Agent）请求按各模型消耗的 token 计额度，**额度用尽后自动切换回轻量模型继续可用**——不是直接停摆。个人免费版智能体额度的具体数值官方未在可核实页面明示，因此不写数字。 | 2026-08-04 |
 | [Cline](https://baipiaoji.com/tools/cline.html) | 扩展本身开源免费、对个人开发者完全免费，无订阅、无速率限制、对推理不加价；代码在本机运行、用你自己的 Key，不经过官方服务器。新用户另有一份免费额度（官方称无需绑卡，具体数额未在可核实引文中给出）。 | 2026-08-04 |
