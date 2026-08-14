@@ -1,14 +1,14 @@
 # 已核实的免费额度上限 / Verified free-tier limits — 白嫖计 (baipiaoji.com)
 
-本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 218 个工具，本清单只含已核实额度上限的 115 个）。
-Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (115 of 218 listed tools qualify so far).
+本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 218 个工具，本清单只含已核实额度上限的 121 个）。
+Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (121 of 218 listed tools qualify so far).
 
 ## DeepSeek
 
-- 额度上限 / Quota: 网页与 App 端对话免费使用，支持文件上传与长文本对话；官方页面未公布具体条数上限。官方协议里明确的另一件事更重要：输入与输出可用于个人使用、学术研究、衍生产品开发乃至训练其他模型——这个使用权范围在免费对话产品里相当宽松。
-- 撞墙表现 / What happens at the wall: 免费对话的额度以「产品页面与平台网站公示为准」（官方协议原文口径）；开放平台 API 侧是预充值付费，与网页免费档是两条线，不要混为一谈。
-- 来源 / Source: DeepSeek 官方用户协议、开放平台服务协议与官网（deepseek.com，经搜索索引引文核实；免费档条数官方未公布）
-- 核实于 / Checked: 2026-08-04
+- 额度上限 / Quota: 网页与 App 端对话免费使用，支持文件上传与长文本对话；官方页面未公布具体条数上限，也未见任何会员/订阅档位（注：chat.deepseek.com 当前已有 Expert Mode / Instant Mode 的模式分档，各模式是否另有额度，官方页面未公布）。官方协议里明确的另一件事更重要：输入与输出可用于个人使用、学术研究、衍生产品开发乃至训练其他模型（原文点名「模型蒸馏」）——这个使用权范围在免费对话产品里相当宽松。同一份用户协议也写明输入与对应输出可能被用于模型训练与服务优化，用户可在产品内通过关闭「数据用于优化体验」选择退出。
+- 撞墙表现 / What happens at the wall: 免费对话没有公布的墙——官方不写死数字，而是把额度推给界面：「免费额度以产品页面与平台网站公示为准」。这句的出处本轮做了修正：它位于《DeepSeek 开放平台服务协议》（面向 API 开发者的充值与计费条款），不是对话端的用户协议——对话端协议里压根没有额度条款。开放平台 API 侧是预充值付费，与网页免费档是两条线，不要混为一谈。
+- 来源 / Source: DeepSeek 官方用户协议（cdn.deepseek.com/policies/zh-CN/deepseek-terms-of-use.html）与开放平台服务协议（经搜索索引引文核实，未直接打开页面——出口代理封锁厂商域名；本轮结论已过一道对抗复核）
+- 核实于 / Checked: 2026-08-13
 - 详情页 / Page: https://baipiaoji.com/tools/deepseek.html ｜ EN: https://baipiaoji.com/en/tools/deepseek.html
 
 ## Kimi（月之暗面）
@@ -21,10 +21,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## 通义千问
 
-- 额度上限 / Quota: 开发者侧（阿里云百炼）官方明码：千问系列每款模型赠送 100 万免费 tokens，官方另有免费额度有效期的调整公告（现行有效期以该公告页为准）。对话端网页/App 免费使用，但免费档的具体限制官方未在文档中明示——阿里云开发者社区文章提到的高峰排队、文件大小、绘图张数等属社区口径，不是官方文档，本站不采信。
-- 撞墙表现 / What happens at the wall: API 侧免费 tokens 用尽或过有效期后按量计费；对话端的付费会员主要买的是优先调度与更大文件/更多创作额度，具体权益以官网当期页面为准。
-- 来源 / Source: 阿里云百炼官方帮助中心（千问系列免费额度与有效期调整公告，help.aliyun.com，经搜索索引引文核实）；对话端免费档限制官方未明示，社区文章不采信
-- 核实于 / Checked: 2026-08-04
+- 额度上限 / Quota: 开发者侧（阿里云百炼）官方明码：首次开通的新用户，平台主流模型每款赠送 100 万免费 tokens（输入+输出合计）；各模型、乃至同一模型的不同快照版本，免费额度相互独立，不合并、不转移、不共享。自 2025 年 9 月 8 日 11 点起首次开通百炼的用户，新人免费额度有效期 90 天（该时点前已开通的用户有效期不变，可能不足 90 天）；额度用尽或过期后自动失效，官方明示不支持补发、延期或重置。对话端（通义千问网页/App）免费使用，但对话轮次、文件大小、绘图张数等免费档具体限制，官方文档仍未明示；网络流传的排队、文件大小、绘图张数等数字出自阿里云开发者社区文章及第三方测评，非官方口径，本站不采信。另注：官方权益页面自称可调整权益形式、数量与价值，以当期页面展示为准。
+- 撞墙表现 / What happens at the wall: API 侧免费 tokens 用尽或过有效期后按量计费；额度过期自动失效，官方明示不支持补发、延期或重置。对话端的付费会员主要买的是优先调度与更大文件/更多创作额度，具体权益以官网当期页面为准。本轮另需留意一个方向性信号：索引中已出现百炼《Token Plan（个人版）》与 2026-08-05 的权益节点，付费结构在动，下轮要复查是否连带影响免费档。
+- 来源 / Source: 阿里云百炼官方帮助中心（help.aliyun.com/zh/model-studio/new-free-quota 与 new-free-quota-validity-adjustment）；对话端免费档限制官方文档仍未明示（经搜索索引引文核实，未直接打开页面——出口代理封锁厂商域名；本轮结论已过一道对抗复核）
+- 核实于 / Checked: 2026-08-13
 - 详情页 / Page: https://baipiaoji.com/tools/tongyi.html ｜ EN: https://baipiaoji.com/en/tools/tongyi.html
 
 ## ChatGPT
@@ -40,7 +40,7 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 - 额度上限 / Quota: 免费档按「算力用量」计量而非固定条数：官方明示用量取决于提示词的长度与复杂度、上传文件的数量与大小、对话长度、所用模型与功能。限额每 5 小时刷新一次，另有周度上限。
 - 撞墙表现 / What happens at the wall: 触及 5 小时或周度上限后需等待刷新；订阅用户可在触顶后继续用更轻量的模型对话，免费档则要等窗口重置。官方社区里「Pro 用量从 100 掉到 25」这类反馈也印证了额度是浮动的——所以我们不写死条数。
 - 来源 / Source: Google 官方 Gemini Apps 帮助中心用量与升级说明（support.google.com，经搜索索引引文核实；免费档固定条数官方不公布）
-- 核实于 / Checked: 2026-08-04
+- 核实于 / Checked: 2026-08-13
 - 详情页 / Page: https://baipiaoji.com/tools/gemini.html ｜ EN: https://baipiaoji.com/en/tools/gemini.html
 
 ## GitHub Copilot Free
@@ -197,10 +197,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## 豆包（字节跳动）
 
-- 额度上限 / Quota: 登录即免费使用对话、写作、翻译、编程等核心功能，官方未公布对话条数上限；今日复核另确认可免费使用 Seedance 2.0 视频生成。官方明确区分「普通账号」与「会员账号」：云盘（AI 空间）向普通账号提供一定额度的免费云存储，需要更多空间才买扩容；云盘服务仅限登录用户使用。免费云存储的具体额度官方未明示，不写数字。
-- 撞墙表现 / What happens at the wall: 免费档的可见边界主要在云存储与会员增值功能，不在对话本身；付费扩容有期限，到期未续或降档时云存储空间会相应减少——存了重要文件的要留意这条，与稿定设计「素材随会员到期失效」同属「付费停止即权益回收」这一类。
-- 来源 / Source: 豆包官方付费服务协议与云盘使用须知（doubao.com/legal，经搜索索引引文核实；对话条数与免费云存储额度官方未公布）
-- 核实于 / Checked: 2026-08-04
+- 额度上限 / Quota: 官方未公布具体数字。登录后可免费使用对话、写作、翻译、编程等功能，官网未标注条数或频次上限；Seedance 2.0 视频生成模型已接入豆包，厂商研究站称登录即可免费使用，但未公布免费生成条数；云盘对普通账号提供「一定额度」的免费云存储空间，官方未明示容量。《豆包付费服务协议》将会员分为标准/加强/高级三档，声明开通会员可「解锁 AI 功能的更多使用额度」，并把具体权益推给「产品页面及服务权益实际展示为准」——即数字只在登录后的会员订阅页/产品界面动态展示，站外无法核验。
+- 撞墙表现 / What happens at the wall: 免费档的可见边界主要在云存储与会员增值功能，不在对话本身；付费扩容有期限，到期未续或降档时云存储空间会相应减少——存了重要文件的要留意这条，与稿定设计「素材随会员到期失效」同属「付费停止即权益回收」这一类。一处必须说清的核实盲区：最可能公布逐档数字的那一页是登录后的会员订阅页（doubao.com/member/subscription），页面为登录后动态渲染、站外抓不到——所以对那一页而言，我们是「未能核验」，不是「已核实为未公布」。协议里「以产品页面及服务权益实际展示为准」恰恰把数字指向了这一页。
+- 来源 / Source: 豆包官网与《豆包付费服务协议》《AI 空间服务条款》（doubao.com/legal/…），Seedance 2.0 免费可用见厂商研究站 research.doubao.com/en/seedance2_0（经搜索索引引文核实，未直接打开页面——出口代理封锁厂商域名；本轮结论已过一道对抗复核）
+- 核实于 / Checked: 2026-08-13
 - 详情页 / Page: https://baipiaoji.com/tools/doubao.html ｜ EN: https://baipiaoji.com/en/tools/doubao.html
 
 ## Claude
@@ -443,36 +443,44 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 - 核实于 / Checked: 2026-08-03
 - 详情页 / Page: https://baipiaoji.com/tools/grammarly.html ｜ EN: https://baipiaoji.com/en/tools/grammarly.html
 
+## 秘塔 AI 搜索
+
+- 额度上限 / Quota: 官方用户协议确认免费（普通）用户每日可领到一定额度的「刷新积分」，但官方明确写明「具体数额以服务页面显示为准」，未在任何可检索到的厂商页面公布具体数字。官方也从未说过「不限次数」——协议写的是按积分计费：普通模型回答 1 积分，DeepSeek 模型回答 3 积分，第一次工具调用不消耗积分、从第二次起每次 1 积分（消耗=(工具调用-1)+模型回答）。因此免费档是「有额度但官方不公布数字」，不是无限。
+- 撞墙表现 / What happens at the wall: 每日刷新积分当日有效，用不完不累计、不结转，次日清零；积分用尽后要么等次日刷新，要么购买长期积分（有效期 12 个月，到期未用自动失效），要么开通会员以获得更高的每日刷新额度（会员每日额度「以其已购买会员权益或销售政策约定为准」）。官方对价格的口径是「服务费用及相应的权益内容将在您订购页面予以列明公示」——该订购页需登录才展示，搜索索引中没有出现具体金额，因此本条不写价格。商用方面协议有明确限制：服务「仅限于用户个人自行使用，不得以任何形式、在任何平台或通过任何社交软件进行转卖、出租，亦不得采用爬虫或其他任何方式调用秘塔科技平台提供的服务及平台内的任何内容」。
+- 来源 / Source: 秘塔科技官方用户协议（metaso.cn/meta-user-policy）；官方定价页与订购页需登录才展示，具体额度与金额无法核实｜本轮执行限制：出口代理封锁全部厂商域名，未能直接打开官方页面，以上据搜索引擎索引中出自厂商自有域名的引文核实；对抗复核因搜索预算耗尽未能独立重查，故只发布有厂商域名直接引文支撑的说法
+- 核实于 / Checked: 2026-08-13
+- 详情页 / Page: https://baipiaoji.com/tools/metaso.html ｜ EN: https://baipiaoji.com/en/tools/metaso.html
+
 ## Perplexity
 
-- 额度上限 / Quota: 免费账户基础搜索不限次数；Pro Search（高级模型深度检索）与文件上传为有限次，官方帮助中心与定价页当前只写「limited」而不给具体数字（另有页面提到免费用户按月计的有限次数）。本站 2026-08-03 曾记录「每天 5 次 Pro Search、3 次文件上传」，2026-08-04 复核未能在官方页面重新确认该数字，因此撤下不再断言。
-- 撞墙表现 / What happens at the wall: Pro Search 次数用完后自动回落到基础搜索，等窗口重置或订阅 Pro。由于官方当前不公布具体次数、且曾出现按日/按月两种表述，规划用量前请以账号内实际显示为准。
-- 来源 / Source: Perplexity 官方帮助中心与定价页（perplexity.ai，经搜索索引引文核实；具体次数官方当前未公布，历史记录的数字未能复现）
-- 核实于 / Checked: 2026-08-04
+- 额度上限 / Quota: 官方未公布可用的整体免费额度数字，且官方页面之间互相矛盾。现行帮助中心只写「免费档可使用顶级 AI 模型，但每周用量有限」，以及「免费档可以用 Best 和有限次数的 Pro Search，但不能手动选择高级搜索模型」——两处都明确承认「有限」却都不给数字，计量单位为「每周」。另有一篇旧版帮助文仍写着「每天 5 次 Pro Search、3 次文件上传」，与现行页面在两个维度上直接冲突（给数字 vs 不给数字、按天 vs 按周），且该文仍使用 Pro Search / sessions / Discover 这套旧产品词汇，判为未同步的过期页面，不予采信。官方博客另写过「免费用户每月 3 次」用于体验高级数据源集成的检索，但该数字只覆盖这一个子功能、不等于整体额度，且同属旧版结构期的发布公告，是否适用于现行套餐同样未获现行页面确认，因此本站不将其作为免费额度发布。关于「基础搜索不限次数」：官方自有页面上未见此说法，流传的 unlimited quick / basic searches 均出自第三方站，本站不予断言。
+- 撞墙表现 / What happens at the wall: 官方页面没有写额度用尽后的具体表现——是降级回基础搜索、还是直接不可用、还是等待重置，官方均未说明。官方写明的升级路径是 Perplexity Pro 每月 20 美元，Perplexity Max 每月 200 美元或每年 2000 美元。功能层面的硬墙是官方写明的：免费档不能手动选择高级模型，且不含 Perplexity Computer 及其 credits 体系（credits 只在使用 Computer 时消耗，Pro/Max 才有）。另外官方服务条款写明消费端服务仅限「个人、非商业用途」，免费档产出用于商业用途受此条款约束。
+- 来源 / Source: Perplexity 官方帮助中心、官方博客与官方服务条款页（perplexity.ai）。现行页面口径为「每周用量有限」且不给数字；本站 2026-08-04 撤下的「每天 5 次 Pro Search」经本轮定位，出自帮助中心一篇仍在使用 Pro Search / sessions / Discover 旧产品词汇的未同步页面，仍不具备可发布性｜本轮执行限制：出口代理封锁全部厂商域名，未能直接打开官方页面，以上据搜索引擎索引中出自厂商自有域名的引文核实；对抗复核因搜索预算耗尽未能独立重查，故只发布有厂商域名直接引文支撑的说法
+- 核实于 / Checked: 2026-08-13
 - 详情页 / Page: https://baipiaoji.com/tools/perplexity.html ｜ EN: https://baipiaoji.com/en/tools/perplexity.html
 
 ## NotebookLM（Google）
 
-- 额度上限 / Quota: 免费档官方明码四组数字：最多 100 个笔记本、每本 50 个来源（单源上限 50 万词）、每天 50 次对话提问、每天 3 次音频概览（AI 播客）生成。
-- 撞墙表现 / What happens at the wall: 对话与音频按日重置；笔记本/来源数触顶需删旧或升级（Pro 档扩容五倍并解锁更高日额）。
-- 来源 / Source: Google NotebookLM 官方帮助中心 FAQ 与 Upgrade 专页（support.google.com，经搜索索引引文核实）
-- 核实于 / Checked: 2026-08-03
+- 额度上限 / Quota: 免费档官方明码四组数字，2026-08 复核仍是现行口径：最多 100 个笔记本、每本最多 50 个来源（单源上限 50 万词，本地上传单文件最大 200MB）、每天 50 次对话提问、每天 3 次音频概览（AI 播客）生成。注意：产品已官方更名为 Gemini Notebook，帮助中心迁到 support.google.com/gemininotebook（旧 /notebooklm/ 路径同 answer ID 仍可达），但这四个数字随更名未发生变化。官方未在自有页面公布免费档的视频概览 / 报告 / Deep Research 的具体次数——流传的「每天 3 次视频概览、每天 10 份报告、每月 10 次 Deep Research」只见于第三方博客，本站不采信。
+- 撞墙表现 / What happens at the wall: 对话提问与音频概览是按日额度，当天用完就停用，须等次日重置或升级；笔记本总数与单本来源数是硬容量上限，触顶只能删旧的或升级。官方「Upgrade」页写明的升级路径是 Google AI Pro、Google AI Ultra、Google Cloud 或合资格的 Google Workspace 方案，升级到 Pro 档后官方给出的数字是 500 个笔记本、每本 300 个来源、每天 500 次提问、每天 20 次音频概览；官方该页只列方案名称、未在同页写明月费，故此处不写价格。官方隐私与条款页写明：用它生成的原创内容 Google 不主张所有权，且内容不会被直接用于训练基础模型（除非用户主动提交反馈）——这是目前唯一能追到厂商页面的产出权属线索，官方未对免费档产出另设商用限制条款。
+- 来源 / Source: Google 官方帮助中心 FAQ 与 Upgrade 专页、官方来源上限说明页与隐私条款页（support.google.com/gemininotebook 与 support.google.com/notebooklm，两条路径的同一 answer ID 均可达），更名公告见 blog.google。四个数字与本站 2026-08-03 已核实口径完全一致，未见变动；更名一事本轮为单次核实、未经二次复核｜本轮执行限制：出口代理封锁全部厂商域名，未能直接打开官方页面，以上据搜索引擎索引中出自厂商自有域名的引文核实；对抗复核因搜索预算耗尽未能独立重查，故只发布有厂商域名直接引文支撑的说法
+- 核实于 / Checked: 2026-08-13
 - 详情页 / Page: https://baipiaoji.com/tools/notebooklm.html ｜ EN: https://baipiaoji.com/en/tools/notebooklm.html
 
 ## Felo Search
 
-- 额度上限 / Quota: 免费档高速搜索（Quick Search）不限次数，专业搜索（Pro Search，可调用高级模型）每天 5 次。
-- 撞墙表现 / What happens at the wall: 专业搜索当日用完后可继续用不限量的高速搜索，或升级 Pro（$14.99/月，专业搜索提至每天 300 次）。官方已推出积分制订阅升级，权益细节以定价页当期展示为准。
-- 来源 / Source: Felo 官方定价页与官方博客（felo.ai，经搜索索引引文核实）
-- 核实于 / Checked: 2026-08-03
+- 额度上限 / Quota: 官方现行免费额度未能确认，本站暂不给出具体数字。此前记录的「高速搜索（Quick Search）不限次数 + 专业搜索（Pro Search）每天 5 次」只见于 felo.ai 上的博客文章，与另一篇宣布个人订阅改为统一积分制、所有功能共用同一积分池的官方博客直接冲突——「不限次」与「共用积分池」不可能同时成立，说明旧表述至少已有官方未说明的边界。厂商既未下线旧页面，也未说明旧口径是否废止。同时，积分制公告中「Standard accounts 每天获得 200 积分」的 Standard 是否就是免费档，官方措辞未作界定，不能直接当作免费额度写入。本次复核无法访问 felo.ai 当期定价页（felo.ai/pricing、felo.ai/en/pricing），故按「官方现行数字未确认」处理：免费档的专业搜索次数与每日积分数均记为未确认，待能实读官方定价页当期免费档那一栏后再补。
+- 撞墙表现 / What happens at the wall: 免费档当天 200 积分用完后会发生什么，官方没有写。官方只明确写了付费侧的兜底：Pro 用户在计划积分与加油包积分全部耗尽后，每天仍可用 300 次专业搜索或 Playground（Pro 模型）。积分每天自动刷新、午夜清零不结转；「加油包积分」只有在订阅期内的付费用户才能购买，免费用户买不了（官方明写 free users cannot），所以免费档没有花钱续额度的途径，只能等次日刷新或升级。升级 Pro 官方标价 $14.99/月（日区 ¥2099/月）。商用方面官方给了正面条款：官方称用 GPT-Image 2 生成的图片「即使在免费档也包含完整商用授权」，Felo Slides 免费档导出的演示文稿官方也称不限制导出后的使用方式。
+- 来源 / Source: Felo 官方博客（积分制订阅升级公告：普通账号每天 200 积分、午夜清零不结转）、官方 Free/Pro 对比页与定价页（仍写「高速搜索不限次 + 专业搜索每天 5 次」）、官方文件分析 FAQ（felo.ai）。两套口径并存于厂商自有域名且官方未说明旧口径是否废止，故本站记为矛盾、不发布具体次数｜本轮执行限制：出口代理封锁全部厂商域名，未能直接打开官方页面，以上据搜索引擎索引中出自厂商自有域名的引文核实；对抗复核因搜索预算耗尽未能独立重查，故只发布有厂商域名直接引文支撑的说法
+- 核实于 / Checked: 2026-08-13
 - 详情页 / Page: https://baipiaoji.com/tools/felo.html ｜ EN: https://baipiaoji.com/en/tools/felo.html
 
 ## Consensus
 
-- 额度上限 / Quota: 免费档提供按月重置的 AI 积分（官方帮助中心确认月度重置机制，但具体数额未在可核实的官方引文中给出，不猜测）；基础文献搜索免费可用。
-- 撞墙表现 / What happens at the wall: 积分用完等次月重置，或升级 Pro（$20/月、年付 $144）解锁无限 Pro 搜索与每月 15 次深度搜索（Deep Search）——付费档数字为官方定价页口径。
-- 来源 / Source: Consensus 官方定价页与帮助中心（consensus.app，经搜索索引引文核实；免费档数额官方未在引文中明示）
-- 核实于 / Checked: 2026-08-03
+- 额度上限 / Quota: 免费档每月 15 条 Pro message（AI 综述，单次最多汇总 20 篇论文）+ 每月最多 3 次 Deep review（文献级综述，单次最多 50 篇论文）；官方特别说明：免费用户每跑一次 Deep，也会同时扣掉一条 Pro message 额度。
+- 撞墙表现 / What happens at the wall: 额度用完后 Pro message / Deep review 即不可用，只能等下个月免费额度自动重置（重置日期可在账号设置里查看），或升级到付费档。官方帮助中心写的 Pro 价格是 $20/月或 $144/年，含无限 Pro message 与每月 15 次 Deep review；更高的 Deep 档为每月 200 次 Deep review。官方措辞为「用完额度就考虑升级到付费订阅以获得更高上限」，未提及封号或降级到不可用状态。
+- 来源 / Source: Consensus 官方帮助中心（help.consensus.app 的 how-to-use-deep-review、how-to-use-pro-messages、subscription-plans、account-settings 四篇，其中前两篇互相独立地给出同一个「免费用户每月 15 条 Pro message」数字）｜本轮执行限制：出口代理封锁全部厂商域名，未能直接打开官方页面，以上据搜索引擎索引中出自厂商自有域名的引文核实；对抗复核因搜索预算耗尽未能独立重查，故只发布有厂商域名直接引文支撑的说法
+- 核实于 / Checked: 2026-08-13
 - 详情页 / Page: https://baipiaoji.com/tools/consensus.html ｜ EN: https://baipiaoji.com/en/tools/consensus.html
 
 ## Grok（xAI）
@@ -493,10 +501,12 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## Poe
 
-- 额度上限 / Quota: 免费用户每日发放计算积分、每 24 小时重置；官方帮助中心确认这套机制但不公布固定数额（第三方口径从 300 到 3000 互相打架，一概不采信）。不同模型扣分差异很大。
-- 撞墙表现 / What happens at the wall: 积分用完等次日重置；要更多就订阅（低档 $9.99/月、每日 10,000 积分起）。
-- 来源 / Source: Poe 官方帮助中心 help.poe.com（官方确认每日发放与重置机制、未公布具体数额，如实说明）
-- 核实于 / Checked: 2026-08-02
+- 额度上限 / Quota: 官方未公布免费档的具体额度。Poe 帮助中心（help.poe.com）只说明机制：非付费用户每天获得一批计算积分（compute points），积分在每 24 小时周期结束时重置、不结转，订阅用户获得的积分数高于免费用户。在可检索到的官方页面文本（帮助中心 FAQ、poe.com/subscription_plans）中，均未出现免费档「每日 N 积分」的固定数字，实际余额只在产品界面内显示。不同模型每条消息扣的积分差异很大，因此官方也没有给出免费档能发多少条消息。（第三方口径从 300 到 3000 互相打架，一概不采信。）
+
+配套 wall 建议改为：积分耗尽后无法继续向消耗积分的模型发消息；帮助中心的处理口径是「不结转，需要更多就等次日续发，或现在付费购买」，官方博客与购买 FAQ 另给出加购积分约 $30/100 万积分的换算。订阅档位价格与各档积分数不写入本条——官方定价页当前同时呈现「starting at $4.99/month」与年付折算「$4.17/mo」两种起价口径，且无法核实旧的 $9.99 档是否仍在售；原记录中的「每日 10,000 积分」只见于第三方，直接删除，不用新价替换。
+- 撞墙表现 / What happens at the wall: 积分耗尽后无法继续向消耗积分的模型发消息；帮助中心的处理口径是不结转、等次日续发，或当场付费购买。加购积分的换算约 $30 / 100 万积分（出处为 Poe 帮助中心与官方博客两处，不是同一句原话）。订阅档位价格与各档积分数本轮全部撤下：本站此前记录的「低档 $9.99/月、每日 10,000 积分起」，其中每日 10,000 积分只见于第三方、追不到 poe.com 页面；而官方定价页当前同时呈现「starting at $4.99/month」与年付折算「$4.17/mo」两种起价口径，也无法核实 $9.99 档是否仍在售。按「宁可少一条记录，不可发错一个数字」，撤下而不是用一个同样追不实的新价替换。
+- 来源 / Source: Poe 帮助中心（help.poe.com）与官方定价页 poe.com/subscription_plans、官方博客；免费档固定数额官方未公布，实际余额只在产品界面内显示（经搜索索引引文核实，未直接打开页面——出口代理封锁厂商域名；本轮结论已过一道对抗复核）
+- 核实于 / Checked: 2026-08-13
 - 详情页 / Page: https://baipiaoji.com/tools/poe.html ｜ EN: https://baipiaoji.com/en/tools/poe.html
 
 ## GitHub Models
@@ -747,6 +757,30 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 - 核实于 / Checked: 2026-08-03
 - 详情页 / Page: https://baipiaoji.com/tools/wordvice.html ｜ EN: https://baipiaoji.com/en/tools/wordvice.html
 
+## 夸克 AI
+
+- 额度上限 / Quota: 官方未公布任何具体数字。夸克官网与各 AI 产品页（AI 搜索、AI 写作、AI PPT、AI 生图、深度思考）只用「免费」「免费生成」这类措辞描述免费档，从未写出每日/每月可用次数、可用条数、积分或点数余额，也没写额度按什么周期重置；付费的「夸克 AI 会员 / 网盘 SVIP」页面只罗列付费能享受什么，不写免费档到哪为止。第三方广泛流传的「AI PPT 每天 3 次」「AI 搜题免费不限次」等说法，全部追不到夸克自有页面的原始出处，本站不采信。夸克以移动端为主，若真存在次数上限，很可能仅在 App 内以弹窗形式提示，网页侧无从核实。
+- 撞墙表现 / What happens at the wall: 官方没有说明免费档触顶后会发生什么——是降级、排队、停用还是等次日重置，夸克自有页面均无任何说法。官方公开划出的免费/付费分界只落在功能层面（付费会员页把「AI 创作工具套组、文档处理、语音转录与专业翻译」等列为会员权益），而不是次数层面。升级价格同样不予登记：夸克会员售价随促销频繁变动，官方页面未给出稳定标价，检索中出现的各种月费/年费数字全部来自第三方促销报道。
+- 来源 / Source: 夸克官网与各 AI 产品页、会员购买页（quark.cn / ai.quark.cn / b.quark.cn）——均只做功能宣传与付费权益罗列，未量化免费档。注意 doc.quark.cn 上标题像官方文件的《会员服务手册》等实为用户上传到「夸克文档」的 UGC，不作官方口径｜本轮执行限制：出口代理封锁全部厂商域名，未能直接打开官方页面，以上据搜索引擎索引中出自厂商自有域名的引文核实；对抗复核因搜索预算耗尽未能独立重查，故只发布有厂商域名直接引文支撑的说法
+- 核实于 / Checked: 2026-08-13
+- 详情页 / Page: https://baipiaoji.com/tools/quark-ai.html ｜ EN: https://baipiaoji.com/en/tools/quark-ai.html
+
+## 360 AI 搜索
+
+- 额度上限 / Quota: 官方未公布任何具体数字。360 AI 搜索的基础搜索与问答可免费使用，但在 360 自有域名上找不到任何写明免费用户每天／每月能用多少次的页面：官网、帮助中心、协议页均无免费档的次数、条数或额度公示，也不存在一个列出免费档与付费档对比的官方定价页。搜索索引中可见的 360 自有协议文本只从付费侧描述权益（会员可享「不限次数的AI分析」），并明写权益细节「以您实际购买时的产品界面展示及服务权益实际展示为准」，即具体数字只存在于登录后的产品界面。需要说明的是，《360AI大会员自动续费服务协议》中「每个AI应用，每天的使用次数有限制」一句出自付费大会员协议、描述的是会员侧的权益边界，不能据此断言官方已就免费档公布或承认上限——免费档究竟有没有上限、上限是多少，官方一律未公布。流传的「文档5份/天」「翻译1万字/天」及各类会员价格均出自第三方站点，追不到 360 自有页面，按规则不采信。
+- 撞墙表现 / What happens at the wall: 官方未公布免费额度耗尽后的具体后果，也未公布免费档的重置周期。可核实的官方口径只有付费侧：纳米AI会员服务协议把「不限次数的AI分析（视频、音频、pdf、word 等格式的文件总结、重点提取、翻译）」列为会员权益，并写明权益内容「以您实际购买时的产品界面展示及服务权益实际展示为准」；《360AI 大会员自动续费服务协议》写「每个AI应用，每天的使用次数有限制」——该句描述的是大会员侧的权益边界，不能据此断言免费档的上限。产品内另有「AI豆」消耗式额度体系（360 社区有官方科普帖），免费用户能拿到多少同样无公开数字。会员价格：360 自有页面未在索引中给出可核实数字（流传的 25 元/月、39 元/月等均出自第三方），故不写价格。商用方面官方用户协议写明：未经 360 书面许可，不得复制、读取、采用本产品中的信息内容用于宣传、增加阅读量等商业用途。
+- 来源 / Source: 纳米AI（原 360 AI 搜索）官方会员服务协议、360AI 大会员自动续费服务协议与纳米AI用户协议（pop.vip.360.cn / jia.360.cn / n.cn）；360 自有域名下不存在列出免费档与付费档对比的定价页｜本轮执行限制：出口代理封锁全部厂商域名，未能直接打开官方页面，以上据搜索引擎索引中出自厂商自有域名的引文核实；对抗复核因搜索预算耗尽未能独立重查，故只发布有厂商域名直接引文支撑的说法
+- 核实于 / Checked: 2026-08-13
+- 详情页 / Page: https://baipiaoji.com/tools/ai360.html ｜ EN: https://baipiaoji.com/en/tools/ai360.html
+
+## 知乎直答
+
+- 额度上限 / Quota: 官方未公布免费档的任何额度数字。知乎从未为「知乎直答」发布过定价页、额度页或帮助中心条目：搜索索引中的官网（zhida.zhihu.com）引文通篇只讲产品能力（AI 搜索、内容溯源、知识库），没有提问次数、对话轮数、每日或每月上限；官方也从未出现「不限次数／无限使用」的表述——即「到底有没有限制」这件事本身，官方都没写过。网上流传的知识库容量 1GB／5GB／50GB 三个互相冲突的版本，以及「最多上传 100 个文件、单个文件最大 100 MB」的上传规则，均只见于搜索索引摘要或知乎用户专栏（zhuanlan.zhihu.com 属 UGC），既无法确认现行有效（有迹象表明该上传规则的索引快照早于后续知识库扩容），也不属于免费档使用额度，故一律不作为额度采用。
+- 撞墙表现 / What happens at the wall: 官方未说明额度用完会发生什么。厂商自有页面的引文里既没有「免费额度用尽后降级／停用／等待重置」的说明，也没有直答自己的付费升级档位或价格。与直答相关的付费项是知乎「知识会员」（面向学术论文、电子书等版权内容），但其权益范围与月卡 30 元等价格只见于第三方新闻转述，未能在知乎自有页面的引文中核实，因此不写入价格。知乎盐选会员权益页在索引引文中只列内容／身份／社区功能权益，未出现任何与直答提问次数或额度相关的条目——即没有证据表明盐选会员会解锁直答的更高额度。免费档产出能否商用，官方页面同样未见任何条款线索。
+- 来源 / Source: 知乎直答官网首页与知识库页面、知乎盐选会员权益页（zhida.zhihu.com / www.zhihu.com）；知乎从未为直答发布过定价页、额度页或帮助中心条目。zhuanlan.zhihu.com 虽在知乎域名下但属用户专栏（UGC），不计为官方口径｜本轮执行限制：出口代理封锁全部厂商域名，未能直接打开官方页面，以上据搜索引擎索引中出自厂商自有域名的引文核实；对抗复核因搜索预算耗尽未能独立重查，故只发布有厂商域名直接引文支撑的说法
+- 核实于 / Checked: 2026-08-13
+- 详情页 / Page: https://baipiaoji.com/tools/zhihu-zhida.html ｜ EN: https://baipiaoji.com/en/tools/zhihu-zhida.html
+
 ## Devv AI
 
 - 额度上限 / Quota: 免费档按月发放积分（官方文档确认月度额度机制与积分制，但免费档具体数额未在可核实引文中明示，不猜测）；积分主要被编程智能体消耗。
@@ -754,6 +788,14 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 - 来源 / Source: Devv 官方定价页与文档 FAQ（devv.ai，经搜索索引引文核实；免费档数额官方未明示）
 - 核实于 / Checked: 2026-08-04
 - 详情页 / Page: https://baipiaoji.com/tools/devv.html ｜ EN: https://baipiaoji.com/en/tools/devv.html
+
+## Phind
+
+- 额度上限 / Quota: 官方未公布：追不到任何 phind.com 自有页面写明免费档的具体次数，因此不填数字。网上流传的「每天 5 次 / 10 次 / 500 次 Phind-405B / 1000 次 research / Phind Instant 无限」等说法全部出自第三方站点，彼此矛盾，其中多项被描述为 Pro 付费档限额而非免费档，另有一批明显来自 Plus $15、Pro $30 的旧版定价结构，按本站规矩一律不采信。另需提示：多家第三方来源（Hacker News 讨论页转述的创始人公告、X 用户贴文、工具目录站）称 Phind 已于 2026 年 1 月 16 日停止服务，但该消息同样追不到 phind.com 自有页面，我们无法核实；本站 2026-08-13 的可达性探测对 www.phind.com 得到的是 HTTP 403 应答（服务器有响应，并非域名失效），因此我们既不宣称它已停运，也不宣称它仍在正常运营——在拿到厂商自有页面的说明之前，这里只写"官方未公布免费额度"这一件已确认的事。
+- 撞墙表现 / What happens at the wall: 无可核实的官方说明：追不到任何 phind.com 自有页面写明额度用尽后的表现、重置周期或升级价格。需要单独提示一件事——多家第三方来源（Hacker News 上转述的创始人公告、X 用户贴文、工具目录站）称 Phind 已于 2026 年 1 月 16 日停止搜索服务、付费用户按比例退款、用户被要求在 1 月 30 日前导出记录；但这些全部追不到厂商自有页面，我们无法核实。本站 2026-08-13 的可达性探测对 www.phind.com 得到 HTTP 403（服务器有响应，并非域名失效）。因此在拿到厂商自己的说明之前，本站既不宣称它已停运，也不宣称它仍在正常运营。
+- 来源 / Source: phind.com 自有页面在搜索索引中只返回标题或应用错误页，未见任何写明免费档次数的引文；流传的每天 5 次 / 10 次 / 500 次 / 1000 次 / 无限等说法互相矛盾且多出自旧版定价结构，一律不采信｜本轮执行限制：出口代理封锁全部厂商域名，未能直接打开官方页面，以上据搜索引擎索引中出自厂商自有域名的引文核实；对抗复核因搜索预算耗尽未能独立重查，故只发布有厂商域名直接引文支撑的说法
+- 核实于 / Checked: 2026-08-13
+- 详情页 / Page: https://baipiaoji.com/tools/phind.html ｜ EN: https://baipiaoji.com/en/tools/phind.html
 
 ## Fireworks AI
 
@@ -922,6 +964,16 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 - 来源 / Source: Gemini CLI 官方仓库配额文档与 Gemini API 速率限制页（github.com/google-gemini/gemini-cli/blob/main/docs/resources/quota-and-pricing.md、ai.google.dev/gemini-api/docs/rate-limits，经搜索索引引文核实）
 - 核实于 / Checked: 2026-08-05
 - 详情页 / Page: https://baipiaoji.com/tools/gemini-cli.html ｜ EN: https://baipiaoji.com/en/tools/gemini-cli.html
+
+## Exa
+
+- 额度上限 / Quota: Exa 免费档发的是「额度券」不是请求数：搜索索引中出自官方定价页的引文写明新账号注册赠送 $20 免费额度（官方括注约合 2,800 次搜索，与其 Search $7/1k 的单价吻合：20 ÷ 7 × 1000 ≈ 2857），之后免费档每月再补 $10 额度。Websets 侧官方另写免费方案含 1,000 credits（每个 webset 最多 25 条结果、功能受限）。官方页面从未出现第三方站广泛流传的「每月 20,000 次免费请求」这一说法，该数字不予采信。
+
+【时效性存疑，请以官网当前页面为准】以上数字均来自搜索引擎索引的引文，本次核实环境无法直接打开 exa.ai 页面，引文的快照日期不明。有第三方记录（不采信为来源，仅作为提醒）称 Exa 在 2026 年 7 月调整过免费档；同时流传中还存在另一套与上述不同的赠额结构（「$10 注册赠额 + 每月 $7」），两套结构不可能同时现行，说明其中至少有一代已是旧版定价。我们未能确认上文引用的是否为现行版本，因此此处不声称这些数字「当前有效」，仅记录它们确实出自 Exa 自有页面。
+- 撞墙表现 / What happens at the wall: 额度用完不是降级也不是限速，而是直接被拦住：官方计费文档写明余额归零后 API 请求会被阻断，必须自行充值或开启 auto-recharge 才能继续。继续用按量付费，官方定价页列出 Search $7 / 1k 次请求、Contents $1 / 1k 页、LLM Answer $5 / 1k 次请求、Answer（多步研究）$12–15 / 1k 次请求。要更高速率限制、自定义索引、SLA 或零数据留存需联系 sales@exa.ai 谈 Enterprise。Websets 侧官方标价 Core $49/月含 8,000 credits、Pro $449/月含 100,000 credits。官方页面未见关于「免费档产出能否商用」的专门条款，故此处不作断言。
+- 来源 / Source: Exa 官方定价页与官方文档（exa.ai/pricing、exa.ai/docs/reference/pricing、/billing、/websets/faq）｜本轮执行限制：出口代理封锁全部厂商域名，未能直接打开官方页面，以上据搜索引擎索引中出自厂商自有域名的引文核实；对抗复核因搜索预算耗尽未能独立重查，故只发布有厂商域名直接引文支撑的说法
+- 核实于 / Checked: 2026-08-13
+- 详情页 / Page: https://baipiaoji.com/tools/exa.html ｜ EN: https://baipiaoji.com/en/tools/exa.html
 
 > 本数据以 **CC BY 4.0** 开放转载（含商用）：注明来源「白嫖计（https://baipiaoji.com）」并附回链即可。机器可读版：https://baipiaoji.com/limits.json
 > 额度政策变动频繁，以官方页面为准。引用请注明「白嫖计（https://baipiaoji.com）」与核实日期。
