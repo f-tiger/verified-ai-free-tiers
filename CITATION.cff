@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this dataset, cite it as below (CC BY 4.0 — attribution naming Baipiaoji with a link to baipiaoji.com satisfies the license)."
+title: "Verified AI Free-Tier Limits"
+type: dataset
+authors:
+  - name: "Baipiaoji (baipiaoji.com)"
+    website: "https://baipiaoji.com"
+repository-code: "https://github.com/f-tiger/verified-ai-free-tiers"
+url: "https://baipiaoji.com/limits.json"
+license: CC-BY-4.0
+abstract: >-
+  Free-tier limits of AI tools, hand-verified against official vendor pages —
+  every figure carries an official source link and a check date; contradictory or
+  unpublished figures are recorded as such rather than guessed. This repository
+  mirrors the live dataset rebuilt daily from baipiaoji.com. The dataset is
+  living: cite the URL together with the check date of the figures you used
+  (no DOI is registered).
