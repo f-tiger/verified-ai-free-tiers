@@ -3,10 +3,10 @@
   "publisher": "白嫖计",
   "url": "https://baipiaoji.com/limits.json",
   "license": "CC BY 4.0 — 允许转载与商用，条件：注明来源「白嫖计 baipiaoji.com」并附回链到对应工具页 / Reuse permitted (incl. commercial) with attribution to \"Baipiaoji (baipiaoji.com)\" and a link back to the tool page.",
-  "generated": "2026-08-16",
+  "generated": "2026-08-17",
   "note": "只含能追溯到官方来源的条目；不在此列 = 未找到官方数字。额度政策随时变，以 checked 日期与官方页面为准。Only entries traceable to an official source are included.",
-  "count": 121,
-  "of_total_listed": 218,
+  "count": 128,
+  "of_total_listed": 219,
   "tools": [
     {
       "slug": "deepseek",
@@ -284,6 +284,17 @@
       "page_en": "https://baipiaoji.com/en/tools/doubao.html"
     },
     {
+      "slug": "wenxin",
+      "name": "文心一言（百度）",
+      "category": "chat",
+      "quota": "官方公告自 2025-04-01 零时起全面免费：PC 与 App 端全部用户可用文心系列最新模型，此前需付费会员才能用的超长文档处理、专业级检索增强、高级 AI 绘画与深度搜索一并放开；文心 5.0 上线后 C 端同样免费可用。官方未公布对话条数或频率上限。",
+      "wall": "公告层面没有为免费使用设墙，但也没有承诺任何具体数字——额度与权益以产品页当期展示为准。另一堵实际的墙是入口本身：网页版已于 2026-06 从 yiyan.baidu.com 迁至 wenxin.baidu.com（百度文心助手），移动端产品线为「文小言」App，旧链接与旧截图对不上号不代表产品没了。",
+      "source": "百度官方公告（2025-02-13 宣布 4 月 1 日起全面免费），经新华网 news.cn/tech/20250213 等权威转载核实；厂商域名被出口代理封锁，未直抓官方页",
+      "checked": "2026-08-17",
+      "page": "https://baipiaoji.com/tools/wenxin.html",
+      "page_en": "https://baipiaoji.com/en/tools/wenxin.html"
+    },
+    {
       "slug": "claude",
       "name": "Claude",
       "category": "chat",
@@ -502,6 +513,17 @@
       "checked": "2026-08-05",
       "page": "https://baipiaoji.com/tools/cerebras.html",
       "page_en": "https://baipiaoji.com/en/tools/cerebras.html"
+    },
+    {
+      "slug": "mistral",
+      "name": "Mistral AI",
+      "category": "api",
+      "quota": "API 免费档（Experiment 计划）真实存在且覆盖全系模型（含 Mistral Large、Codestral），无需绑卡，但要过两道门：手机号验证 + 同意输入数据用于模型训练。官方已不再公开发布具体限额数字，以控制台 Admin Console → Limits 的实时显示为准；常被引用的典型档位约 1 次/秒、500,000 tokens/分钟、10 亿 tokens/月。",
+      "wall": "超过速率的请求被拒绝，等窗口重置即可继续，不产生费用。真正的墙是那道数据条款：不同意「数据用于训练」就开不了免费档——这是它与 Groq 等免费 API 最大的区别；升级付费档按官方条款不再以数据换额度。限额按工作区计。",
+      "source": "Mistral 官方文档 docs.mistral.ai/deployment/ai-studio/tier 与官方帮助中心 help.mistral.ai（限额以控制台实时数字为准）；域名被出口代理封锁未直抓，经搜索索引引文核实，典型数字经多个独立来源交叉印证",
+      "checked": "2026-08-17",
+      "page": "https://baipiaoji.com/tools/mistral.html",
+      "page_en": "https://baipiaoji.com/en/tools/mistral.html"
     },
     {
       "slug": "nvidia-nim",
@@ -1329,6 +1351,50 @@
       "page_en": "https://baipiaoji.com/en/tools/gemini-cli.html"
     },
     {
+      "slug": "duckduckgo-ai",
+      "name": "DuckDuckGo AI Chat",
+      "category": "chat",
+      "quota": "免注册、匿名、免费——官方确认免费档可用模型含 GPT-5.4 mini/nano、Claude 4.5 Haiku、Mistral Small 4、gpt-oss-120b 等；每日用量有上限，但官方刻意不公布具体条数（限额匿名执行，与其隐私定位一致），聊天记录不用于模型训练。",
+      "wall": "达到每日上限后需等待重置；订阅 Privacy Pro 的 Plus/Pro 档解锁更高每日限额与更强模型（Plus 加 GPT-5.4、Claude Sonnet 4.6；Pro 再加 Claude Opus 4.8，限额为 Plus 的 2 倍）。网上流传的「免费每日 X 条」具体数字均无官方出处，本站不采信。",
+      "source": "DuckDuckGo 官方帮助页 duckduckgo.com/duckduckgo-help-pages/duckai/usage-limits 与官方博客 spreadprivacy.com/ai-chat/；域名被出口代理封锁未直抓，经搜索索引引文核实",
+      "checked": "2026-08-17",
+      "page": "https://baipiaoji.com/tools/duckduckgo-ai.html",
+      "page_en": "https://baipiaoji.com/en/tools/duckduckgo-ai.html"
+    },
+    {
+      "slug": "character-ai",
+      "name": "Character.AI",
+      "category": "chat",
+      "quota": "免费档不限消息数——官方 FAQ 明确基础聊天体验保持免费且无限量，全部角色库与社区功能开放，无需绑卡。",
+      "wall": "墙不在条数在速度：高峰时段免费用户可能进入等待队列（waiting room）、生成变慢；c.ai+（$9.99/月，年付约 $7.92/月）跳过排队、生成更快、提前体验新功能。网上流传的「免费每日 400 次 swipe」等具体数字官方从未公布，本站不采信。",
+      "source": "Character.AI 官方帮助中心 c.ai+ FAQ（support.character.ai）与官方博客 blog.character.ai/introducing-c-ai；域名被出口代理封锁未直抓，经搜索索引引文核实",
+      "checked": "2026-08-17",
+      "page": "https://baipiaoji.com/tools/character-ai.html",
+      "page_en": "https://baipiaoji.com/en/tools/character-ai.html"
+    },
+    {
+      "slug": "cody",
+      "name": "Sourcegraph Cody",
+      "category": "coding",
+      "quota": "个人免费档已不存在：Sourcegraph 官方公告 Cody Free 与 Cody Pro 自 2025-06-25 停止新注册、2025-07-23 停止服务，Cody 现仅存面向企业的 Enterprise 版（按席位年约报价）。官方给个人用户的去处是其新产品 Amp：注册送 $10 试用额度，原 Cody Pro 用户可写邮件申领 $40。",
+      "wall": "这里没有可撞的免费墙——免费档被整个撤掉了。截至核实日仍有大量 2025 年前的榜单在推荐「Cody Free」，那个方案已经不存在；要免费补全与对话请看本站编程类的其他家。Amp 的 $10 是一次性试用额度，用完即付费，不是持续免费档。",
+      "source": "Sourcegraph 官方博客 sourcegraph.com/blog/changes-to-cody-free-pro-and-enterprise-starter-plans（停服日期）与 ampcode.com（$10 额度）；域名被出口代理封锁未直抓，经搜索索引引文核实",
+      "checked": "2026-08-17",
+      "page": "https://baipiaoji.com/tools/cody.html",
+      "page_en": "https://baipiaoji.com/en/tools/cody.html"
+    },
+    {
+      "slug": "languagetool",
+      "name": "LanguageTool",
+      "category": "writing",
+      "quota": "两条产品线两套额度：编辑器与浏览器插件的免费版单次检查上限 10,000 字符（Premium 提到 100,000）；公开 HTTP API 免费口径为每 IP 20 次/分钟、75,000 字符/分钟、单次请求 20,000 字符（Premium API 为 80 次/分钟、300,000 字符/分钟、单次 60,000）。",
+      "wall": "免费版的墙是单次长度不是月用量——约 1,500–1,800 个英文词就顶到 10,000 字符，长文一律手工分段。改写（paraphrase）等 AI 功能免费版受限，Premium 才不限量。公开 API 的限额官方注明是峰值口径，持续打满会被封禁。",
+      "source": "LanguageTool 官方 API 文档 languagetool.org/http-api/ 与 dev.languagetool.org/public-http-api.html、官方 Premium 页 languagetool.org/premium；域名被出口代理封锁未直抓，经搜索索引引文核实",
+      "checked": "2026-08-17",
+      "page": "https://baipiaoji.com/tools/languagetool.html",
+      "page_en": "https://baipiaoji.com/en/tools/languagetool.html"
+    },
+    {
       "slug": "exa",
       "name": "Exa",
       "category": "search",
@@ -1338,6 +1404,17 @@
       "checked": "2026-08-13",
       "page": "https://baipiaoji.com/tools/exa.html",
       "page_en": "https://baipiaoji.com/en/tools/exa.html"
+    },
+    {
+      "slug": "gptzero",
+      "name": "GPTZero",
+      "category": "safety",
+      "quota": "免费档每月 10,000 词、单次扫描上限 10,000 字符，无需绑卡。",
+      "wall": "超出后等月度重置或升级付费档。付费档报价在第三方来源之间互相矛盾（Essential 有 $10/月 与 $14.99/月 两种口径并存），官方页未能直抓核实——本站不采信任何一个，以 gptzero.me 定价页当期展示为准。",
+      "source": "GPTZero 官方定价页 gptzero.me（免费档 10,000 词/月、10,000 字符/次经多个独立来源交叉印证一致）；域名被出口代理封锁未直抓，经搜索索引引文核实",
+      "checked": "2026-08-17",
+      "page": "https://baipiaoji.com/tools/gptzero.html",
+      "page_en": "https://baipiaoji.com/en/tools/gptzero.html"
     }
   ]
 }

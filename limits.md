@@ -1,7 +1,7 @@
 # 已核实的免费额度上限 / Verified free-tier limits — 白嫖计 (baipiaoji.com)
 
-本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 218 个工具，本清单只含已核实额度上限的 121 个）。
-Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (121 of 218 listed tools qualify so far).
+本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 219 个工具，本清单只含已核实额度上限的 128 个）。
+Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (128 of 219 listed tools qualify so far).
 
 ## DeepSeek
 
@@ -203,6 +203,14 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 - 核实于 / Checked: 2026-08-13
 - 详情页 / Page: https://baipiaoji.com/tools/doubao.html ｜ EN: https://baipiaoji.com/en/tools/doubao.html
 
+## 文心一言（百度）
+
+- 额度上限 / Quota: 官方公告自 2025-04-01 零时起全面免费：PC 与 App 端全部用户可用文心系列最新模型，此前需付费会员才能用的超长文档处理、专业级检索增强、高级 AI 绘画与深度搜索一并放开；文心 5.0 上线后 C 端同样免费可用。官方未公布对话条数或频率上限。
+- 撞墙表现 / What happens at the wall: 公告层面没有为免费使用设墙，但也没有承诺任何具体数字——额度与权益以产品页当期展示为准。另一堵实际的墙是入口本身：网页版已于 2026-06 从 yiyan.baidu.com 迁至 wenxin.baidu.com（百度文心助手），移动端产品线为「文小言」App，旧链接与旧截图对不上号不代表产品没了。
+- 来源 / Source: 百度官方公告（2025-02-13 宣布 4 月 1 日起全面免费），经新华网 news.cn/tech/20250213 等权威转载核实；厂商域名被出口代理封锁，未直抓官方页
+- 核实于 / Checked: 2026-08-17
+- 详情页 / Page: https://baipiaoji.com/tools/wenxin.html ｜ EN: https://baipiaoji.com/en/tools/wenxin.html
+
 ## Claude
 
 - 额度上限 / Quota: 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说可发条数随需求量浮动，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。2026-08-12 复核：机制与官方措辞均未变化，第三方广为流传的「每 5 小时 40 条」仍然只有第三方出处、官方从未公布，本站继续不采信。
@@ -362,6 +370,14 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 - 来源 / Source: Cerebras 官方定价页与推理文档速率限制/定价页（cerebras.ai/pricing、inference-docs.cerebras.ai/support/rate-limits 与 /support/pricing，经搜索索引引文核实，本轮无法直连官方页）
 - 核实于 / Checked: 2026-08-05
 - 详情页 / Page: https://baipiaoji.com/tools/cerebras.html ｜ EN: https://baipiaoji.com/en/tools/cerebras.html
+
+## Mistral AI
+
+- 额度上限 / Quota: API 免费档（Experiment 计划）真实存在且覆盖全系模型（含 Mistral Large、Codestral），无需绑卡，但要过两道门：手机号验证 + 同意输入数据用于模型训练。官方已不再公开发布具体限额数字，以控制台 Admin Console → Limits 的实时显示为准；常被引用的典型档位约 1 次/秒、500,000 tokens/分钟、10 亿 tokens/月。
+- 撞墙表现 / What happens at the wall: 超过速率的请求被拒绝，等窗口重置即可继续，不产生费用。真正的墙是那道数据条款：不同意「数据用于训练」就开不了免费档——这是它与 Groq 等免费 API 最大的区别；升级付费档按官方条款不再以数据换额度。限额按工作区计。
+- 来源 / Source: Mistral 官方文档 docs.mistral.ai/deployment/ai-studio/tier 与官方帮助中心 help.mistral.ai（限额以控制台实时数字为准）；域名被出口代理封锁未直抓，经搜索索引引文核实，典型数字经多个独立来源交叉印证
+- 核实于 / Checked: 2026-08-17
+- 详情页 / Page: https://baipiaoji.com/tools/mistral.html ｜ EN: https://baipiaoji.com/en/tools/mistral.html
 
 ## NVIDIA NIM
 
@@ -965,6 +981,38 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 - 核实于 / Checked: 2026-08-05
 - 详情页 / Page: https://baipiaoji.com/tools/gemini-cli.html ｜ EN: https://baipiaoji.com/en/tools/gemini-cli.html
 
+## DuckDuckGo AI Chat
+
+- 额度上限 / Quota: 免注册、匿名、免费——官方确认免费档可用模型含 GPT-5.4 mini/nano、Claude 4.5 Haiku、Mistral Small 4、gpt-oss-120b 等；每日用量有上限，但官方刻意不公布具体条数（限额匿名执行，与其隐私定位一致），聊天记录不用于模型训练。
+- 撞墙表现 / What happens at the wall: 达到每日上限后需等待重置；订阅 Privacy Pro 的 Plus/Pro 档解锁更高每日限额与更强模型（Plus 加 GPT-5.4、Claude Sonnet 4.6；Pro 再加 Claude Opus 4.8，限额为 Plus 的 2 倍）。网上流传的「免费每日 X 条」具体数字均无官方出处，本站不采信。
+- 来源 / Source: DuckDuckGo 官方帮助页 duckduckgo.com/duckduckgo-help-pages/duckai/usage-limits 与官方博客 spreadprivacy.com/ai-chat/；域名被出口代理封锁未直抓，经搜索索引引文核实
+- 核实于 / Checked: 2026-08-17
+- 详情页 / Page: https://baipiaoji.com/tools/duckduckgo-ai.html ｜ EN: https://baipiaoji.com/en/tools/duckduckgo-ai.html
+
+## Character.AI
+
+- 额度上限 / Quota: 免费档不限消息数——官方 FAQ 明确基础聊天体验保持免费且无限量，全部角色库与社区功能开放，无需绑卡。
+- 撞墙表现 / What happens at the wall: 墙不在条数在速度：高峰时段免费用户可能进入等待队列（waiting room）、生成变慢；c.ai+（$9.99/月，年付约 $7.92/月）跳过排队、生成更快、提前体验新功能。网上流传的「免费每日 400 次 swipe」等具体数字官方从未公布，本站不采信。
+- 来源 / Source: Character.AI 官方帮助中心 c.ai+ FAQ（support.character.ai）与官方博客 blog.character.ai/introducing-c-ai；域名被出口代理封锁未直抓，经搜索索引引文核实
+- 核实于 / Checked: 2026-08-17
+- 详情页 / Page: https://baipiaoji.com/tools/character-ai.html ｜ EN: https://baipiaoji.com/en/tools/character-ai.html
+
+## Sourcegraph Cody
+
+- 额度上限 / Quota: 个人免费档已不存在：Sourcegraph 官方公告 Cody Free 与 Cody Pro 自 2025-06-25 停止新注册、2025-07-23 停止服务，Cody 现仅存面向企业的 Enterprise 版（按席位年约报价）。官方给个人用户的去处是其新产品 Amp：注册送 $10 试用额度，原 Cody Pro 用户可写邮件申领 $40。
+- 撞墙表现 / What happens at the wall: 这里没有可撞的免费墙——免费档被整个撤掉了。截至核实日仍有大量 2025 年前的榜单在推荐「Cody Free」，那个方案已经不存在；要免费补全与对话请看本站编程类的其他家。Amp 的 $10 是一次性试用额度，用完即付费，不是持续免费档。
+- 来源 / Source: Sourcegraph 官方博客 sourcegraph.com/blog/changes-to-cody-free-pro-and-enterprise-starter-plans（停服日期）与 ampcode.com（$10 额度）；域名被出口代理封锁未直抓，经搜索索引引文核实
+- 核实于 / Checked: 2026-08-17
+- 详情页 / Page: https://baipiaoji.com/tools/cody.html ｜ EN: https://baipiaoji.com/en/tools/cody.html
+
+## LanguageTool
+
+- 额度上限 / Quota: 两条产品线两套额度：编辑器与浏览器插件的免费版单次检查上限 10,000 字符（Premium 提到 100,000）；公开 HTTP API 免费口径为每 IP 20 次/分钟、75,000 字符/分钟、单次请求 20,000 字符（Premium API 为 80 次/分钟、300,000 字符/分钟、单次 60,000）。
+- 撞墙表现 / What happens at the wall: 免费版的墙是单次长度不是月用量——约 1,500–1,800 个英文词就顶到 10,000 字符，长文一律手工分段。改写（paraphrase）等 AI 功能免费版受限，Premium 才不限量。公开 API 的限额官方注明是峰值口径，持续打满会被封禁。
+- 来源 / Source: LanguageTool 官方 API 文档 languagetool.org/http-api/ 与 dev.languagetool.org/public-http-api.html、官方 Premium 页 languagetool.org/premium；域名被出口代理封锁未直抓，经搜索索引引文核实
+- 核实于 / Checked: 2026-08-17
+- 详情页 / Page: https://baipiaoji.com/tools/languagetool.html ｜ EN: https://baipiaoji.com/en/tools/languagetool.html
+
 ## Exa
 
 - 额度上限 / Quota: Exa 免费档发的是「额度券」不是请求数：搜索索引中出自官方定价页的引文写明新账号注册赠送 $20 免费额度（官方括注约合 2,800 次搜索，与其 Search $7/1k 的单价吻合：20 ÷ 7 × 1000 ≈ 2857），之后免费档每月再补 $10 额度。Websets 侧官方另写免费方案含 1,000 credits（每个 webset 最多 25 条结果、功能受限）。官方页面从未出现第三方站广泛流传的「每月 20,000 次免费请求」这一说法，该数字不予采信。
@@ -974,6 +1022,14 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 - 来源 / Source: Exa 官方定价页与官方文档（exa.ai/pricing、exa.ai/docs/reference/pricing、/billing、/websets/faq）｜本轮执行限制：出口代理封锁全部厂商域名，未能直接打开官方页面，以上据搜索引擎索引中出自厂商自有域名的引文核实；对抗复核因搜索预算耗尽未能独立重查，故只发布有厂商域名直接引文支撑的说法
 - 核实于 / Checked: 2026-08-13
 - 详情页 / Page: https://baipiaoji.com/tools/exa.html ｜ EN: https://baipiaoji.com/en/tools/exa.html
+
+## GPTZero
+
+- 额度上限 / Quota: 免费档每月 10,000 词、单次扫描上限 10,000 字符，无需绑卡。
+- 撞墙表现 / What happens at the wall: 超出后等月度重置或升级付费档。付费档报价在第三方来源之间互相矛盾（Essential 有 $10/月 与 $14.99/月 两种口径并存），官方页未能直抓核实——本站不采信任何一个，以 gptzero.me 定价页当期展示为准。
+- 来源 / Source: GPTZero 官方定价页 gptzero.me（免费档 10,000 词/月、10,000 字符/次经多个独立来源交叉印证一致）；域名被出口代理封锁未直抓，经搜索索引引文核实
+- 核实于 / Checked: 2026-08-17
+- 详情页 / Page: https://baipiaoji.com/tools/gptzero.html ｜ EN: https://baipiaoji.com/en/tools/gptzero.html
 
 > 本数据以 **CC BY 4.0** 开放转载（含商用）：注明来源「白嫖计（https://baipiaoji.com）」并附回链即可。机器可读版：https://baipiaoji.com/limits.json
 > 额度政策变动频繁，以官方页面为准。引用请注明「白嫖计（https://baipiaoji.com）」与核实日期。

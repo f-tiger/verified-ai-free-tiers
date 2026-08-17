@@ -85,6 +85,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [智谱开放平台](https://baipiaoji.com/en/tools/zhipu-glm.html) | 官方文档设有专门的「免费模型」板块：GLM-4-Flash-250414、GLM-4.7-Flash（30B 级，200K 上下文、最长 128K 输出）等 Flash 系列 API 调用免费。 | 2026-08-01 |
 | [Cloudflare Workers AI](https://baipiaoji.com/en/tools/cloudflare-workers-ai.html) | 每天 10,000 Neurons 免费（Neurons 是 Cloudflare 统一的推理计量单位，token/图块/音频分钟都折算进去），Workers Free 与 Paid 计划都含这份额度，每天 00:00 UTC（北京时间 08:00）重置。 | 2026-08-01 |
 | [豆包（字节跳动）](https://baipiaoji.com/en/tools/doubao.html) | 官方未公布具体数字。登录后可免费使用对话、写作、翻译、编程等功能，官网未标注条数或频次上限；Seedance 2.0 视频生成模型已接入豆包，厂商研究站称登录即可免费使用，但未公布免费生成条数；云盘对普通账号提供「一定额度」的免费云存储空间，官方未明示容量。《豆包付费服务协议》将会员分为标准/加强/高级三档，声明开通会员可「解锁 AI 功能的更多使用额度」，并把具体权益推给「产品页面及服务权益实际展示为准」——即数字只在登录后的会员订阅页/产品界面动态展示，站外无法核验。 | 2026-08-13 |
+| [文心一言（百度）](https://baipiaoji.com/en/tools/wenxin.html) | 官方公告自 2025-04-01 零时起全面免费：PC 与 App 端全部用户可用文心系列最新模型，此前需付费会员才能用的超长文档处理、专业级检索增强、高级 AI 绘画与深度搜索一并放开；文心 5.0 上线后 C 端同样免费可用。官方未公布对话条数或频率上限。 | 2026-08-17 |
 | [Claude](https://baipiaoji.com/en/tools/claude.html) | 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说**可发条数随需求量浮动**，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。2026-08-12 复核：机制与官方措辞均未变化，第三方广为流传的「每 5 小时 40 条」仍然只有第三方出处、官方从未公布，本站继续不采信。 | 2026-08-12 |
 | [Cursor](https://baipiaoji.com/en/tools/cursor.html) | Hobby 免费档存在且无需绑卡：可用 Agent、Chat 与 Tab 补全（Auto 模型），官方口径为「有限的 Agent 请求与补全」——**现行官方页面不公布具体数字**。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。 | 2026-08-03 |
 | [文心快码 Comate（百度）](https://baipiaoji.com/en/tools/comate.html) | 个人免费版：**轻量模型不限量使用**；智能体（Agent）请求按各模型消耗的 token 计额度，**额度用尽后自动切换回轻量模型继续可用**——不是直接停摆。个人免费版智能体额度的具体数值官方未在可核实页面明示，因此不写数字。 | 2026-08-04 |
@@ -105,6 +106,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [Notion AI](https://baipiaoji.com/en/tools/notion-ai.html) | 免费与 Plus 计划的工作区可获得一份「体验用」的 AI 回复额度（官方帮助中心专页 complimentary AI responses），但**具体条数官方未在当前页面公布**——网上流传的「每人 20 次」出自 2023 年的活动、早已结束，不可采信。Notion AI 现按 $10/人/月 作为加购项提供（年付约 8 折）。 | 2026-08-04 |
 | [OpenRouter](https://baipiaoji.com/en/tools/openrouter.html) | 免费账户可用 20+ 个 $0 模型（ID 带 :free）：每天 50 次请求、每分钟 20 次。一次性充值 $10 后，免费模型上限提升至每天 1,000 次（每分钟仍为 20 次），且该笔存款不过期、可用于付费模型。 | 2026-08-03 |
 | [Cerebras](https://baipiaoji.com/en/tools/cerebras.html) | 新账号绑定并验证支付方式后获得 $5 免费额度，自发放起 30 天到期，可用于全部公开模型；免费档上下文长度 8,192 tokens。官方文档明确写明：目前不提供会自动续期的免费档，也没有任何模型的「永久免费」额度。 | 2026-08-05 |
+| [Mistral AI](https://baipiaoji.com/en/tools/mistral.html) | API 免费档（Experiment 计划）真实存在且覆盖全系模型（含 Mistral Large、Codestral），无需绑卡，但要过两道门：手机号验证 + 同意输入数据用于模型训练。官方已不再公开发布具体限额数字，以控制台 Admin Console → Limits 的实时显示为准；常被引用的典型档位约 1 次/秒、500,000 tokens/分钟、10 亿 tokens/月。 | 2026-08-17 |
 | [NVIDIA NIM](https://baipiaoji.com/en/tools/nvidia-nim.html) | 加入免费的 NVIDIA Developer Program 后，可免费调用 NVIDIA 托管的 NIM API 端点做开发与测试（官方措辞「unlimited prototyping」），无需信用卡，覆盖 DeepSeek / Llama / Qwen 等百余个模型。 | 2026-08-01 |
 | [Cohere](https://baipiaoji.com/en/tools/cohere.html) | Trial（试用）API Key 每月 1,000 次调用免费，注册即得、无需绑卡。不同端点另有每分钟速率限制：Embed 每分钟 5 次、Chat 每分钟 20 次——月额度没用完也会被分钟级限速卡住。 | 2026-08-05 |
 | [Hugging Face](https://baipiaoji.com/en/tools/huggingface.html) | 官方说明每个 Hugging Face 账号每月都会获得一笔 Inference Providers 额度用于试用，可跨多家推理服务商使用——但免费档的具体金额官方未在可核实页面写明。有明码的是 PRO：每月 $2 推理额度，官方另称 PRO 的包含额度是免费档的 20 倍。 | 2026-08-05 |
@@ -182,9 +184,14 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [LM Studio](https://baipiaoji.com/en/tools/lm-studio.html) | 客户端本身免费、无额度概念：个人一直免费，且官方已**取消商用需单独申请许可的要求**——公司/团队直接用即可，不必填表或联系官方。团队可免费建公开 Hub 组织配合使用。 | 2026-08-04 |
 | [AnythingLLM](https://baipiaoji.com/en/tools/anythingllm.html) | 桌面版 MIT 开源、完全免费，官方口径是「**无需账号、无需 API Key、无 token 限制**」，在本机运行（macOS / Windows / Linux 均有）。云端版由官方团队托管在隔离的 AWS 实例上，供试用或规模化使用；**云端定价与用量上限官方未在可核实页面明示**，因此不写数字。 | 2026-08-04 |
 | [Gemini CLI](https://baipiaoji.com/en/tools/gemini-cli.html) | 用 Google 账号登录的免费档：每天 1,000 次模型请求，Flash 上限 60 次/分钟，默认走 Gemini Flash。官方文档同时明确两件容易被误读的事：这 1,000 次是 Pro 与 Flash 混合计的，**不等于每天 1,000 次 Gemini 2.5 Pro 请求**；而且**一次提问可能触发几十次模型请求**——「1,000 次」不是 1,000 轮对话。 | 2026-08-05 |
+| [DuckDuckGo AI Chat](https://baipiaoji.com/en/tools/duckduckgo-ai.html) | 免注册、匿名、免费——官方确认免费档可用模型含 GPT-5.4 mini/nano、Claude 4.5 Haiku、Mistral Small 4、gpt-oss-120b 等；每日用量有上限，但官方刻意不公布具体条数（限额匿名执行，与其隐私定位一致），聊天记录不用于模型训练。 | 2026-08-17 |
+| [Character.AI](https://baipiaoji.com/en/tools/character-ai.html) | 免费档不限消息数——官方 FAQ 明确基础聊天体验保持免费且无限量，全部角色库与社区功能开放，无需绑卡。 | 2026-08-17 |
+| [Sourcegraph Cody](https://baipiaoji.com/en/tools/cody.html) | 个人免费档已不存在：Sourcegraph 官方公告 Cody Free 与 Cody Pro 自 2025-06-25 停止新注册、2025-07-23 停止服务，Cody 现仅存面向企业的 Enterprise 版（按席位年约报价）。官方给个人用户的去处是其新产品 Amp：注册送 $10 试用额度，原 Cody Pro 用户可写邮件申领 $40。 | 2026-08-17 |
+| [LanguageTool](https://baipiaoji.com/en/tools/languagetool.html) | 两条产品线两套额度：编辑器与浏览器插件的免费版单次检查上限 10,000 字符（Premium 提到 100,000）；公开 HTTP API 免费口径为每 IP 20 次/分钟、75,000 字符/分钟、单次请求 20,000 字符（Premium API 为 80 次/分钟、300,000 字符/分钟、单次 60,000）。 | 2026-08-17 |
 | [Exa](https://baipiaoji.com/en/tools/exa.html) | Exa 免费档发的是「额度券」不是请求数：搜索索引中出自官方定价页的引文写明新账号注册赠送 $20 免费额度（官方括注约合 2,800 次搜索，与其 Search $7/1k 的单价吻合：20 ÷ 7 × 1000 ≈ 2857），之后免费档每月再补 $10 额度。Websets 侧官方另写免费方案含 1,000 credits（每个 webset 最多 25 条结果、功能受限）。官方页面从未出现第三方站广泛流传的「每月 20,000 次免费请求」这一说法，该数字不予采信。
 
 【时效性存疑，请以官网当前页面为准】以上数字均来自搜索引擎索引的引文，本次核实环境无法直接打开 exa.ai 页面，**引文的快照日期不明**。有第三方记录（不采信为来源，仅作为提醒）称 Exa 在 2026 年 7 月调整过免费档；同时流传中还存在另一套与上述不同的赠额结构（「$10 注册赠额 + 每月 $7」），两套结构不可能同时现行，说明其中至少有一代已是旧版定价。我们未能确认上文引用的是否为现行版本，因此此处不声称这些数字「当前有效」，仅记录它们确实出自 Exa 自有页面。 | 2026-08-13 |
+| [GPTZero](https://baipiaoji.com/en/tools/gptzero.html) | 免费档每月 10,000 词、单次扫描上限 10,000 字符，无需绑卡。 | 2026-08-17 |
 
 ## 已核实额度（中文）
 
@@ -215,6 +222,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [智谱开放平台](https://baipiaoji.com/tools/zhipu-glm.html) | 官方文档设有专门的「免费模型」板块：GLM-4-Flash-250414、GLM-4.7-Flash（30B 级，200K 上下文、最长 128K 输出）等 Flash 系列 API 调用免费。 | 2026-08-01 |
 | [Cloudflare Workers AI](https://baipiaoji.com/tools/cloudflare-workers-ai.html) | 每天 10,000 Neurons 免费（Neurons 是 Cloudflare 统一的推理计量单位，token/图块/音频分钟都折算进去），Workers Free 与 Paid 计划都含这份额度，每天 00:00 UTC（北京时间 08:00）重置。 | 2026-08-01 |
 | [豆包（字节跳动）](https://baipiaoji.com/tools/doubao.html) | 官方未公布具体数字。登录后可免费使用对话、写作、翻译、编程等功能，官网未标注条数或频次上限；Seedance 2.0 视频生成模型已接入豆包，厂商研究站称登录即可免费使用，但未公布免费生成条数；云盘对普通账号提供「一定额度」的免费云存储空间，官方未明示容量。《豆包付费服务协议》将会员分为标准/加强/高级三档，声明开通会员可「解锁 AI 功能的更多使用额度」，并把具体权益推给「产品页面及服务权益实际展示为准」——即数字只在登录后的会员订阅页/产品界面动态展示，站外无法核验。 | 2026-08-13 |
+| [文心一言（百度）](https://baipiaoji.com/tools/wenxin.html) | 官方公告自 2025-04-01 零时起全面免费：PC 与 App 端全部用户可用文心系列最新模型，此前需付费会员才能用的超长文档处理、专业级检索增强、高级 AI 绘画与深度搜索一并放开；文心 5.0 上线后 C 端同样免费可用。官方未公布对话条数或频率上限。 | 2026-08-17 |
 | [Claude](https://baipiaoji.com/tools/claude.html) | 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说**可发条数随需求量浮动**，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。2026-08-12 复核：机制与官方措辞均未变化，第三方广为流传的「每 5 小时 40 条」仍然只有第三方出处、官方从未公布，本站继续不采信。 | 2026-08-12 |
 | [Cursor](https://baipiaoji.com/tools/cursor.html) | Hobby 免费档存在且无需绑卡：可用 Agent、Chat 与 Tab 补全（Auto 模型），官方口径为「有限的 Agent 请求与补全」——**现行官方页面不公布具体数字**。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。 | 2026-08-03 |
 | [文心快码 Comate（百度）](https://baipiaoji.com/tools/comate.html) | 个人免费版：**轻量模型不限量使用**；智能体（Agent）请求按各模型消耗的 token 计额度，**额度用尽后自动切换回轻量模型继续可用**——不是直接停摆。个人免费版智能体额度的具体数值官方未在可核实页面明示，因此不写数字。 | 2026-08-04 |
@@ -235,6 +243,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [Notion AI](https://baipiaoji.com/tools/notion-ai.html) | 免费与 Plus 计划的工作区可获得一份「体验用」的 AI 回复额度（官方帮助中心专页 complimentary AI responses），但**具体条数官方未在当前页面公布**——网上流传的「每人 20 次」出自 2023 年的活动、早已结束，不可采信。Notion AI 现按 $10/人/月 作为加购项提供（年付约 8 折）。 | 2026-08-04 |
 | [OpenRouter](https://baipiaoji.com/tools/openrouter.html) | 免费账户可用 20+ 个 $0 模型（ID 带 :free）：每天 50 次请求、每分钟 20 次。一次性充值 $10 后，免费模型上限提升至每天 1,000 次（每分钟仍为 20 次），且该笔存款不过期、可用于付费模型。 | 2026-08-03 |
 | [Cerebras](https://baipiaoji.com/tools/cerebras.html) | 新账号绑定并验证支付方式后获得 $5 免费额度，自发放起 30 天到期，可用于全部公开模型；免费档上下文长度 8,192 tokens。官方文档明确写明：目前不提供会自动续期的免费档，也没有任何模型的「永久免费」额度。 | 2026-08-05 |
+| [Mistral AI](https://baipiaoji.com/tools/mistral.html) | API 免费档（Experiment 计划）真实存在且覆盖全系模型（含 Mistral Large、Codestral），无需绑卡，但要过两道门：手机号验证 + 同意输入数据用于模型训练。官方已不再公开发布具体限额数字，以控制台 Admin Console → Limits 的实时显示为准；常被引用的典型档位约 1 次/秒、500,000 tokens/分钟、10 亿 tokens/月。 | 2026-08-17 |
 | [NVIDIA NIM](https://baipiaoji.com/tools/nvidia-nim.html) | 加入免费的 NVIDIA Developer Program 后，可免费调用 NVIDIA 托管的 NIM API 端点做开发与测试（官方措辞「unlimited prototyping」），无需信用卡，覆盖 DeepSeek / Llama / Qwen 等百余个模型。 | 2026-08-01 |
 | [Cohere](https://baipiaoji.com/tools/cohere.html) | Trial（试用）API Key 每月 1,000 次调用免费，注册即得、无需绑卡。不同端点另有每分钟速率限制：Embed 每分钟 5 次、Chat 每分钟 20 次——月额度没用完也会被分钟级限速卡住。 | 2026-08-05 |
 | [Hugging Face](https://baipiaoji.com/tools/huggingface.html) | 官方说明每个 Hugging Face 账号每月都会获得一笔 Inference Providers 额度用于试用，可跨多家推理服务商使用——但免费档的具体金额官方未在可核实页面写明。有明码的是 PRO：每月 $2 推理额度，官方另称 PRO 的包含额度是免费档的 20 倍。 | 2026-08-05 |
@@ -312,9 +321,14 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [LM Studio](https://baipiaoji.com/tools/lm-studio.html) | 客户端本身免费、无额度概念：个人一直免费，且官方已**取消商用需单独申请许可的要求**——公司/团队直接用即可，不必填表或联系官方。团队可免费建公开 Hub 组织配合使用。 | 2026-08-04 |
 | [AnythingLLM](https://baipiaoji.com/tools/anythingllm.html) | 桌面版 MIT 开源、完全免费，官方口径是「**无需账号、无需 API Key、无 token 限制**」，在本机运行（macOS / Windows / Linux 均有）。云端版由官方团队托管在隔离的 AWS 实例上，供试用或规模化使用；**云端定价与用量上限官方未在可核实页面明示**，因此不写数字。 | 2026-08-04 |
 | [Gemini CLI](https://baipiaoji.com/tools/gemini-cli.html) | 用 Google 账号登录的免费档：每天 1,000 次模型请求，Flash 上限 60 次/分钟，默认走 Gemini Flash。官方文档同时明确两件容易被误读的事：这 1,000 次是 Pro 与 Flash 混合计的，**不等于每天 1,000 次 Gemini 2.5 Pro 请求**；而且**一次提问可能触发几十次模型请求**——「1,000 次」不是 1,000 轮对话。 | 2026-08-05 |
+| [DuckDuckGo AI Chat](https://baipiaoji.com/tools/duckduckgo-ai.html) | 免注册、匿名、免费——官方确认免费档可用模型含 GPT-5.4 mini/nano、Claude 4.5 Haiku、Mistral Small 4、gpt-oss-120b 等；每日用量有上限，但官方刻意不公布具体条数（限额匿名执行，与其隐私定位一致），聊天记录不用于模型训练。 | 2026-08-17 |
+| [Character.AI](https://baipiaoji.com/tools/character-ai.html) | 免费档不限消息数——官方 FAQ 明确基础聊天体验保持免费且无限量，全部角色库与社区功能开放，无需绑卡。 | 2026-08-17 |
+| [Sourcegraph Cody](https://baipiaoji.com/tools/cody.html) | 个人免费档已不存在：Sourcegraph 官方公告 Cody Free 与 Cody Pro 自 2025-06-25 停止新注册、2025-07-23 停止服务，Cody 现仅存面向企业的 Enterprise 版（按席位年约报价）。官方给个人用户的去处是其新产品 Amp：注册送 $10 试用额度，原 Cody Pro 用户可写邮件申领 $40。 | 2026-08-17 |
+| [LanguageTool](https://baipiaoji.com/tools/languagetool.html) | 两条产品线两套额度：编辑器与浏览器插件的免费版单次检查上限 10,000 字符（Premium 提到 100,000）；公开 HTTP API 免费口径为每 IP 20 次/分钟、75,000 字符/分钟、单次请求 20,000 字符（Premium API 为 80 次/分钟、300,000 字符/分钟、单次 60,000）。 | 2026-08-17 |
 | [Exa](https://baipiaoji.com/tools/exa.html) | Exa 免费档发的是「额度券」不是请求数：搜索索引中出自官方定价页的引文写明新账号注册赠送 $20 免费额度（官方括注约合 2,800 次搜索，与其 Search $7/1k 的单价吻合：20 ÷ 7 × 1000 ≈ 2857），之后免费档每月再补 $10 额度。Websets 侧官方另写免费方案含 1,000 credits（每个 webset 最多 25 条结果、功能受限）。官方页面从未出现第三方站广泛流传的「每月 20,000 次免费请求」这一说法，该数字不予采信。
 
 【时效性存疑，请以官网当前页面为准】以上数字均来自搜索引擎索引的引文，本次核实环境无法直接打开 exa.ai 页面，**引文的快照日期不明**。有第三方记录（不采信为来源，仅作为提醒）称 Exa 在 2026 年 7 月调整过免费档；同时流传中还存在另一套与上述不同的赠额结构（「$10 注册赠额 + 每月 $7」），两套结构不可能同时现行，说明其中至少有一代已是旧版定价。我们未能确认上文引用的是否为现行版本，因此此处不声称这些数字「当前有效」，仅记录它们确实出自 Exa 自有页面。 | 2026-08-13 |
+| [GPTZero](https://baipiaoji.com/tools/gptzero.html) | 免费档每月 10,000 词、单次扫描上限 10,000 字符，无需绑卡。 | 2026-08-17 |
 
 ## Method ｜ 核实方法
 
