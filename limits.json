@@ -5,7 +5,7 @@
   "license": "CC BY 4.0 — 允许转载与商用，条件：注明来源「白嫖计 baipiaoji.com」并附回链到对应工具页 / Reuse permitted (incl. commercial) with attribution to \"Baipiaoji (baipiaoji.com)\" and a link back to the tool page.",
   "generated": "2026-08-17",
   "note": "只含能追溯到官方来源的条目；不在此列 = 未找到官方数字。额度政策随时变，以 checked 日期与官方页面为准。Only entries traceable to an official source are included.",
-  "count": 128,
+  "count": 129,
   "of_total_listed": 219,
   "tools": [
     {
@@ -1415,6 +1415,17 @@
       "checked": "2026-08-17",
       "page": "https://baipiaoji.com/tools/gptzero.html",
       "page_en": "https://baipiaoji.com/en/tools/gptzero.html"
+    },
+    {
+      "slug": "ante",
+      "name": "Ante",
+      "category": "coding",
+      "quota": "工具本身不设额度：预览版二进制免费，官方 Binary Preview Terms 明示包含商用。模型走自带 Key（BYOK），支持 12+ 家供应商（Anthropic、OpenAI、Google、xAI、OpenRouter 等），所以推理花多少完全等于你自己那把 Key 的价钱，本站不做任何估算。本条独有的一种形态：内置 llama.cpp，跑本地模型可完全离线——这种用法下根本不需要任何 Key。",
+      "wall": "没有用量墙，但有两处不确定值得知道：免费条款绑在 alpha 预览期的 Binary Preview Terms 上，预览结束后可能变；官方自称 public alpha，明说会有破坏性变更。目前仅支持 macOS 与 Linux。",
+      "source": "ante.run 与 antigma.ai 官方站点，以及 GitHub 上的 AntigmaLabs/ante-preview README（经搜索索引引文核实；因出口代理封锁厂商域名，未直接打开页面）",
+      "checked": "2026-08-17",
+      "page": "https://baipiaoji.com/tools/ante.html",
+      "page_en": "https://baipiaoji.com/en/tools/ante.html"
     }
   ]
 }

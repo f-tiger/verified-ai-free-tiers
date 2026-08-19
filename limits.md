@@ -1,7 +1,7 @@
 # 已核实的免费额度上限 / Verified free-tier limits — 白嫖计 (baipiaoji.com)
 
-本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 219 个工具，本清单只含已核实额度上限的 128 个）。
-Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (128 of 219 listed tools qualify so far).
+本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 219 个工具，本清单只含已核实额度上限的 129 个）。
+Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (129 of 219 listed tools qualify so far).
 
 ## DeepSeek
 
@@ -1030,6 +1030,14 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 - 来源 / Source: GPTZero 官方定价页 gptzero.me（免费档 10,000 词/月、10,000 字符/次经多个独立来源交叉印证一致）；域名被出口代理封锁未直抓，经搜索索引引文核实
 - 核实于 / Checked: 2026-08-17
 - 详情页 / Page: https://baipiaoji.com/tools/gptzero.html ｜ EN: https://baipiaoji.com/en/tools/gptzero.html
+
+## Ante
+
+- 额度上限 / Quota: 工具本身不设额度：预览版二进制免费，官方 Binary Preview Terms 明示包含商用。模型走自带 Key（BYOK），支持 12+ 家供应商（Anthropic、OpenAI、Google、xAI、OpenRouter 等），所以推理花多少完全等于你自己那把 Key 的价钱，本站不做任何估算。本条独有的一种形态：内置 llama.cpp，跑本地模型可完全离线——这种用法下根本不需要任何 Key。
+- 撞墙表现 / What happens at the wall: 没有用量墙，但有两处不确定值得知道：免费条款绑在 alpha 预览期的 Binary Preview Terms 上，预览结束后可能变；官方自称 public alpha，明说会有破坏性变更。目前仅支持 macOS 与 Linux。
+- 来源 / Source: ante.run 与 antigma.ai 官方站点，以及 GitHub 上的 AntigmaLabs/ante-preview README（经搜索索引引文核实；因出口代理封锁厂商域名，未直接打开页面）
+- 核实于 / Checked: 2026-08-17
+- 详情页 / Page: https://baipiaoji.com/tools/ante.html ｜ EN: https://baipiaoji.com/en/tools/ante.html
 
 > 本数据以 **CC BY 4.0** 开放转载（含商用）：注明来源「白嫖计（https://baipiaoji.com）」并附回链即可。机器可读版：https://baipiaoji.com/limits.json
 > 额度政策变动频繁，以官方页面为准。引用请注明「白嫖计（https://baipiaoji.com）」与核实日期。

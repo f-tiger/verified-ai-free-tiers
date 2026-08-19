@@ -192,6 +192,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 
 【时效性存疑，请以官网当前页面为准】以上数字均来自搜索引擎索引的引文，本次核实环境无法直接打开 exa.ai 页面，**引文的快照日期不明**。有第三方记录（不采信为来源，仅作为提醒）称 Exa 在 2026 年 7 月调整过免费档；同时流传中还存在另一套与上述不同的赠额结构（「$10 注册赠额 + 每月 $7」），两套结构不可能同时现行，说明其中至少有一代已是旧版定价。我们未能确认上文引用的是否为现行版本，因此此处不声称这些数字「当前有效」，仅记录它们确实出自 Exa 自有页面。 | 2026-08-13 |
 | [GPTZero](https://baipiaoji.com/en/tools/gptzero.html) | 免费档每月 10,000 词、单次扫描上限 10,000 字符，无需绑卡。 | 2026-08-17 |
+| [Ante](https://baipiaoji.com/en/tools/ante.html) | 工具本身不设额度：预览版二进制免费，官方 Binary Preview Terms 明示包含商用。模型走自带 Key（BYOK），支持 12+ 家供应商（Anthropic、OpenAI、Google、xAI、OpenRouter 等），所以推理花多少完全等于你自己那把 Key 的价钱，本站不做任何估算。本条独有的一种形态：内置 llama.cpp，跑本地模型可完全离线——这种用法下根本不需要任何 Key。 | 2026-08-17 |
 
 ## 已核实额度（中文）
 
@@ -329,6 +330,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 
 【时效性存疑，请以官网当前页面为准】以上数字均来自搜索引擎索引的引文，本次核实环境无法直接打开 exa.ai 页面，**引文的快照日期不明**。有第三方记录（不采信为来源，仅作为提醒）称 Exa 在 2026 年 7 月调整过免费档；同时流传中还存在另一套与上述不同的赠额结构（「$10 注册赠额 + 每月 $7」），两套结构不可能同时现行，说明其中至少有一代已是旧版定价。我们未能确认上文引用的是否为现行版本，因此此处不声称这些数字「当前有效」，仅记录它们确实出自 Exa 自有页面。 | 2026-08-13 |
 | [GPTZero](https://baipiaoji.com/tools/gptzero.html) | 免费档每月 10,000 词、单次扫描上限 10,000 字符，无需绑卡。 | 2026-08-17 |
+| [Ante](https://baipiaoji.com/tools/ante.html) | 工具本身不设额度：预览版二进制免费，官方 Binary Preview Terms 明示包含商用。模型走自带 Key（BYOK），支持 12+ 家供应商（Anthropic、OpenAI、Google、xAI、OpenRouter 等），所以推理花多少完全等于你自己那把 Key 的价钱，本站不做任何估算。本条独有的一种形态：内置 llama.cpp，跑本地模型可完全离线——这种用法下根本不需要任何 Key。 | 2026-08-17 |
 
 ## Method ｜ 核实方法
 
