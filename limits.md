@@ -815,10 +815,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## Fireworks AI
 
-- 额度上限 / Quota: 新用户注册自动获得 $1 免费额度（约合 70B 级模型 100 万 token），无需绑卡即可开始调用。
+- 额度上限 / Quota: 新用户注册自动获得 $1 免费额度（约合 70B 级模型 100 万 token），无需绑卡即可开始调用。 2026-09-12 复核：官方文档仍写新账户自动获得 $1 免费额度；另据官方博客，2026-07-01 起自助账户已改为预付费（按余额扣减），$1 启动额度不变、用完即按余额计费，它是一次性启动金，不是持续免费层。
 - 撞墙表现 / What happens at the wall: 没有长期免费档——$1 是一次性试用金，用完后按 token 计费（小模型约 $0.10/百万 token 起）。
 - 来源 / Source: Fireworks 官方文档 docs.fireworks.ai/faq-new/billing-pricing/how-much-does-fireworks-cost（$1 数额经多个独立来源交叉印证）
-- 核实于 / Checked: 2026-08-02
+- 核实于 / Checked: 2026-09-12
 - 详情页 / Page: https://baipiaoji.com/tools/fireworks.html ｜ EN: https://baipiaoji.com/en/tools/fireworks.html
 
 ## 阿里云百炼
