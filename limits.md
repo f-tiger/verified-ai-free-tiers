@@ -191,8 +191,8 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 - 额度上限 / Quota: 每天 10,000 Neurons 免费（Neurons 是 Cloudflare 统一的推理计量单位，token/图块/音频分钟都折算进去），Workers Free 与 Paid 计划都含这份额度，每天 00:00 UTC（北京时间 08:00）重置。
 - 撞墙表现 / What happens at the wall: 免费计划下当天用完即停，等次日重置；要继续用需升级 Workers Paid，超出部分按 $0.011 / 1000 Neurons 计费。
-- 来源 / Source: Cloudflare 官方定价文档 developers.cloudflare.com/workers-ai/platform/pricing
-- 核实于 / Checked: 2026-08-01
+- 来源 / Source: Cloudflare 官方定价文档 developers.cloudflare.com/workers-ai/platform/pricing（2026-09-16 直接抓取复核，页面自身标注 Last updated Aug 28, 2026）
+- 核实于 / Checked: 2026-09-16
 - 详情页 / Page: https://baipiaoji.com/tools/cloudflare-workers-ai.html ｜ EN: https://baipiaoji.com/en/tools/cloudflare-workers-ai.html
 
 ## 豆包（字节跳动）
