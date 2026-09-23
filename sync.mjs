@@ -41,7 +41,7 @@ if (Number.isInteger(data.count) && Number.isInteger(data.of_total_listed)) {
 const wk = await getJson(base + '/.well-known/mcp.json');
 if (wk && Array.isArray(wk.tools) && Array.isArray(wk.resources)) {
   readme = swap(readme, /\*\*\d+ tools\*\*/, () => `**${wk.tools.length} tools**`, 'tool count');
-  const res = wk.resources.map((u, i) => (i === 0 ? `\`${u}\`` : `\`${u.replace(/^baipiaoji:/, '')}\``)).join(' · ');
+  const res = wk.resources.map((u, i) => (i === 0 ? `\`${u}\`` : `\`${u.replace(/^baipiaoji/, '')}\``)).join(' · ');
   readme = swap(readme, /\*\*\d+ resources\*\* \(pull whole datasets in one call\): [^\n]*/, () => `**${wk.resources.length} resources** (pull whole datasets in one call): ${res}`, 'resources');
   for (const t of wk.tools) if (!readme.includes(`| \`${t}\` |`)) warn(`tool ${t} is live but has no README row — add one by hand`);
 }

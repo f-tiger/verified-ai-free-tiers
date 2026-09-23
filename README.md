@@ -35,7 +35,7 @@ No auth, streamable HTTP, nothing to install. Full setup docs for Claude Code / 
 | `monitor_new_agents` | Source-backed list of AI agents and MCP servers: filter by audience, category, transport, origin (hand-curated or official MCP registry) and `since` a date, so an agent can poll it like a changelog |
 | `get_agent` | One record by slug: official page, repository, audiences, and the date each URL last answered |
 
-**10 resources** (pull whole datasets in one call): `baipiaoji://limits` · `//directory` · `//quotas` · `//myths` · `//workflows` · `//changes` · `//no-source` · `//insights` · `//agents` · `//dataset`
+**10 resources** (pull whole datasets in one call): `baipiaoji://limits` · `://directory` · `://quotas` · `://myths` · `://workflows` · `://changes` · `://no-source` · `://insights` · `://agents` · `://dataset`
 
 **4 prompts** (they appear in your client's prompt picker): `audit-my-ai-stack` · `pick-a-free-tier` · `fact-check-a-free-tier-claim` · `watch-my-free-tiers`
 
@@ -49,7 +49,7 @@ The same site keeps a directory of AI agents and MCP servers. A record goes in o
 
 同一站点维护一份 AI Agent 与 MCP 服务器目录：官方页面或仓库当天可访问才收录，每个链接都带最近一次可访问的日期；来自官方 MCP 注册表的条目只展示发布者自己的描述，不改写。
 
-- 🧭 Directory（英文）: https://baipiaoji.com/en/agents/ ｜ 中文: https://baipiaoji.com/agents/ — <!--agents-count-->978 records<!--/agents-count--> (list dated <!--agents-date-->2026-09-22<!--/agents-date-->)
+- 🧭 Directory（英文）: https://baipiaoji.com/en/agents/ ｜ 中文: https://baipiaoji.com/agents/ — <!--agents-count-->981 records<!--/agents-count--> (list dated <!--agents-date-->2026-09-23<!--/agents-date-->)
 - 🔌 MCP servers with check dates: https://baipiaoji.com/en/agents/c/mcp
 - 📦 Whole list as JSON: https://baipiaoji.com/agents.json (English: https://baipiaoji.com/en/agents.json)
 - 📰 RSS of newly added records: https://baipiaoji.com/en/agents/feed.xml
