@@ -14,11 +14,11 @@ claude mcp add --transport http baipiaoji https://baipiaoji.com/api/mcp
 
 No auth, streamable HTTP, nothing to install. Full setup docs for Claude Code / Claude Desktop / Cursor / Windsurf / VS Code: <https://baipiaoji.com/mcp.html>
 
-**14 tools**
+**16 tools**
 
 | Tool | What it answers |
 |---|---|
-| `search_ai_tools` | Search the 218-tool directory: category / fully-free / works-in-China / capability tag / keyword |
+| `search_ai_tools` | Search the tool directory (219 tools today; every result reports `directory_size`): category / fully-free / works-in-China / capability tag / keyword |
 | `get_free_tier_limit` | The verified ceiling, what happens at the wall, official source, check date |
 | `compare_free_tiers` | Compare a whole category side by side (chat / coding / video / image / api) — what is metered, when it resets, whether a figure is published at all |
 | `check_free_tier_claim` | Fact-check a circulating claim against official sources — many popular figures have none |
@@ -32,8 +32,10 @@ No auth, streamable HTTP, nothing to install. Full setup docs for Claude Code / 
 | `get_china_ai_rules` | Two gates for publishing to mainland China: vendor terms, and the AI-content labelling duty on top |
 | `explain_missing_figure` | Why a figure is missing — the vendor refuses to publish, official pages contradict each other, or no official page exists |
 | `watch_free_tier_changes` | Subscribe a webhook to verified free-tier changes: when a watched allowance or licence term moves (checked daily), a sourced JSON payload arrives the same day; 3 tools free |
+| `monitor_new_agents` | Source-backed list of AI agents and MCP servers: filter by audience, category, transport, origin (hand-curated or official MCP registry) and `since` a date, so an agent can poll it like a changelog |
+| `get_agent` | One record by slug: official page, repository, audiences, and the date each URL last answered |
 
-**9 resources** (pull whole datasets in one call): `baipiaoji://limits` · `://directory` · `://quotas` · `://myths` · `://workflows` · `://changes` · `://no-source` · `://insights` · `://dataset`
+**10 resources** (pull whole datasets in one call): `baipiaoji://limits` · `//directory` · `//quotas` · `//myths` · `//workflows` · `//changes` · `//no-source` · `//insights` · `//agents` · `//dataset`
 
 **4 prompts** (they appear in your client's prompt picker): `audit-my-ai-stack` · `pick-a-free-tier` · `fact-check-a-free-tier-claim` · `watch-my-free-tiers`
 
@@ -41,14 +43,26 @@ REST alternative: `https://baipiaoji.com/api/tools` · OpenAPI: `https://baipiao
 
 > 仓库 topics 请设置：`mcp` `mcp-server` `ai-tools` `free-tier` `dataset`（目录站按 topics 爬取收录）
 
+## AI agents & MCP servers directory ｜ Agent 与 MCP 目录
+
+The same site keeps a directory of AI agents and MCP servers. A record goes in only after its official page or repository answered on the day it was added, and every URL carries the date it last answered. Records pulled from the [official MCP Registry](https://registry.modelcontextprotocol.io/) show the publisher's own description, unedited.
+
+同一站点维护一份 AI Agent 与 MCP 服务器目录：官方页面或仓库当天可访问才收录，每个链接都带最近一次可访问的日期；来自官方 MCP 注册表的条目只展示发布者自己的描述，不改写。
+
+- 🧭 Directory（英文）: https://baipiaoji.com/en/agents/ ｜ 中文: https://baipiaoji.com/agents/ — <!--agents-count-->978 records<!--/agents-count--> (list dated <!--agents-date-->2026-09-22<!--/agents-date-->)
+- 🔌 MCP servers with check dates: https://baipiaoji.com/en/agents/c/mcp
+- 📦 Whole list as JSON: https://baipiaoji.com/agents.json (English: https://baipiaoji.com/en/agents.json)
+- 📰 RSS of newly added records: https://baipiaoji.com/en/agents/feed.xml
+- 🤖 From an MCP client: `monitor_new_agents` with `{"since": "2026-09-20", "transport": "mcp-remote"}`
+
 ## Why this exists ｜ 为什么做这个
 
 Most "best free AI tools" lists repeat figures nobody can trace. This dataset does the opposite: a number is published **only** when an official vendor page states it, and the date it was checked travels with it. When a vendor publishes no figure, the entry says so instead of carrying a guess — for AI chat assistants, for instance, only 1 of 10 vendors publishes a message count at all.
 
 多数「免费 AI 工具榜单」转述的数字查不到出处。这份数据集反过来做：**只有官方页面写明的数字才发布**，并带上核实日期；官方没公布的如实标注「未公布」，而不是填一个猜的数——比如对话助手这一类，10 家里只有 1 家真的公布了条数。
 
-Figures that cannot be traced to an official page are deliberately absent — 121 of the 218 listed tools have a verified ceiling.
-查不到官方来源的数字一律缺席：目前 218 个工具中 121 条已核实。
+Figures that cannot be traced to an official page are deliberately absent — 129 of the 219 listed tools have a verified ceiling.
+查不到官方来源的数字一律缺席：目前 219 个工具中 129 条已核实。
 
 - 📄 In this repo: [limits.json](./limits.json) ｜ [limits.md](./limits.md) — synced daily from [baipiaoji.com](https://baipiaoji.com/en/)（每日自动同步）
 - 🧮 Structured comparison data（可比较的结构化对照，非散文）: https://baipiaoji.com/en/quotas.json — what each vendor meters, when it resets, whether a figure is published
