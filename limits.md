@@ -1,7 +1,7 @@
 # 已核实的免费额度上限 / Verified free-tier limits — 白嫖计 (baipiaoji.com)
 
-本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 219 个工具，本清单只含已核实额度上限的 129 个）。
-Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (129 of 219 listed tools qualify so far).
+本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 221 个工具，本清单只含已核实额度上限的 131 个）。
+Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (131 of 221 listed tools qualify so far).
 
 ## DeepSeek
 
@@ -69,9 +69,9 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## Windsurf
 
-- 额度上限 / Quota: 免费档每月 25 个 prompt credits（官方文档明码）；Tab 补全免费使用。注意：Windsurf 已并入 Cognition（Devin）体系，官方定价与文档页现以 Devin 品牌展示。
-- 撞墙表现 / What happens at the wall: 当月 25 个 credits 用尽后 Cascade/Agent 类功能受限，可按 $10/250 credits 加购或订阅付费档；补全不受影响。
-- 来源 / Source: Windsurf/Devin 官方定价页与文档（windsurf.com / docs.windsurf.com，经搜索索引引文核实）
+- 额度上限 / Quota: 免费档每月 25 个 prompt credits（官方文档明码）；Tab 补全免费使用。注意：Windsurf 已并入 Cognition（Devin）体系，官方定价与文档页现以 Devin 品牌展示。⚠ 2026-09-20 runner 直接抓取的官方定价页已不再列 credits 数字：Free 档写的是「Light quota to code with agents」、模型可用性受限、行内编辑与 Tab 补全不限量——25 credits 是 08-03 的官方文档口径，两者出现在不同日期的不同官方页面，本站两条都保留、不替你选，下次文档复核再定。
+- 撞墙表现 / What happens at the wall: 当月 25 个 credits 用尽后 Cascade/Agent 类功能受限，可按 $10/250 credits 加购或订阅付费档；补全不受影响（2026-09-20 定价页对加购的措辞已改为「按 API 价格购买额外用量」，$10/250 credits 同样是 08-03 文档口径。）
+- 来源 / Source: Windsurf/Devin 官方定价页与文档（windsurf.com / docs.windsurf.com，经搜索索引引文核实）；https://windsurf.com/pricing（runner 探针 2026-09-20 直接抓取）
 - 核实于 / Checked: 2026-08-03
 - 详情页 / Page: https://baipiaoji.com/tools/windsurf ｜ EN: https://baipiaoji.com/en/tools/windsurf
 
@@ -125,10 +125,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## Runway
 
-- 额度上限 / Quota: 免费计划为一次性发放 125 积分：不过期、但用完永不续发（官方帮助中心专页明码，注意不是「每月 125」）；可用模型范围也少于付费档。
+- 额度上限 / Quota: 免费计划为一次性发放 125 积分：不过期、但用完永不续发（官方帮助中心专页明码，注意不是「每月 125」）；可用模型范围也少于付费档。2026-09-21 官方定价页复核一致：Free $0/月，125 积分一次性发放、不过期，含 5GB 素材存储。
 - 撞墙表现 / What happens at the wall: 125 积分用完后免费计划无法单独购买积分，继续生成必须升级 Standard 及以上；免费档定位就是「付费前试玩」。授权维度是本站目前见到的最宽松一档，也正好戳破「无水印才可商用」这个等式：官方明确所有档位（含免费档）的用户都保留自己上传与生成内容的所有权与全部权利，且享有商用权——官方专页逐条列举了适用场景：YouTube 变现与非变现投稿、Reels/TikTok 等短视频、社交媒体发布、电影节参赛、产品广告等。免费档确实带 Runway 水印，去水印需升级 Standard 及以上——但水印只是外观，商用权在免费档就已经给了。
-- 来源 / Source: Runway 官方帮助中心「Free plan details」「Usage rights」「Can I use the content I made in Runway for commercial purposes?」等专页与使用条款（help.runwayml.com / runwayml.com/terms-of-use，经搜索索引引文核实）
-- 核实于 / Checked: 2026-08-06
+- 来源 / Source: Runway 官方帮助中心「Free plan details」「Usage rights」「Can I use the content I made in Runway for commercial purposes?」等专页与使用条款（help.runwayml.com / runwayml.com/terms-of-use，经搜索索引引文核实）；官方定价页 https://runwayml.com/pricing（2026-09-21 直接抓取，含 FAQ 与模型对比表）
+- 核实于 / Checked: 2026-09-21
 - 详情页 / Page: https://baipiaoji.com/tools/runway ｜ EN: https://baipiaoji.com/en/tools/runway
 
 ## Gamma
@@ -221,10 +221,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## Cursor
 
-- 额度上限 / Quota: Hobby 免费档存在且无需绑卡：可用 Agent、Chat 与 Tab 补全（Auto 模型），官方口径为「有限的 Agent 请求与补全」——现行官方页面不公布具体数字。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。
-- 撞墙表现 / What happens at the wall: 触及隐性限额后 Agent/补全受限，升级 Pro（$20/月）解锁；实际余量以账户设置页显示为准。
-- 来源 / Source: Cursor 官方定价页与文档（cursor.com，经搜索索引引文核实；官方现行页面不公布免费档具体数额，旧数字已过时）
-- 核实于 / Checked: 2026-08-03
+- 额度上限 / Quota: Hobby 免费档存在且无需绑卡。官方定价页 2026-09-25 的 Hobby 栏只列三项：无需绑卡、有限的 Agent 请求（Limited Agent requests）、可用 Composer——仍不公布具体数字。08-03 核实时写到的 Chat 与 Tab 补全（Auto 模型）这次没有出现在免费档清单里，页面也没有说它们被取消，本站只照录当日原文。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。
+- 撞墙表现 / What happens at the wall: 触及隐性限额后 Agent 受限，升级 Individual 档解锁（页面同一栏可切换 Pro、Pro+、Ultra，静态文本当日只显示 Pro 的 $20/月）；官方 FAQ：每档都含一份模型用量，用完后可开 on-demand 按量续用、事后结算；实际余量以账户设置页显示为准。
+- 来源 / Source: Cursor 官方定价页 https://cursor.com/pricing（2026-09-25 直接抓取；免费档仍不公布具体数额，旧数字已过时）
+- 核实于 / Checked: 2026-09-25
 - 详情页 / Page: https://baipiaoji.com/tools/cursor ｜ EN: https://baipiaoji.com/en/tools/cursor
 
 ## 文心快码 Comate（百度）
@@ -429,10 +429,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## DeepL
 
-- 额度上限 / Quota: 开发者 API Free 档每月 500,000 字符，无每日限制、用完当月即停（官方文档明示）。网页免费版单次翻译有字符上限，但官方未公布具体数字，超长文本需分段。
+- 额度上限 / Quota: 开发者 API Free 档每月 500,000 字符，无每日限制、用完当月即停（官方文档明示）。网页免费版单次翻译有字符上限，但官方未公布具体数字，超长文本需分段。2026-09-21 官方定价页的档位对比表补上了网页/应用免费版的月度口径：文本翻译 50,000 字符/用户/月、文件翻译 1 份/月、保存 1 次翻译（单次粘贴的字符上限官方仍未给数字）。
 - 撞墙表现 / What happens at the wall: API 达到月度 50 万字符后停止翻译、次月重置；网页版超长文本会被截断，需分段粘贴或升级 Pro。
-- 来源 / Source: DeepL 官方开发者文档与帮助中心（经搜索索引引文核实）
-- 核实于 / Checked: 2026-08-02
+- 来源 / Source: DeepL 官方开发者文档与帮助中心（经搜索索引引文核实）；官方定价页 https://www.deepl.com/pricing（2026-09-21 直接抓取，免费版 50,000 字符/月与付费档来自该页对比表）
+- 核实于 / Checked: 2026-09-21
 - 详情页 / Page: https://baipiaoji.com/tools/deepl ｜ EN: https://baipiaoji.com/en/tools/deepl
 
 ## 彩云小译
@@ -567,10 +567,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## Bolt.new
 
-- 额度上限 / Quota: 免费档双重上限（官方支持文档明码）：每天最多 300,000 tokens、每月总量 1,000,000 tokens——注意网上流传的「每天 150K」是旧口径。
+- 额度上限 / Quota: 免费档双重上限（官方支持文档明码）：每天最多 300,000 tokens、每月总量 1,000,000 tokens——注意网上流传的「每天 150K」是旧口径。2026-09-21 官方定价页复核一致：Free $0 仍写 300K tokens 日上限、1M tokens 月上限；免费档另有网站带 Bolt 品牌标识、单文件上传 10MB、托管站点最多 333k web requests、数据库个数不限。
 - 撞墙表现 / What happens at the wall: 触及日上限等次日、触及月上限等下月或升级付费档（更大 token 池且可结转规则见官方页）；生成中断时项目仍保留可手动续做。
-- 来源 / Source: Bolt 官方支持文档 Tokens 专页与定价页（support.bolt.new / bolt.new，经搜索索引引文核实）
-- 核实于 / Checked: 2026-08-03
+- 来源 / Source: Bolt 官方支持文档 Tokens 专页（support.bolt.new，经搜索索引引文核实）与官方定价页 https://bolt.new/pricing（2026-09-21 直接抓取，含 FAQ）
+- 核实于 / Checked: 2026-09-21
 - 详情页 / Page: https://baipiaoji.com/tools/bolt ｜ EN: https://baipiaoji.com/en/tools/bolt
 
 ## Lovable
@@ -863,10 +863,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## FastGPT
 
-- 额度上限 / Quota: 开源社区版自部署免费，含 Agent 构建、工作流、知识库全部核心功能。云端免费版有 AI 积分与知识库索引额度（官方文档确认这两种计量存在，但免费档具体数值未在可核实引文中给出，不猜测）。
+- 额度上限 / Quota: 开源社区版自部署免费，含 Agent 构建、工作流、知识库全部核心功能。云端免费版有 AI 积分与知识库索引额度（官方文档确认这两种计量存在，但免费档具体数值未在可核实引文中给出，不猜测）——2026-09-21 官方定价页（fastgpt.cn/price）已直接抓到免费版数字：¥0/月，100 AI 积分、600 组知识库索引、1 个团队成员、10 个 Agent、3 个知识库、对话记录保留 30 天、30 QPM（此前 08-04 只能确认两种计量存在、数值未在引文中给出，现已补齐）。
 - 撞墙表现 / What happens at the wall: 云端免费版最硬的一条是「30 天不登录清空知识库」——这不是额度问题而是数据保全问题；知识库索引超限后无法新增或更新内容；付费套餐到期会自动切回免费版并清空 AI 积分。要长期留存数据就走自部署。
-- 来源 / Source: FastGPT 官方文档与定价页（fastgpt.cn / doc.tryfastgpt.ai，经搜索索引引文核实；免费档数值官方未明示）
-- 核实于 / Checked: 2026-08-04
+- 来源 / Source: FastGPT 官方定价页 https://fastgpt.cn/price（2026-09-21 直接抓取，免费版与付费档数字均来自该页）与官方文档（doc.tryfastgpt.ai，经搜索索引引文核实）
+- 核实于 / Checked: 2026-09-21
 - 详情页 / Page: https://baipiaoji.com/tools/fastgpt ｜ EN: https://baipiaoji.com/en/tools/fastgpt
 
 ## RAGFlow
@@ -967,10 +967,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## AnythingLLM
 
-- 额度上限 / Quota: 桌面版 MIT 开源、完全免费，官方口径是「无需账号、无需 API Key、无 token 限制」，在本机运行（macOS / Windows / Linux 均有）。云端版由官方团队托管在隔离的 AWS 实例上，供试用或规模化使用；云端定价与用量上限官方未在可核实页面明示，因此不写数字。
+- 额度上限 / Quota: 桌面版 MIT 开源、完全免费，官方口径是「无需账号、无需 API Key、无 token 限制」，在本机运行（macOS / Windows / Linux 均有）；官方定价页另明写 Docker 自部署免费。云端版由官方团队托管在隔离的 AWS 实例上，供试用或规模化使用；云端价格 2026-09-21 已在官方 /pricing 页直接抓到（Basic $50/月、Pro $99/月，见付费档位），但云端用量上限官方仍未在可核实页面明示，因此额度侧不写数字。
 - 撞墙表现 / What happens at the wall: 桌面版没有额度墙，能力取决于你接的模型与本机硬件（与 Ollama、LM Studio 同型）。要多人协作或托管运维就走云端版，费用与限制以官方 cloud 页当期为准。
-- 来源 / Source: AnythingLLM 官网与文档（anythingllm.com、docs.anythingllm.com，经搜索索引引文核实；云端版额度官方未明示）
-- 核实于 / Checked: 2026-08-04
+- 来源 / Source: AnythingLLM 官网与文档（anythingllm.com、docs.anythingllm.com，经搜索索引引文核实）；官方定价页 https://anythingllm.com/pricing（2026-09-21 直接抓取，云端价格来自该页；用量上限该页未写）
+- 核实于 / Checked: 2026-09-21
 - 详情页 / Page: https://baipiaoji.com/tools/anythingllm ｜ EN: https://baipiaoji.com/en/tools/anythingllm
 
 ## Gemini CLI
@@ -980,6 +980,22 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 - 来源 / Source: Gemini CLI 官方仓库配额文档与 Gemini API 速率限制页（github.com/google-gemini/gemini-cli/blob/main/docs/resources/quota-and-pricing.md、ai.google.dev/gemini-api/docs/rate-limits，经搜索索引引文核实）
 - 核实于 / Checked: 2026-08-05
 - 详情页 / Page: https://baipiaoji.com/tools/gemini-cli ｜ EN: https://baipiaoji.com/en/tools/gemini-cli
+
+## Kiro
+
+- 额度上限 / Quota: 永久免费档 Kiro Free：每月 50 credits。用社交账号或 AWS Builder ID 注册的免费用户可用 Claude Sonnet 4.5 与开放权重模型（官方点名 Qwen3 Coder Next、DeepSeek 3.2、MiniMax M2.1），访问受速率限制。credit 是「一次提示所做的工作」的计量单位：官方说简单提示可能不到 1 个，执行 spec 任务这类复杂提示通常超过 1 个，不同模型的消耗也不同——所以 50 credits 不等于 50 次提问。
+- 撞墙表现 / What happens at the wall: 额度按账单月重置，未用完不结转。加购 credits（$0.04/个）官方只列在付费档下，要继续用就得升级；付费档可用 Auto、Claude Sonnet 5、Claude Opus 5 等高级模型（并非所有国家/地区都能用全部模型）。订阅只能在 Kiro IDE、Kiro CLI、网页版、Kiro Crew、ACP 兼容 IDE 与开发自动化（如 CI/CD 里的审查）中使用，经 OpenClaw 这类第三方自动化外壳转发请求官方明确不允许。
+- 来源 / Source: Kiro 官方定价页 https://kiro.dev/pricing/（2026-09-25 直接抓取）
+- 核实于 / Checked: 2026-09-25
+- 详情页 / Page: https://baipiaoji.com/tools/kiro ｜ EN: https://baipiaoji.com/en/tools/kiro
+
+## OpenAI Codex
+
+- 额度上限 / Quota: ChatGPT Free（$0）含 Codex，官方定位是「在快速编程任务上体验 Codex 的能力」：在桌面端以标准速度使用 GPT-6 Luna，并标注 subject to rollout（逐步开放，未必人人立刻可用）；免费档不能生成图片。官方用量表只列 Plus 及以上各档，没有 Free 这一列——免费档每 5 小时能发多少条消息，官方没有公布，本站不替它估。
+- 撞墙表现 / What happens at the wall: 官方说明用量取决于模型、任务的大小与复杂度、在本地还是云端运行，给出的只是「每 5 小时本地消息数」的估算区间而非固定上限，另外可能还有每周上限；实际余量看用量面板。触顶后 Plus 与 Pro 可购买 ChatGPT credits 续用，所有用户也可以改用 API Key、按 API 标准价跑本地对话。Codex 与 ChatGPT Work 共用同一份用量。GPT-5.5 将于 2026-10-14 在 ChatGPT、ChatGPT Work 与 Codex 的所有档位下线（API 不受影响）。
+- 来源 / Source: OpenAI Codex 官方定价页 https://developers.openai.com/codex/pricing（2026-09-25 直接抓取）
+- 核实于 / Checked: 2026-09-25
+- 详情页 / Page: https://baipiaoji.com/tools/codex ｜ EN: https://baipiaoji.com/en/tools/codex
 
 ## DuckDuckGo AI Chat
 

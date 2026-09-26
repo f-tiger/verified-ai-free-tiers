@@ -18,7 +18,7 @@ No auth, streamable HTTP, nothing to install. Full setup docs for Claude Code / 
 
 | Tool | What it answers |
 |---|---|
-| `search_ai_tools` | Search the tool directory (219 tools today; every result reports `directory_size`): category / fully-free / works-in-China / capability tag / keyword |
+| `search_ai_tools` | Search the tool directory (221 tools today; every result reports `directory_size`): category / fully-free / works-in-China / capability tag / keyword |
 | `get_free_tier_limit` | The verified ceiling, what happens at the wall, official source, check date |
 | `compare_free_tiers` | Compare a whole category side by side (chat / coding / video / image / api) — what is metered, when it resets, whether a figure is published at all |
 | `check_free_tier_claim` | Fact-check a circulating claim against official sources — many popular figures have none |
@@ -49,7 +49,7 @@ The same site keeps a directory of AI agents and MCP servers. A record goes in o
 
 同一站点维护一份 AI Agent 与 MCP 服务器目录：官方页面或仓库当天可访问才收录，每个链接都带最近一次可访问的日期；来自官方 MCP 注册表的条目只展示发布者自己的描述，不改写。
 
-- 🧭 Directory（英文）: https://baipiaoji.com/en/agents/ ｜ 中文: https://baipiaoji.com/agents/ — <!--agents-count-->1058 records<!--/agents-count--> (list dated <!--agents-date-->2026-09-24<!--/agents-date-->)
+- 🧭 Directory（英文）: https://baipiaoji.com/en/agents/ ｜ 中文: https://baipiaoji.com/agents/ — <!--agents-count-->1092 records<!--/agents-count--> (list dated <!--agents-date-->2026-09-25<!--/agents-date-->)
 - 🔌 MCP servers with check dates: https://baipiaoji.com/en/agents/c/mcp
 - 📦 Whole list as JSON: https://baipiaoji.com/agents.json (English: https://baipiaoji.com/en/agents.json)
 - 📰 RSS of newly added records: https://baipiaoji.com/en/agents/feed.xml
@@ -61,8 +61,8 @@ Most "best free AI tools" lists repeat figures nobody can trace. This dataset do
 
 多数「免费 AI 工具榜单」转述的数字查不到出处。这份数据集反过来做：**只有官方页面写明的数字才发布**，并带上核实日期；官方没公布的如实标注「未公布」，而不是填一个猜的数——比如对话助手这一类，10 家里只有 1 家真的公布了条数。
 
-Figures that cannot be traced to an official page are deliberately absent — 129 of the 219 listed tools have a verified ceiling.
-查不到官方来源的数字一律缺席：目前 219 个工具中 129 条已核实。
+Figures that cannot be traced to an official page are deliberately absent — 131 of the 221 listed tools have a verified ceiling.
+查不到官方来源的数字一律缺席：目前 221 个工具中 131 条已核实。
 
 - 📄 In this repo: [limits.json](./limits.json) ｜ [limits.md](./limits.md) — synced daily from [baipiaoji.com](https://baipiaoji.com/en/)（每日自动同步）
 - 🧮 Structured comparison data（可比较的结构化对照，非散文）: https://baipiaoji.com/en/quotas.json — what each vendor meters, when it resets, whether a figure is published
@@ -82,14 +82,14 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [GitHub Copilot Free](https://baipiaoji.com/en/tools/github-copilot.html) | Copilot Free 档每月 2,000 次代码补全 + 50 次对话请求（对话含 Edits、按高级请求计），官方文档与官方博客双确认；无需订阅、VS Code 内直接开通。 | 2026-08-03 |
 | [通义灵码](https://baipiaoji.com/en/tools/tongyi-lingma.html) | 已于 2026-05-20 更名为 Qoder CN（官方公告）：社区版免费，基础代码补全与问答明确不计费；个人专业版每月 2,000 Credits（用于 Repowiki、Quest、Subagent、多文件生成、长文本等高级能力），当月有效不结转。 | 2026-08-03 |
 | [Trae（字节跳动）](https://baipiaoji.com/en/tools/trae.html) | 注意区分两个版本：国际版（trae.ai）免费档为每月 5,000 次代码补全 + 最多 2 个并发云任务（官方定价页明码），Pro $20/月不限补全；国内版（trae.com.cn）为独立 SKU，本条数字不适用于国内版。 | 2026-08-03 |
-| [Windsurf](https://baipiaoji.com/en/tools/windsurf.html) | 免费档每月 25 个 prompt credits（官方文档明码）；Tab 补全免费使用。注意：Windsurf 已并入 Cognition（Devin）体系，官方定价与文档页现以 Devin 品牌展示。 | 2026-08-03 |
+| [Windsurf](https://baipiaoji.com/en/tools/windsurf.html) | 免费档每月 25 个 prompt credits（官方文档明码）；Tab 补全免费使用。注意：Windsurf 已并入 Cognition（Devin）体系，官方定价与文档页现以 Devin 品牌展示。⚠ 2026-09-20 runner 直接抓取的官方定价页已不再列 credits 数字：Free 档写的是「Light quota to code with agents」、模型可用性受限、行内编辑与 Tab 补全不限量——25 credits 是 08-03 的官方文档口径，两者出现在不同日期的不同官方页面，本站两条都保留、不替你选，下次文档复核再定。 | 2026-08-03 |
 | [即梦 AI](https://baipiaoji.com/en/tools/jimeng.html) | 官方站内多处功能页给出同一口径：每天最多可获得 150 个免费积分；按官方举例，图像类操作约 3 积分一次（约 50 次生成/天），图像扩展每天最多 50 张。 | 2026-08-06 |
 | [LiblibAI 哩布哩布](https://baipiaoji.com/en/tools/liblib.html) | 免费用户每日登录赠送 20 积分，约可生成 40 张图或 2 个视频（官方会员页口径），可用平台上百个图像/视频模型，另含 3GB 云存储。 | 2026-08-06 |
 | [Canva 可画](https://baipiaoji.com/en/tools/canva.html) | 设计基础功能免费不限；AI 功能两套额度（官方帮助中心明码）：Magic Write 免费档共 50 次——是终身总量不是每月；其余 AI 工具走按月发放的 AI 用量池（免费档具体数额官方帮助中心按功能列示，随版本调整）。另有一条独立于 AI 的官方额度：**免费档可上传 5GB 素材**。 | 2026-08-06 |
 | [Recraft](https://baipiaoji.com/en/tools/recraft.html) | 免费档每天自动发放积分（官方页面同时出现 30/天与 50/天两种口径，以账户内实际到账为准）；栅格图 1 积分/张、矢量图 2 积分/张，日积分不结转。 | 2026-08-06 |
 | [可灵 AI（快手）](https://baipiaoji.com/en/tools/kling.html) | 非会员每日登录赠送 66 灵感值，约够生成 6 个标准模式视频（每个 5 秒）；当日不用不结转。 | 2026-08-06 |
 | [海螺 AI（MiniMax）](https://baipiaoji.com/en/tools/hailuo.html) | 官方口径：新模型上线期可能提供**每日免费试用积分**（当日刷新、不累积）；2025-06-18 起注册的新用户另有一次性欢迎积分包，**授予后 3 天到期**、每人限一份。官方同时给出积分消耗参考：768p 6 秒 25 积分、768p 10 秒 50 积分、1080p 6 秒 50 积分。 | 2026-08-06 |
-| [Runway](https://baipiaoji.com/en/tools/runway.html) | 免费计划为一次性发放 125 积分：不过期、但用完永不续发（官方帮助中心专页明码，注意不是「每月 125」）；可用模型范围也少于付费档。 | 2026-08-06 |
+| [Runway](https://baipiaoji.com/en/tools/runway.html) | 免费计划为一次性发放 125 积分：不过期、但用完永不续发（官方帮助中心专页明码，注意不是「每月 125」）；可用模型范围也少于付费档。2026-09-21 官方定价页复核一致：Free $0/月，125 积分一次性发放、不过期，含 5GB 素材存储。 | 2026-09-21 |
 | [Gamma](https://baipiaoji.com/en/tools/gamma.html) | 注册即得 400 credits，一次性发放，**不按月刷新**。官方给出的消耗量级参考：10 页卡片 + 5 张基础模型配图约 20–60 credits；20 页卡片 + 15 张高级模型配图约 320–1,070 credits——所以「够做几份演示」的说法只在用基础模型时成立。 | 2026-08-04 |
 | [讯飞星火](https://baipiaoji.com/en/tools/xinghuo.html) | 开发者侧（讯飞开放平台）默认免费版含一定免费资源、可按需升级；官方用户协议明确写着：**免费套餐的规则、可免费使用的产品与配置会随业务需求随时调整，不同时期的用户可能拿到不同规格**，部分产品限量领取。因此本站不写具体数额——不是查不到，是官方明说它会变。 | 2026-08-04 |
 | [WPS AI](https://baipiaoji.com/en/tools/wps-ai.html) | 免费版每日约 10 次 AI 额度（官方文章口径「10 次左右」），覆盖 AI 写作、改写、总结、生成 PPT 等基础场景。 | 2026-08-02 |
@@ -101,7 +101,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [豆包（字节跳动）](https://baipiaoji.com/en/tools/doubao.html) | 官方未公布具体数字。登录后可免费使用对话、写作、翻译、编程等功能，官网未标注条数或频次上限；Seedance 2.0 视频生成模型已接入豆包，厂商研究站称登录即可免费使用，但未公布免费生成条数；云盘对普通账号提供「一定额度」的免费云存储空间，官方未明示容量。《豆包付费服务协议》将会员分为标准/加强/高级三档，声明开通会员可「解锁 AI 功能的更多使用额度」，并把具体权益推给「产品页面及服务权益实际展示为准」——即数字只在登录后的会员订阅页/产品界面动态展示，站外无法核验。 | 2026-08-13 |
 | [文心一言（百度）](https://baipiaoji.com/en/tools/wenxin.html) | 官方公告自 2025-04-01 零时起全面免费：PC 与 App 端全部用户可用文心系列最新模型，此前需付费会员才能用的超长文档处理、专业级检索增强、高级 AI 绘画与深度搜索一并放开；文心 5.0 上线后 C 端同样免费可用。官方未公布对话条数或频率上限。 | 2026-08-17 |
 | [Claude](https://baipiaoji.com/en/tools/claude.html) | 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说**可发条数随需求量浮动**，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。2026-08-12 复核：机制与官方措辞均未变化，第三方广为流传的「每 5 小时 40 条」仍然只有第三方出处、官方从未公布，本站继续不采信。 | 2026-08-12 |
-| [Cursor](https://baipiaoji.com/en/tools/cursor.html) | Hobby 免费档存在且无需绑卡：可用 Agent、Chat 与 Tab 补全（Auto 模型），官方口径为「有限的 Agent 请求与补全」——**现行官方页面不公布具体数字**。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。 | 2026-08-03 |
+| [Cursor](https://baipiaoji.com/en/tools/cursor.html) | Hobby 免费档存在且无需绑卡。官方定价页 2026-09-25 的 Hobby 栏只列三项：无需绑卡、有限的 Agent 请求（Limited Agent requests）、可用 Composer——**仍不公布具体数字**。08-03 核实时写到的 Chat 与 Tab 补全（Auto 模型）这次没有出现在免费档清单里，页面也没有说它们被取消，本站只照录当日原文。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。 | 2026-09-25 |
 | [文心快码 Comate（百度）](https://baipiaoji.com/en/tools/comate.html) | 个人免费版：**轻量模型不限量使用**；智能体（Agent）请求按各模型消耗的 token 计额度，**额度用尽后自动切换回轻量模型继续可用**——不是直接停摆。个人免费版智能体额度的具体数值官方未在可核实页面明示，因此不写数字。 | 2026-08-04 |
 | [Cline](https://baipiaoji.com/en/tools/cline.html) | 扩展本身开源免费、对个人开发者完全免费，无订阅、无速率限制、对推理不加价；代码在本机运行、用你自己的 Key，不经过官方服务器。新用户另有一份免费额度（官方称无需绑卡，具体数额未在可核实引文中给出）。 | 2026-08-04 |
 | [Qoder（阿里）](https://baipiaoji.com/en/tools/qoder.html) | 新用户免费试用两周，含 1000 Credits、不限量代码补全、Next Edits、Quest 模式与 Repo Wiki。正式免费档的额度官方未公布明确数字，本站不写没锚点的数。 | 2026-08-02 |
@@ -127,7 +127,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [Suno](https://baipiaoji.com/en/tools/suno.html) | 免费档每天刷新 50 积分，官方口径约可创作 10 首短曲；音频上传上限 1 分钟；作品可设为仅链接可见或发布到个人页。 | 2026-08-04 |
 | [ElevenLabs](https://baipiaoji.com/en/tools/elevenlabs.html) | 免费档每月 10,000 credits，约合 10 分钟 Multilingual v2 高质量语音合成（Flash/Turbo 系按 0.5–1 credit/字符折算，能换更多分钟数）。 | 2026-08-02 |
 | [Fish Audio](https://baipiaoji.com/en/tools/fish-audio.html) | 免费档每月 8,000 积分、每月重置，约合 7 分钟 S1 高质量音频（每分钟约 600–625 积分，官方定价页明码）；另有官方博客宣布的 S2.1 Pro 免费 TTS API（合理使用范围内不限量）。 | 2026-08-03 |
-| [DeepL](https://baipiaoji.com/en/tools/deepl.html) | 开发者 API Free 档每月 500,000 字符，无每日限制、用完当月即停（官方文档明示）。网页免费版单次翻译有字符上限，但官方未公布具体数字，超长文本需分段。 | 2026-08-02 |
+| [DeepL](https://baipiaoji.com/en/tools/deepl.html) | 开发者 API Free 档每月 500,000 字符，无每日限制、用完当月即停（官方文档明示）。网页免费版单次翻译有字符上限，但官方未公布具体数字，超长文本需分段。2026-09-21 官方定价页的档位对比表补上了网页/应用免费版的月度口径：文本翻译 50,000 字符/用户/月、文件翻译 1 份/月、保存 1 次翻译（单次粘贴的字符上限官方仍未给数字）。 | 2026-09-21 |
 | [彩云小译](https://baipiaoji.com/en/tools/caiyun.html) | 网页/文本翻译基础功能免费使用；开发者侧官方明码：开放平台注册即送 100 万字符翻译额度、有效期 1 个月、到期自动清零（按原文字符计、含空格标点）。 | 2026-08-03 |
 | [QuillBot](https://baipiaoji.com/en/tools/quillbot.html) | 免费版按「单次输入」限长：改写器（Paraphraser）单次最多 125 词；摘要器（Summarizer）单次最多 1,200 词（均为官方帮助中心明码）。改写模式也仅开放基础两种。 | 2026-08-03 |
 | [Grammarly](https://baipiaoji.com/en/tools/grammarly.html) | 免费档每月 100 次生成式 AI prompts（官方支持中心明码；Premium 为 1,000 次/月，Pro/教育版 2,000 次）；基础语法与拼写检查不占该额度。 | 2026-08-03 |
@@ -146,7 +146,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [Continue](https://baipiaoji.com/en/tools/continue.html) | Apache 2.0 开源（仓库 LICENSE 可查），VS Code / JetBrains 插件与 CLI 全部免费，无额度概念；支持自带任意模型供应商（OpenAI、Anthropic、Azure、Mistral 等）用于对话、改写、补全与向量化，官方文档还给出自托管开源模型的部署指引。 | 2026-08-04 |
 | [Aider](https://baipiaoji.com/en/tools/aider.html) | Apache 2.0 开源、经 PyPI 分发，工具本身完全免费无额度概念；BYO-LLM 设计：自带各家 API Key，或直接指向本地 Ollama / LM Studio / 任意 OpenAI 兼容端点——跑本地模型时整条链路零成本。直接在本地 Git 仓库里改代码并自动提交。 | 2026-08-04 |
 | [v0（Vercel）](https://baipiaoji.com/en/tools/v0.html) | 免费档现按 tokens 折算 credits 计量（官方博客明示新定价：输入/输出 tokens 计费，并称新制下免费档可用量比旧制更多）；旧口径「每天 7 条消息」已被 token 计量取代，攻略再引用即过时。具体免费 credits 数额以账户页实时显示为准。 | 2026-08-03 |
-| [Bolt.new](https://baipiaoji.com/en/tools/bolt.html) | 免费档双重上限（官方支持文档明码）：每天最多 300,000 tokens、每月总量 1,000,000 tokens——注意网上流传的「每天 150K」是旧口径。 | 2026-08-03 |
+| [Bolt.new](https://baipiaoji.com/en/tools/bolt.html) | 免费档双重上限（官方支持文档明码）：每天最多 300,000 tokens、每月总量 1,000,000 tokens——注意网上流传的「每天 150K」是旧口径。2026-09-21 官方定价页复核一致：Free $0 仍写 300K tokens 日上限、1M tokens 月上限；免费档另有网站带 Bolt 品牌标识、单文件上传 10MB、托管站点最多 333k web requests、数据库个数不限。 | 2026-09-21 |
 | [Lovable](https://baipiaoji.com/en/tools/lovable.html) | 免费工作区每天发 5 个 build credits，但每自然月上限 30 个（官方文档明码）——实际等于每月只有前 6 天有发放、之后当月归零，这是攻略普遍漏掉的关键机制；另送 4 个应用内 AI 功能试用 credits。 | 2026-08-03 |
 | [Replit](https://baipiaoji.com/en/tools/replit.html) | Starter 免费档：Agent 用量为每日发放 credits、月度封顶（官方文档明示机制，数额未公布不采信第三方）；另有月度发布 credits，可免费发布 1 个应用。 | 2026-08-03 |
 | [CodeBuddy（腾讯）](https://baipiaoji.com/en/tools/codebuddy.html) | 新用户免费试用 Pro 两周：500 Credits + 每日 50 Credits（每日零点重置）。正式免费档的额度官方未公布明确数字。 | 2026-08-02 |
@@ -183,7 +183,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [扣子 Coze（字节）](https://baipiaoji.com/en/tools/coze.html) | 个人版分五档（含免费档），按「资源点」计量。**免费档具体资源点数官方未在可核实页面明示**，因此不写数字；团队版于 2026-06-22 正式上线，另有多档。 | 2026-08-04 |
 | [Dify](https://baipiaoji.com/en/tools/dify.html) | 开源版自部署完全免费、无额度限制。云端 Sandbox 免费档：赠送 200 次模型调用额度（官方口径 200 OpenAI calls）、无需绑卡，团队人数与资源有上限，额度内可体验当前版本全部功能。 | 2026-08-04 |
 | [n8n](https://baipiaoji.com/en/tools/n8n.html) | 社区版（自托管）永久免费、功能近乎完整：**工作流数量、步骤数、执行次数与用户数均不限**。用邮箱注册社区版可免费拿一个 license key，额外解锁三项：文件夹整理、编辑器内调试（复制与固定执行数据）、自定义执行元数据。 | 2026-08-04 |
-| [FastGPT](https://baipiaoji.com/en/tools/fastgpt.html) | 开源社区版自部署免费，含 Agent 构建、工作流、知识库全部核心功能。云端免费版有 AI 积分与知识库索引额度（官方文档确认这两种计量存在，但免费档具体数值未在可核实引文中给出，不猜测）。 | 2026-08-04 |
+| [FastGPT](https://baipiaoji.com/en/tools/fastgpt.html) | 开源社区版自部署免费，含 Agent 构建、工作流、知识库全部核心功能。云端免费版有 AI 积分与知识库索引额度（官方文档确认这两种计量存在，但免费档具体数值未在可核实引文中给出，不猜测）——2026-09-21 官方定价页（fastgpt.cn/price）已直接抓到免费版数字：¥0/月，100 AI 积分、600 组知识库索引、1 个团队成员、10 个 Agent、3 个知识库、对话记录保留 30 天、30 QPM（此前 08-04 只能确认两种计量存在、数值未在引文中给出，现已补齐）。 | 2026-09-21 |
 | [RAGFlow](https://baipiaoji.com/en/tools/ragflow.html) | Apache 2.0 开源、自托管完全免费、无额度概念。官方文档给出的是**技术上限而非商业额度**：单次上传总大小 1GB（docker/.env 里 MAX_CONTENT_LENGTH 可自行调大）、批量上传单批 32 个文件，**账号文件总数不设上限**；改用 HTTP API 或 Python SDK 上传时，32 个的批量限制自动解除。 | 2026-08-04 |
 | [Figma](https://baipiaoji.com/en/tools/figma.html) | Starter 免费档：1 个团队、1 个项目、团队内最多 3 个设计文件、每个文件最多 3 页；个人草稿（Drafts）文件数不限；协作者/编辑者人数不限。 | 2026-08-06 |
 | [即时设计](https://baipiaoji.com/en/tools/jsdesign.html) | 官方口径：基础版永久免费，文件数、图层数、资源库容量、云端字体数、文件协作者、团队数量**均不限**；模板、插件与内置工具对个人及中小团队免费。 | 2026-08-06 |
@@ -196,8 +196,10 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [国家反诈中心](https://baipiaoji.com/en/tools/guojia-fanzha.html) | 「AI 内容鉴定」完全免费、每日最多 10 次，覆盖图像/视频/文本/音频四类。单次输入上限：图片 30KB–5MB、视频 100KB–100MB、文本 10–5000 字、人声音频不超过 10 分钟。 | 2026-08-04 |
 | [Ollama](https://baipiaoji.com/en/tools/ollama.html) | 无任何额度概念：MIT 许可开源（仓库 LICENSE 可查），本地运行、不限次数、不限 token、无需联网、数据不出本机。**2026-08-04 复核新增**：Ollama 现另有云端服务（Cloud / Turbo 预览），用数据中心级硬件跑 gpt-oss:20b、gpt-oss:120b、deepseek-v3.1:671b 等模型，官方称免费档也有完整上下文长度与「宽松」额度——但**免费档的具体数额未在可核实页面明示**，因此不写数字。本地跑与云端跑是两条线，本地那条依然没有任何额度概念。 | 2026-08-04 |
 | [LM Studio](https://baipiaoji.com/en/tools/lm-studio.html) | 客户端本身免费、无额度概念：个人一直免费，且官方已**取消商用需单独申请许可的要求**——公司/团队直接用即可，不必填表或联系官方。团队可免费建公开 Hub 组织配合使用。 | 2026-08-04 |
-| [AnythingLLM](https://baipiaoji.com/en/tools/anythingllm.html) | 桌面版 MIT 开源、完全免费，官方口径是「**无需账号、无需 API Key、无 token 限制**」，在本机运行（macOS / Windows / Linux 均有）。云端版由官方团队托管在隔离的 AWS 实例上，供试用或规模化使用；**云端定价与用量上限官方未在可核实页面明示**，因此不写数字。 | 2026-08-04 |
+| [AnythingLLM](https://baipiaoji.com/en/tools/anythingllm.html) | 桌面版 MIT 开源、完全免费，官方口径是「**无需账号、无需 API Key、无 token 限制**」，在本机运行（macOS / Windows / Linux 均有）；官方定价页另明写 Docker 自部署免费。云端版由官方团队托管在隔离的 AWS 实例上，供试用或规模化使用；**云端价格 2026-09-21 已在官方 /pricing 页直接抓到（Basic $50/月、Pro $99/月，见付费档位），但云端用量上限官方仍未在可核实页面明示**，因此额度侧不写数字。 | 2026-09-21 |
 | [Gemini CLI](https://baipiaoji.com/en/tools/gemini-cli.html) | 用 Google 账号登录的免费档：每天 1,000 次模型请求，Flash 上限 60 次/分钟，默认走 Gemini Flash。官方文档同时明确两件容易被误读的事：这 1,000 次是 Pro 与 Flash 混合计的，**不等于每天 1,000 次 Gemini 2.5 Pro 请求**；而且**一次提问可能触发几十次模型请求**——「1,000 次」不是 1,000 轮对话。 | 2026-08-05 |
+| [Kiro](https://baipiaoji.com/en/tools/kiro.html) | 永久免费档 Kiro Free：每月 50 credits。用社交账号或 AWS Builder ID 注册的免费用户可用 Claude Sonnet 4.5 与开放权重模型（官方点名 Qwen3 Coder Next、DeepSeek 3.2、MiniMax M2.1），访问受速率限制。credit 是「一次提示所做的工作」的计量单位：官方说简单提示可能不到 1 个，执行 spec 任务这类复杂提示通常超过 1 个，不同模型的消耗也不同——所以 50 credits 不等于 50 次提问。 | 2026-09-25 |
+| [OpenAI Codex](https://baipiaoji.com/en/tools/codex.html) | ChatGPT Free（$0）含 Codex，官方定位是「在快速编程任务上体验 Codex 的能力」：在桌面端以标准速度使用 GPT-6 Luna，并标注 subject to rollout（逐步开放，未必人人立刻可用）；免费档不能生成图片。**官方用量表只列 Plus 及以上各档，没有 Free 这一列**——免费档每 5 小时能发多少条消息，官方没有公布，本站不替它估。 | 2026-09-25 |
 | [DuckDuckGo AI Chat](https://baipiaoji.com/en/tools/duckduckgo-ai.html) | 免注册、匿名、免费——官方确认免费档可用模型含 GPT-5.4 mini/nano、Claude 4.5 Haiku、Mistral Small 4、gpt-oss-120b 等；每日用量有上限，但官方刻意不公布具体条数（限额匿名执行，与其隐私定位一致），聊天记录不用于模型训练。 | 2026-08-17 |
 | [Character.AI](https://baipiaoji.com/en/tools/character-ai.html) | 免费档不限消息数——官方 FAQ 明确基础聊天体验保持免费且无限量，全部角色库与社区功能开放，无需绑卡。 | 2026-08-17 |
 | [Sourcegraph Cody](https://baipiaoji.com/en/tools/cody.html) | 个人免费档已不存在：Sourcegraph 官方公告 Cody Free 与 Cody Pro 自 2025-06-25 停止新注册、2025-07-23 停止服务，Cody 现仅存面向企业的 Enterprise 版（按席位年约报价）。官方给个人用户的去处是其新产品 Amp：注册送 $10 试用额度，原 Cody Pro 用户可写邮件申领 $40。 | 2026-08-17 |
@@ -220,14 +222,14 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [GitHub Copilot Free](https://baipiaoji.com/tools/github-copilot) | Copilot Free 档每月 2,000 次代码补全 + 50 次对话请求（对话含 Edits、按高级请求计），官方文档与官方博客双确认；无需订阅、VS Code 内直接开通。 | 2026-08-03 |
 | [通义灵码](https://baipiaoji.com/tools/tongyi-lingma) | 已于 2026-05-20 更名为 Qoder CN（官方公告）：社区版免费，基础代码补全与问答明确不计费；个人专业版每月 2,000 Credits（用于 Repowiki、Quest、Subagent、多文件生成、长文本等高级能力），当月有效不结转。 | 2026-08-03 |
 | [Trae（字节跳动）](https://baipiaoji.com/tools/trae) | 注意区分两个版本：国际版（trae.ai）免费档为每月 5,000 次代码补全 + 最多 2 个并发云任务（官方定价页明码），Pro $20/月不限补全；国内版（trae.com.cn）为独立 SKU，本条数字不适用于国内版。 | 2026-08-03 |
-| [Windsurf](https://baipiaoji.com/tools/windsurf) | 免费档每月 25 个 prompt credits（官方文档明码）；Tab 补全免费使用。注意：Windsurf 已并入 Cognition（Devin）体系，官方定价与文档页现以 Devin 品牌展示。 | 2026-08-03 |
+| [Windsurf](https://baipiaoji.com/tools/windsurf) | 免费档每月 25 个 prompt credits（官方文档明码）；Tab 补全免费使用。注意：Windsurf 已并入 Cognition（Devin）体系，官方定价与文档页现以 Devin 品牌展示。⚠ 2026-09-20 runner 直接抓取的官方定价页已不再列 credits 数字：Free 档写的是「Light quota to code with agents」、模型可用性受限、行内编辑与 Tab 补全不限量——25 credits 是 08-03 的官方文档口径，两者出现在不同日期的不同官方页面，本站两条都保留、不替你选，下次文档复核再定。 | 2026-08-03 |
 | [即梦 AI](https://baipiaoji.com/tools/jimeng) | 官方站内多处功能页给出同一口径：每天最多可获得 150 个免费积分；按官方举例，图像类操作约 3 积分一次（约 50 次生成/天），图像扩展每天最多 50 张。 | 2026-08-06 |
 | [LiblibAI 哩布哩布](https://baipiaoji.com/tools/liblib) | 免费用户每日登录赠送 20 积分，约可生成 40 张图或 2 个视频（官方会员页口径），可用平台上百个图像/视频模型，另含 3GB 云存储。 | 2026-08-06 |
 | [Canva 可画](https://baipiaoji.com/tools/canva) | 设计基础功能免费不限；AI 功能两套额度（官方帮助中心明码）：Magic Write 免费档共 50 次——是终身总量不是每月；其余 AI 工具走按月发放的 AI 用量池（免费档具体数额官方帮助中心按功能列示，随版本调整）。另有一条独立于 AI 的官方额度：**免费档可上传 5GB 素材**。 | 2026-08-06 |
 | [Recraft](https://baipiaoji.com/tools/recraft) | 免费档每天自动发放积分（官方页面同时出现 30/天与 50/天两种口径，以账户内实际到账为准）；栅格图 1 积分/张、矢量图 2 积分/张，日积分不结转。 | 2026-08-06 |
 | [可灵 AI（快手）](https://baipiaoji.com/tools/kling) | 非会员每日登录赠送 66 灵感值，约够生成 6 个标准模式视频（每个 5 秒）；当日不用不结转。 | 2026-08-06 |
 | [海螺 AI（MiniMax）](https://baipiaoji.com/tools/hailuo) | 官方口径：新模型上线期可能提供**每日免费试用积分**（当日刷新、不累积）；2025-06-18 起注册的新用户另有一次性欢迎积分包，**授予后 3 天到期**、每人限一份。官方同时给出积分消耗参考：768p 6 秒 25 积分、768p 10 秒 50 积分、1080p 6 秒 50 积分。 | 2026-08-06 |
-| [Runway](https://baipiaoji.com/tools/runway) | 免费计划为一次性发放 125 积分：不过期、但用完永不续发（官方帮助中心专页明码，注意不是「每月 125」）；可用模型范围也少于付费档。 | 2026-08-06 |
+| [Runway](https://baipiaoji.com/tools/runway) | 免费计划为一次性发放 125 积分：不过期、但用完永不续发（官方帮助中心专页明码，注意不是「每月 125」）；可用模型范围也少于付费档。2026-09-21 官方定价页复核一致：Free $0/月，125 积分一次性发放、不过期，含 5GB 素材存储。 | 2026-09-21 |
 | [Gamma](https://baipiaoji.com/tools/gamma) | 注册即得 400 credits，一次性发放，**不按月刷新**。官方给出的消耗量级参考：10 页卡片 + 5 张基础模型配图约 20–60 credits；20 页卡片 + 15 张高级模型配图约 320–1,070 credits——所以「够做几份演示」的说法只在用基础模型时成立。 | 2026-08-04 |
 | [讯飞星火](https://baipiaoji.com/tools/xinghuo) | 开发者侧（讯飞开放平台）默认免费版含一定免费资源、可按需升级；官方用户协议明确写着：**免费套餐的规则、可免费使用的产品与配置会随业务需求随时调整，不同时期的用户可能拿到不同规格**，部分产品限量领取。因此本站不写具体数额——不是查不到，是官方明说它会变。 | 2026-08-04 |
 | [WPS AI](https://baipiaoji.com/tools/wps-ai) | 免费版每日约 10 次 AI 额度（官方文章口径「10 次左右」），覆盖 AI 写作、改写、总结、生成 PPT 等基础场景。 | 2026-08-02 |
@@ -239,7 +241,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [豆包（字节跳动）](https://baipiaoji.com/tools/doubao) | 官方未公布具体数字。登录后可免费使用对话、写作、翻译、编程等功能，官网未标注条数或频次上限；Seedance 2.0 视频生成模型已接入豆包，厂商研究站称登录即可免费使用，但未公布免费生成条数；云盘对普通账号提供「一定额度」的免费云存储空间，官方未明示容量。《豆包付费服务协议》将会员分为标准/加强/高级三档，声明开通会员可「解锁 AI 功能的更多使用额度」，并把具体权益推给「产品页面及服务权益实际展示为准」——即数字只在登录后的会员订阅页/产品界面动态展示，站外无法核验。 | 2026-08-13 |
 | [文心一言（百度）](https://baipiaoji.com/tools/wenxin) | 官方公告自 2025-04-01 零时起全面免费：PC 与 App 端全部用户可用文心系列最新模型，此前需付费会员才能用的超长文档处理、专业级检索增强、高级 AI 绘画与深度搜索一并放开；文心 5.0 上线后 C 端同样免费可用。官方未公布对话条数或频率上限。 | 2026-08-17 |
 | [Claude](https://baipiaoji.com/tools/claude) | 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说**可发条数随需求量浮动**，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。2026-08-12 复核：机制与官方措辞均未变化，第三方广为流传的「每 5 小时 40 条」仍然只有第三方出处、官方从未公布，本站继续不采信。 | 2026-08-12 |
-| [Cursor](https://baipiaoji.com/tools/cursor) | Hobby 免费档存在且无需绑卡：可用 Agent、Chat 与 Tab 补全（Auto 模型），官方口径为「有限的 Agent 请求与补全」——**现行官方页面不公布具体数字**。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。 | 2026-08-03 |
+| [Cursor](https://baipiaoji.com/tools/cursor) | Hobby 免费档存在且无需绑卡。官方定价页 2026-09-25 的 Hobby 栏只列三项：无需绑卡、有限的 Agent 请求（Limited Agent requests）、可用 Composer——**仍不公布具体数字**。08-03 核实时写到的 Chat 与 Tab 补全（Auto 模型）这次没有出现在免费档清单里，页面也没有说它们被取消，本站只照录当日原文。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。 | 2026-09-25 |
 | [文心快码 Comate（百度）](https://baipiaoji.com/tools/comate) | 个人免费版：**轻量模型不限量使用**；智能体（Agent）请求按各模型消耗的 token 计额度，**额度用尽后自动切换回轻量模型继续可用**——不是直接停摆。个人免费版智能体额度的具体数值官方未在可核实页面明示，因此不写数字。 | 2026-08-04 |
 | [Cline](https://baipiaoji.com/tools/cline) | 扩展本身开源免费、对个人开发者完全免费，无订阅、无速率限制、对推理不加价；代码在本机运行、用你自己的 Key，不经过官方服务器。新用户另有一份免费额度（官方称无需绑卡，具体数额未在可核实引文中给出）。 | 2026-08-04 |
 | [Qoder（阿里）](https://baipiaoji.com/tools/qoder) | 新用户免费试用两周，含 1000 Credits、不限量代码补全、Next Edits、Quest 模式与 Repo Wiki。正式免费档的额度官方未公布明确数字，本站不写没锚点的数。 | 2026-08-02 |
@@ -265,7 +267,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [Suno](https://baipiaoji.com/tools/suno) | 免费档每天刷新 50 积分，官方口径约可创作 10 首短曲；音频上传上限 1 分钟；作品可设为仅链接可见或发布到个人页。 | 2026-08-04 |
 | [ElevenLabs](https://baipiaoji.com/tools/elevenlabs) | 免费档每月 10,000 credits，约合 10 分钟 Multilingual v2 高质量语音合成（Flash/Turbo 系按 0.5–1 credit/字符折算，能换更多分钟数）。 | 2026-08-02 |
 | [Fish Audio](https://baipiaoji.com/tools/fish-audio) | 免费档每月 8,000 积分、每月重置，约合 7 分钟 S1 高质量音频（每分钟约 600–625 积分，官方定价页明码）；另有官方博客宣布的 S2.1 Pro 免费 TTS API（合理使用范围内不限量）。 | 2026-08-03 |
-| [DeepL](https://baipiaoji.com/tools/deepl) | 开发者 API Free 档每月 500,000 字符，无每日限制、用完当月即停（官方文档明示）。网页免费版单次翻译有字符上限，但官方未公布具体数字，超长文本需分段。 | 2026-08-02 |
+| [DeepL](https://baipiaoji.com/tools/deepl) | 开发者 API Free 档每月 500,000 字符，无每日限制、用完当月即停（官方文档明示）。网页免费版单次翻译有字符上限，但官方未公布具体数字，超长文本需分段。2026-09-21 官方定价页的档位对比表补上了网页/应用免费版的月度口径：文本翻译 50,000 字符/用户/月、文件翻译 1 份/月、保存 1 次翻译（单次粘贴的字符上限官方仍未给数字）。 | 2026-09-21 |
 | [彩云小译](https://baipiaoji.com/tools/caiyun) | 网页/文本翻译基础功能免费使用；开发者侧官方明码：开放平台注册即送 100 万字符翻译额度、有效期 1 个月、到期自动清零（按原文字符计、含空格标点）。 | 2026-08-03 |
 | [QuillBot](https://baipiaoji.com/tools/quillbot) | 免费版按「单次输入」限长：改写器（Paraphraser）单次最多 125 词；摘要器（Summarizer）单次最多 1,200 词（均为官方帮助中心明码）。改写模式也仅开放基础两种。 | 2026-08-03 |
 | [Grammarly](https://baipiaoji.com/tools/grammarly) | 免费档每月 100 次生成式 AI prompts（官方支持中心明码；Premium 为 1,000 次/月，Pro/教育版 2,000 次）；基础语法与拼写检查不占该额度。 | 2026-08-03 |
@@ -284,7 +286,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [Continue](https://baipiaoji.com/tools/continue) | Apache 2.0 开源（仓库 LICENSE 可查），VS Code / JetBrains 插件与 CLI 全部免费，无额度概念；支持自带任意模型供应商（OpenAI、Anthropic、Azure、Mistral 等）用于对话、改写、补全与向量化，官方文档还给出自托管开源模型的部署指引。 | 2026-08-04 |
 | [Aider](https://baipiaoji.com/tools/aider) | Apache 2.0 开源、经 PyPI 分发，工具本身完全免费无额度概念；BYO-LLM 设计：自带各家 API Key，或直接指向本地 Ollama / LM Studio / 任意 OpenAI 兼容端点——跑本地模型时整条链路零成本。直接在本地 Git 仓库里改代码并自动提交。 | 2026-08-04 |
 | [v0（Vercel）](https://baipiaoji.com/tools/v0) | 免费档现按 tokens 折算 credits 计量（官方博客明示新定价：输入/输出 tokens 计费，并称新制下免费档可用量比旧制更多）；旧口径「每天 7 条消息」已被 token 计量取代，攻略再引用即过时。具体免费 credits 数额以账户页实时显示为准。 | 2026-08-03 |
-| [Bolt.new](https://baipiaoji.com/tools/bolt) | 免费档双重上限（官方支持文档明码）：每天最多 300,000 tokens、每月总量 1,000,000 tokens——注意网上流传的「每天 150K」是旧口径。 | 2026-08-03 |
+| [Bolt.new](https://baipiaoji.com/tools/bolt) | 免费档双重上限（官方支持文档明码）：每天最多 300,000 tokens、每月总量 1,000,000 tokens——注意网上流传的「每天 150K」是旧口径。2026-09-21 官方定价页复核一致：Free $0 仍写 300K tokens 日上限、1M tokens 月上限；免费档另有网站带 Bolt 品牌标识、单文件上传 10MB、托管站点最多 333k web requests、数据库个数不限。 | 2026-09-21 |
 | [Lovable](https://baipiaoji.com/tools/lovable) | 免费工作区每天发 5 个 build credits，但每自然月上限 30 个（官方文档明码）——实际等于每月只有前 6 天有发放、之后当月归零，这是攻略普遍漏掉的关键机制；另送 4 个应用内 AI 功能试用 credits。 | 2026-08-03 |
 | [Replit](https://baipiaoji.com/tools/replit) | Starter 免费档：Agent 用量为每日发放 credits、月度封顶（官方文档明示机制，数额未公布不采信第三方）；另有月度发布 credits，可免费发布 1 个应用。 | 2026-08-03 |
 | [CodeBuddy（腾讯）](https://baipiaoji.com/tools/codebuddy) | 新用户免费试用 Pro 两周：500 Credits + 每日 50 Credits（每日零点重置）。正式免费档的额度官方未公布明确数字。 | 2026-08-02 |
@@ -321,7 +323,7 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [扣子 Coze（字节）](https://baipiaoji.com/tools/coze) | 个人版分五档（含免费档），按「资源点」计量。**免费档具体资源点数官方未在可核实页面明示**，因此不写数字；团队版于 2026-06-22 正式上线，另有多档。 | 2026-08-04 |
 | [Dify](https://baipiaoji.com/tools/dify) | 开源版自部署完全免费、无额度限制。云端 Sandbox 免费档：赠送 200 次模型调用额度（官方口径 200 OpenAI calls）、无需绑卡，团队人数与资源有上限，额度内可体验当前版本全部功能。 | 2026-08-04 |
 | [n8n](https://baipiaoji.com/tools/n8n) | 社区版（自托管）永久免费、功能近乎完整：**工作流数量、步骤数、执行次数与用户数均不限**。用邮箱注册社区版可免费拿一个 license key，额外解锁三项：文件夹整理、编辑器内调试（复制与固定执行数据）、自定义执行元数据。 | 2026-08-04 |
-| [FastGPT](https://baipiaoji.com/tools/fastgpt) | 开源社区版自部署免费，含 Agent 构建、工作流、知识库全部核心功能。云端免费版有 AI 积分与知识库索引额度（官方文档确认这两种计量存在，但免费档具体数值未在可核实引文中给出，不猜测）。 | 2026-08-04 |
+| [FastGPT](https://baipiaoji.com/tools/fastgpt) | 开源社区版自部署免费，含 Agent 构建、工作流、知识库全部核心功能。云端免费版有 AI 积分与知识库索引额度（官方文档确认这两种计量存在，但免费档具体数值未在可核实引文中给出，不猜测）——2026-09-21 官方定价页（fastgpt.cn/price）已直接抓到免费版数字：¥0/月，100 AI 积分、600 组知识库索引、1 个团队成员、10 个 Agent、3 个知识库、对话记录保留 30 天、30 QPM（此前 08-04 只能确认两种计量存在、数值未在引文中给出，现已补齐）。 | 2026-09-21 |
 | [RAGFlow](https://baipiaoji.com/tools/ragflow) | Apache 2.0 开源、自托管完全免费、无额度概念。官方文档给出的是**技术上限而非商业额度**：单次上传总大小 1GB（docker/.env 里 MAX_CONTENT_LENGTH 可自行调大）、批量上传单批 32 个文件，**账号文件总数不设上限**；改用 HTTP API 或 Python SDK 上传时，32 个的批量限制自动解除。 | 2026-08-04 |
 | [Figma](https://baipiaoji.com/tools/figma) | Starter 免费档：1 个团队、1 个项目、团队内最多 3 个设计文件、每个文件最多 3 页；个人草稿（Drafts）文件数不限；协作者/编辑者人数不限。 | 2026-08-06 |
 | [即时设计](https://baipiaoji.com/tools/jsdesign) | 官方口径：基础版永久免费，文件数、图层数、资源库容量、云端字体数、文件协作者、团队数量**均不限**；模板、插件与内置工具对个人及中小团队免费。 | 2026-08-06 |
@@ -334,8 +336,10 @@ Figures that cannot be traced to an official page are deliberately absent — 12
 | [国家反诈中心](https://baipiaoji.com/tools/guojia-fanzha) | 「AI 内容鉴定」完全免费、每日最多 10 次，覆盖图像/视频/文本/音频四类。单次输入上限：图片 30KB–5MB、视频 100KB–100MB、文本 10–5000 字、人声音频不超过 10 分钟。 | 2026-08-04 |
 | [Ollama](https://baipiaoji.com/tools/ollama) | 无任何额度概念：MIT 许可开源（仓库 LICENSE 可查），本地运行、不限次数、不限 token、无需联网、数据不出本机。**2026-08-04 复核新增**：Ollama 现另有云端服务（Cloud / Turbo 预览），用数据中心级硬件跑 gpt-oss:20b、gpt-oss:120b、deepseek-v3.1:671b 等模型，官方称免费档也有完整上下文长度与「宽松」额度——但**免费档的具体数额未在可核实页面明示**，因此不写数字。本地跑与云端跑是两条线，本地那条依然没有任何额度概念。 | 2026-08-04 |
 | [LM Studio](https://baipiaoji.com/tools/lm-studio) | 客户端本身免费、无额度概念：个人一直免费，且官方已**取消商用需单独申请许可的要求**——公司/团队直接用即可，不必填表或联系官方。团队可免费建公开 Hub 组织配合使用。 | 2026-08-04 |
-| [AnythingLLM](https://baipiaoji.com/tools/anythingllm) | 桌面版 MIT 开源、完全免费，官方口径是「**无需账号、无需 API Key、无 token 限制**」，在本机运行（macOS / Windows / Linux 均有）。云端版由官方团队托管在隔离的 AWS 实例上，供试用或规模化使用；**云端定价与用量上限官方未在可核实页面明示**，因此不写数字。 | 2026-08-04 |
+| [AnythingLLM](https://baipiaoji.com/tools/anythingllm) | 桌面版 MIT 开源、完全免费，官方口径是「**无需账号、无需 API Key、无 token 限制**」，在本机运行（macOS / Windows / Linux 均有）；官方定价页另明写 Docker 自部署免费。云端版由官方团队托管在隔离的 AWS 实例上，供试用或规模化使用；**云端价格 2026-09-21 已在官方 /pricing 页直接抓到（Basic $50/月、Pro $99/月，见付费档位），但云端用量上限官方仍未在可核实页面明示**，因此额度侧不写数字。 | 2026-09-21 |
 | [Gemini CLI](https://baipiaoji.com/tools/gemini-cli) | 用 Google 账号登录的免费档：每天 1,000 次模型请求，Flash 上限 60 次/分钟，默认走 Gemini Flash。官方文档同时明确两件容易被误读的事：这 1,000 次是 Pro 与 Flash 混合计的，**不等于每天 1,000 次 Gemini 2.5 Pro 请求**；而且**一次提问可能触发几十次模型请求**——「1,000 次」不是 1,000 轮对话。 | 2026-08-05 |
+| [Kiro](https://baipiaoji.com/tools/kiro) | 永久免费档 Kiro Free：每月 50 credits。用社交账号或 AWS Builder ID 注册的免费用户可用 Claude Sonnet 4.5 与开放权重模型（官方点名 Qwen3 Coder Next、DeepSeek 3.2、MiniMax M2.1），访问受速率限制。credit 是「一次提示所做的工作」的计量单位：官方说简单提示可能不到 1 个，执行 spec 任务这类复杂提示通常超过 1 个，不同模型的消耗也不同——所以 50 credits 不等于 50 次提问。 | 2026-09-25 |
+| [OpenAI Codex](https://baipiaoji.com/tools/codex) | ChatGPT Free（$0）含 Codex，官方定位是「在快速编程任务上体验 Codex 的能力」：在桌面端以标准速度使用 GPT-6 Luna，并标注 subject to rollout（逐步开放，未必人人立刻可用）；免费档不能生成图片。**官方用量表只列 Plus 及以上各档，没有 Free 这一列**——免费档每 5 小时能发多少条消息，官方没有公布，本站不替它估。 | 2026-09-25 |
 | [DuckDuckGo AI Chat](https://baipiaoji.com/tools/duckduckgo-ai) | 免注册、匿名、免费——官方确认免费档可用模型含 GPT-5.4 mini/nano、Claude 4.5 Haiku、Mistral Small 4、gpt-oss-120b 等；每日用量有上限，但官方刻意不公布具体条数（限额匿名执行，与其隐私定位一致），聊天记录不用于模型训练。 | 2026-08-17 |
 | [Character.AI](https://baipiaoji.com/tools/character-ai) | 免费档不限消息数——官方 FAQ 明确基础聊天体验保持免费且无限量，全部角色库与社区功能开放，无需绑卡。 | 2026-08-17 |
 | [Sourcegraph Cody](https://baipiaoji.com/tools/cody) | 个人免费档已不存在：Sourcegraph 官方公告 Cody Free 与 Cody Pro 自 2025-06-25 停止新注册、2025-07-23 停止服务，Cody 现仅存面向企业的 Enterprise 版（按席位年约报价）。官方给个人用户的去处是其新产品 Amp：注册送 $10 试用额度，原 Cody Pro 用户可写邮件申领 $40。 | 2026-08-17 |
