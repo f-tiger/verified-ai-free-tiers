@@ -221,10 +221,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## Cursor
 
-- 额度上限 / Quota: Hobby 免费档存在且无需绑卡。官方定价页 2026-09-25 的 Hobby 栏只列三项：无需绑卡、有限的 Agent 请求（Limited Agent requests）、可用 Composer——仍不公布具体数字。08-03 核实时写到的 Chat 与 Tab 补全（Auto 模型）这次没有出现在免费档清单里，页面也没有说它们被取消，本站只照录当日原文。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。
+- 额度上限 / Quota: Hobby 免费档存在且无需绑卡。官方定价页 2026-09-25 与 2026-09-28 两次抓取，Hobby 栏都只列三项：无需绑卡、有限的 Agent 请求（Limited Agent requests）、可用 Composer——仍不公布具体数字。08-03 核实时写到的 Chat 与 Tab 补全（Auto 模型）这次没有出现在免费档清单里，页面也没有说它们被取消，本站只照录当日原文。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。
 - 撞墙表现 / What happens at the wall: 触及隐性限额后 Agent 受限，升级 Individual 档解锁（页面同一栏可切换 Pro、Pro+、Ultra，静态文本当日只显示 Pro 的 $20/月）；官方 FAQ：每档都含一份模型用量，用完后可开 on-demand 按量续用、事后结算；实际余量以账户设置页显示为准。
-- 来源 / Source: Cursor 官方定价页 https://cursor.com/pricing（2026-09-25 直接抓取；免费档仍不公布具体数额，旧数字已过时）
-- 核实于 / Checked: 2026-09-25
+- 来源 / Source: Cursor 官方定价页 https://cursor.com/pricing（2026-09-28 直接抓取复核，Hobby 三项与 09-25 逐字相同；免费档仍不公布具体数额，旧数字已过时）
+- 核实于 / Checked: 2026-09-28
 - 详情页 / Page: https://baipiaoji.com/tools/cursor ｜ EN: https://baipiaoji.com/en/tools/cursor
 
 ## 文心快码 Comate（百度）
