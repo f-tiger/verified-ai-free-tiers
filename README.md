@@ -49,7 +49,7 @@ The same site keeps a directory of AI agents and MCP servers. A record goes in o
 
 同一站点维护一份 AI Agent 与 MCP 服务器目录：官方页面或仓库当天可访问才收录，每个链接都带最近一次可访问的日期；来自官方 MCP 注册表的条目只展示发布者自己的描述，不改写。
 
-- 🧭 Directory（英文）: https://baipiaoji.com/en/agents/ ｜ 中文: https://baipiaoji.com/agents/ — <!--agents-count-->1164 records<!--/agents-count--> (list dated <!--agents-date-->2026-09-27<!--/agents-date-->)
+- 🧭 Directory（英文）: https://baipiaoji.com/en/agents/ ｜ 中文: https://baipiaoji.com/agents/ — <!--agents-count-->1216 records<!--/agents-count--> (list dated <!--agents-date-->2026-09-29<!--/agents-date-->)
 - 🔌 MCP servers with check dates: https://baipiaoji.com/en/agents/c/mcp
 - 📦 Whole list as JSON: https://baipiaoji.com/agents.json (English: https://baipiaoji.com/en/agents.json)
 - 📰 RSS of newly added records: https://baipiaoji.com/en/agents/feed.xml
@@ -93,7 +93,7 @@ Figures that cannot be traced to an official page are deliberately absent — 13
 | [Gamma](https://baipiaoji.com/en/tools/gamma.html) | 注册即得 400 credits，一次性发放，**不按月刷新**。官方给出的消耗量级参考：10 页卡片 + 5 张基础模型配图约 20–60 credits；20 页卡片 + 15 张高级模型配图约 320–1,070 credits——所以「够做几份演示」的说法只在用基础模型时成立。 | 2026-08-04 |
 | [讯飞星火](https://baipiaoji.com/en/tools/xinghuo.html) | 开发者侧（讯飞开放平台）默认免费版含一定免费资源、可按需升级；官方用户协议明确写着：**免费套餐的规则、可免费使用的产品与配置会随业务需求随时调整，不同时期的用户可能拿到不同规格**，部分产品限量领取。因此本站不写具体数额——不是查不到，是官方明说它会变。 | 2026-08-04 |
 | [WPS AI](https://baipiaoji.com/en/tools/wps-ai.html) | 免费版每日约 10 次 AI 额度（官方文章口径「10 次左右」），覆盖 AI 写作、改写、总结、生成 PPT 等基础场景。 | 2026-08-02 |
-| [Google AI Studio](https://baipiaoji.com/en/tools/google-ai-studio.html) | 免费层按模型区分 RPM/RPD 限额、按项目计算、太平洋时间零点重置（官方文档明示，具体数字以官方 rate-limits 页实时表为准）。重要：2025 年 12 月免费层大幅缩水——如 Flash 由 250 次/天降至 20 次/天（官方开发者论坛多帖证实），网上大量攻略仍在引用缩水前的旧数字。 | 2026-08-03 |
+| [Google AI Studio](https://baipiaoji.com/en/tools/google-ai-studio.html) | 免费档只覆盖部分模型与功能；先查官方 pricing 页对应项目。RPM（每分钟请求）、TPM（每分钟输入 token）与 RPD（每日请求）分别计限，任一触顶均可能报错。限额按项目计算，同项目增加 API Key 不会提高额度。具体可用额度以 AI Studio 当前项目和模型为准，随使用层级与账号状态变化；仅每日请求额度在太平洋时间零点重置。旧攻略中的固定日额度不代表当前项目额度。 | 2026-09-29 |
 | [硅基流动 SiliconFlow](https://baipiaoji.com/en/tools/siliconflow.html) | 新用户注册即送 14 元平台额度（官方口径约合 2,000 万 Qwen1.5-14B tokens）；完成实名认证再得 16 元通用代金券（官方「推荐官」计划页，可用于 API 调用、批量推理、微调乃至 Pro 模型）。另有部分小模型长期免费调用（见官方价格页）。 | 2026-08-03 |
 | [Groq](https://baipiaoji.com/en/tools/groq.html) | 免费层不限总量、按速率限流，无需绑卡。各模型限额不同，常被引用的典型档位约 30 次/分钟、6,000 tokens/分钟、14,400 次/天；以控制台 rate-limits 页的实时数字为准。 | 2026-08-02 |
 | [智谱开放平台](https://baipiaoji.com/en/tools/zhipu-glm.html) | 官方文档设有专门的「免费模型」板块：GLM-4-Flash-250414、GLM-4.7-Flash（30B 级，200K 上下文、最长 128K 输出）等 Flash 系列 API 调用免费。 | 2026-08-01 |
@@ -233,7 +233,7 @@ Figures that cannot be traced to an official page are deliberately absent — 13
 | [Gamma](https://baipiaoji.com/tools/gamma) | 注册即得 400 credits，一次性发放，**不按月刷新**。官方给出的消耗量级参考：10 页卡片 + 5 张基础模型配图约 20–60 credits；20 页卡片 + 15 张高级模型配图约 320–1,070 credits——所以「够做几份演示」的说法只在用基础模型时成立。 | 2026-08-04 |
 | [讯飞星火](https://baipiaoji.com/tools/xinghuo) | 开发者侧（讯飞开放平台）默认免费版含一定免费资源、可按需升级；官方用户协议明确写着：**免费套餐的规则、可免费使用的产品与配置会随业务需求随时调整，不同时期的用户可能拿到不同规格**，部分产品限量领取。因此本站不写具体数额——不是查不到，是官方明说它会变。 | 2026-08-04 |
 | [WPS AI](https://baipiaoji.com/tools/wps-ai) | 免费版每日约 10 次 AI 额度（官方文章口径「10 次左右」），覆盖 AI 写作、改写、总结、生成 PPT 等基础场景。 | 2026-08-02 |
-| [Google AI Studio](https://baipiaoji.com/tools/google-ai-studio) | 免费层按模型区分 RPM/RPD 限额、按项目计算、太平洋时间零点重置（官方文档明示，具体数字以官方 rate-limits 页实时表为准）。重要：2025 年 12 月免费层大幅缩水——如 Flash 由 250 次/天降至 20 次/天（官方开发者论坛多帖证实），网上大量攻略仍在引用缩水前的旧数字。 | 2026-08-03 |
+| [Google AI Studio](https://baipiaoji.com/tools/google-ai-studio) | 免费档只覆盖部分模型与功能；先查官方 pricing 页对应项目。RPM（每分钟请求）、TPM（每分钟输入 token）与 RPD（每日请求）分别计限，任一触顶均可能报错。限额按项目计算，同项目增加 API Key 不会提高额度。具体可用额度以 AI Studio 当前项目和模型为准，随使用层级与账号状态变化；仅每日请求额度在太平洋时间零点重置。旧攻略中的固定日额度不代表当前项目额度。 | 2026-09-29 |
 | [硅基流动 SiliconFlow](https://baipiaoji.com/tools/siliconflow) | 新用户注册即送 14 元平台额度（官方口径约合 2,000 万 Qwen1.5-14B tokens）；完成实名认证再得 16 元通用代金券（官方「推荐官」计划页，可用于 API 调用、批量推理、微调乃至 Pro 模型）。另有部分小模型长期免费调用（见官方价格页）。 | 2026-08-03 |
 | [Groq](https://baipiaoji.com/tools/groq) | 免费层不限总量、按速率限流，无需绑卡。各模型限额不同，常被引用的典型档位约 30 次/分钟、6,000 tokens/分钟、14,400 次/天；以控制台 rate-limits 页的实时数字为准。 | 2026-08-02 |
 | [智谱开放平台](https://baipiaoji.com/tools/zhipu-glm) | 官方文档设有专门的「免费模型」板块：GLM-4-Flash-250414、GLM-4.7-Flash（30B 级，200K 上下文、最长 128K 输出）等 Flash 系列 API 调用免费。 | 2026-08-01 |

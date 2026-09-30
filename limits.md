@@ -157,10 +157,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## Google AI Studio
 
-- 额度上限 / Quota: 免费层按模型区分 RPM/RPD 限额、按项目计算、太平洋时间零点重置（官方文档明示，具体数字以官方 rate-limits 页实时表为准）。重要：2025 年 12 月免费层大幅缩水——如 Flash 由 250 次/天降至 20 次/天（官方开发者论坛多帖证实），网上大量攻略仍在引用缩水前的旧数字。
-- 撞墙表现 / What happens at the wall: 触顶返回 429，当日该模型不再可用、次日太平洋时间零点重置；重度使用要么升级付费层，要么叠加其他免费 API 做 fallback（见站内 0 元方案）。
-- 来源 / Source: Google AI 官方文档 rate-limits 页 + 官方开发者论坛（ai.google.dev，经搜索索引引文核实）
-- 核实于 / Checked: 2026-08-03
+- 额度上限 / Quota: 免费档只覆盖部分模型与功能；先查官方 pricing 页对应项目。RPM（每分钟请求）、TPM（每分钟输入 token）与 RPD（每日请求）分别计限，任一触顶均可能报错。限额按项目计算，同项目增加 API Key 不会提高额度。具体可用额度以 AI Studio 当前项目和模型为准，随使用层级与账号状态变化；仅每日请求额度在太平洋时间零点重置。旧攻略中的固定日额度不代表当前项目额度。
+- 撞墙表现 / What happens at the wall: 遇到 429 先查看错误详情及当前项目限额。分钟级限制应降低并发或请求大小，对可重试错误采用有上限的指数退避；每日额度用尽才需要等日额度重置，不能把所有 429 都解释为当天不可用。持续不足时评估符合需求的模型或付费层，付费层仍有速率限制，公布上限不保证实际容量。
+- 来源 / Source: Google AI 官方文档：https://ai.google.dev/gemini-api/docs/rate-limits 、https://ai.google.dev/gemini-api/docs/pricing 、https://ai.google.dev/gemini-api/docs/troubleshooting （2026-09-29 直接核对）
+- 核实于 / Checked: 2026-09-29
 - 详情页 / Page: https://baipiaoji.com/tools/google-ai-studio ｜ EN: https://baipiaoji.com/en/tools/google-ai-studio
 
 ## 硅基流动 SiliconFlow
