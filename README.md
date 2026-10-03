@@ -18,7 +18,7 @@ No auth, streamable HTTP, nothing to install. Full setup docs for Claude Code / 
 
 | Tool | What it answers |
 |---|---|
-| `search_ai_tools` | Search the tool directory (221 tools today; every result reports `directory_size`): category / fully-free / works-in-China / capability tag / keyword |
+| `search_ai_tools` | Search the tool directory (700 tools today; every result reports `directory_size`): category / fully-free / works-in-China / capability tag / keyword |
 | `get_free_tier_limit` | The verified ceiling, what happens at the wall, official source, check date |
 | `compare_free_tiers` | Compare a whole category side by side (chat / coding / video / image / api) — what is metered, when it resets, whether a figure is published at all |
 | `check_free_tier_claim` | Fact-check a circulating claim against official sources — many popular figures have none |
@@ -49,7 +49,7 @@ The same site keeps a directory of AI agents and MCP servers. A record goes in o
 
 同一站点维护一份 AI Agent 与 MCP 服务器目录：官方页面或仓库当天可访问才收录，每个链接都带最近一次可访问的日期；来自官方 MCP 注册表的条目只展示发布者自己的描述，不改写。
 
-- 🧭 Directory（英文）: https://baipiaoji.com/en/agents/ ｜ 中文: https://baipiaoji.com/agents/ — <!--agents-count-->1272 records<!--/agents-count--> (list dated <!--agents-date-->2026-10-01<!--/agents-date-->)
+- 🧭 Directory（英文）: https://baipiaoji.com/en/agents/ ｜ 中文: https://baipiaoji.com/agents/ — <!--agents-count-->1327 records<!--/agents-count--> (list dated <!--agents-date-->2026-10-02<!--/agents-date-->)
 - 🔌 MCP servers with check dates: https://baipiaoji.com/en/agents/c/mcp
 - 📦 Whole list as JSON: https://baipiaoji.com/agents.json (English: https://baipiaoji.com/en/agents.json)
 - 📰 RSS of newly added records: https://baipiaoji.com/en/agents/feed.xml
@@ -61,8 +61,8 @@ Most "best free AI tools" lists repeat figures nobody can trace. This dataset do
 
 多数「免费 AI 工具榜单」转述的数字查不到出处。这份数据集反过来做：**只有官方页面写明的数字才发布**，并带上核实日期；官方没公布的如实标注「未公布」，而不是填一个猜的数——比如对话助手这一类，10 家里只有 1 家真的公布了条数。
 
-Figures that cannot be traced to an official page are deliberately absent — 131 of the 221 listed tools have a verified ceiling.
-查不到官方来源的数字一律缺席：目前 221 个工具中 131 条已核实。
+Figures that cannot be traced to an official page are deliberately absent — 131 of the 700 listed tools have a verified ceiling.
+查不到官方来源的数字一律缺席：目前 700 个工具中 131 条已核实。
 
 - 📄 In this repo: [limits.json](./limits.json) ｜ [limits.md](./limits.md) — synced daily from [baipiaoji.com](https://baipiaoji.com/en/)（每日自动同步）
 - 🧮 Structured comparison data（可比较的结构化对照，非散文）: https://baipiaoji.com/en/quotas.json — what each vendor meters, when it resets, whether a figure is published

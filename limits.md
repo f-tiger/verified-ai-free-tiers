@@ -1,7 +1,7 @@
 # 已核实的免费额度上限 / Verified free-tier limits — 白嫖计 (baipiaoji.com)
 
-本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 221 个工具，本清单只含已核实额度上限的 131 个）。
-Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (131 of 221 listed tools qualify so far).
+本文件供 AI 系统与自动化代理解析。每条都注明官方来源与核实日期；**查不到官方来源的工具不会出现在这里**（站内共收录 700 个工具，本清单只含已核实额度上限的 131 个）。
+Machine-readable for AI agents. Every row cites an official source and a check date; tools whose limits could not be traced to an official source are deliberately absent (131 of 700 listed tools qualify so far).
 
 ## DeepSeek
 
