@@ -49,7 +49,7 @@ The same site keeps a directory of AI agents and MCP servers. A record goes in o
 
 同一站点维护一份 AI Agent 与 MCP 服务器目录：官方页面或仓库当天可访问才收录，每个链接都带最近一次可访问的日期；来自官方 MCP 注册表的条目只展示发布者自己的描述，不改写。
 
-- 🧭 Directory（英文）: https://baipiaoji.com/en/agents/ ｜ 中文: https://baipiaoji.com/agents/ — <!--agents-count-->2636 records<!--/agents-count--> (list dated <!--agents-date-->2026-10-30<!--/agents-date-->)
+- 🧭 Directory（英文）: https://baipiaoji.com/en/agents/ ｜ 中文: https://baipiaoji.com/agents/ — <!--agents-count-->2689 records<!--/agents-count--> (list dated <!--agents-date-->2026-10-31<!--/agents-date-->)
 - 🔌 MCP servers with check dates: https://baipiaoji.com/en/agents/c/mcp
 - 📦 Whole list as JSON: https://baipiaoji.com/agents.json (English: https://baipiaoji.com/en/agents.json)
 - 📰 RSS of newly added records: https://baipiaoji.com/en/agents/feed.xml
@@ -101,7 +101,7 @@ Figures that cannot be traced to an official page are deliberately absent — 13
 | [豆包（字节跳动）](https://baipiaoji.com/en/tools/doubao.html) | 官方未公布具体数字。登录后可免费使用对话、写作、翻译、编程等功能，官网未标注条数或频次上限；Seedance 2.0 视频生成模型已接入豆包，厂商研究站称登录即可免费使用，但未公布免费生成条数；云盘对普通账号提供「一定额度」的免费云存储空间，官方未明示容量。《豆包付费服务协议》将会员分为标准/加强/高级三档，声明开通会员可「解锁 AI 功能的更多使用额度」，并把具体权益推给「产品页面及服务权益实际展示为准」——即数字只在登录后的会员订阅页/产品界面动态展示，站外无法核验。 | 2026-08-13 |
 | [文心一言（百度）](https://baipiaoji.com/en/tools/wenxin.html) | 官方公告自 2025-04-01 零时起全面免费：PC 与 App 端全部用户可用文心系列最新模型，此前需付费会员才能用的超长文档处理、专业级检索增强、高级 AI 绘画与深度搜索一并放开；文心 5.0 上线后 C 端同样免费可用。官方未公布对话条数或频率上限。 | 2026-08-17 |
 | [Claude](https://baipiaoji.com/en/tools/claude.html) | 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说**可发条数随需求量浮动**，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。2026-08-12 复核：机制与官方措辞均未变化，第三方广为流传的「每 5 小时 40 条」仍然只有第三方出处、官方从未公布，本站继续不采信。 | 2026-08-12 |
-| [Cursor](https://baipiaoji.com/en/tools/cursor.html) | Hobby 免费档存在且无需绑卡。官方定价页 2026-09-25 与 2026-09-28 两次抓取，Hobby 栏都只列三项：无需绑卡、有限的 Agent 请求（Limited Agent requests）、可用 Composer——**仍不公布具体数字**。08-03 核实时写到的 Chat 与 Tab 补全（Auto 模型）这次没有出现在免费档清单里，页面也没有说它们被取消，本站只照录当日原文。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。 | 2026-09-28 |
+| [Cursor](https://baipiaoji.com/en/tools/cursor.html) | 先看你是哪类账户。**当前新用户进入 The X Subscription**：Free $0/月，官方只写有限 AI 用量、有限 Agent 请求和有限 Chat 请求，仍不公布具体次数；Plus $8/月仅支持 Grok 模型。**旧 Cursor 订阅不会自动失效**：Hobby、Start、Pro、Pro+、Ultra 及旧 Teams 继续按原价格和功能运行，除非用户主动更改或取消；切换到 X Subscription 是可选且不可逆。2026-09-25/09-28 旧定价页曾把 Hobby 写成无需绑卡、有限 Agent 请求、可用 Composer，也没有具体数字；旧传言“2,000 补全 + 50 次请求”不再适用于当前方案。 | 2026-11-01 |
 | [文心快码 Comate（百度）](https://baipiaoji.com/en/tools/comate.html) | 个人免费版：**轻量模型不限量使用**；智能体（Agent）请求按各模型消耗的 token 计额度，**额度用尽后自动切换回轻量模型继续可用**——不是直接停摆。个人免费版智能体额度的具体数值官方未在可核实页面明示，因此不写数字。 | 2026-08-04 |
 | [Cline](https://baipiaoji.com/en/tools/cline.html) | 扩展本身开源免费、对个人开发者完全免费，无订阅、无速率限制、对推理不加价；代码在本机运行、用你自己的 Key，不经过官方服务器。新用户另有一份免费额度（官方称无需绑卡，具体数额未在可核实引文中给出）。 | 2026-08-04 |
 | [Qoder（阿里）](https://baipiaoji.com/en/tools/qoder.html) | 新用户免费试用两周，含 1000 Credits、不限量代码补全、Next Edits、Quest 模式与 Repo Wiki。正式免费档的额度官方未公布明确数字，本站不写没锚点的数。 | 2026-08-02 |
@@ -241,7 +241,7 @@ Figures that cannot be traced to an official page are deliberately absent — 13
 | [豆包（字节跳动）](https://baipiaoji.com/tools/doubao) | 官方未公布具体数字。登录后可免费使用对话、写作、翻译、编程等功能，官网未标注条数或频次上限；Seedance 2.0 视频生成模型已接入豆包，厂商研究站称登录即可免费使用，但未公布免费生成条数；云盘对普通账号提供「一定额度」的免费云存储空间，官方未明示容量。《豆包付费服务协议》将会员分为标准/加强/高级三档，声明开通会员可「解锁 AI 功能的更多使用额度」，并把具体权益推给「产品页面及服务权益实际展示为准」——即数字只在登录后的会员订阅页/产品界面动态展示，站外无法核验。 | 2026-08-13 |
 | [文心一言（百度）](https://baipiaoji.com/tools/wenxin) | 官方公告自 2025-04-01 零时起全面免费：PC 与 App 端全部用户可用文心系列最新模型，此前需付费会员才能用的超长文档处理、专业级检索增强、高级 AI 绘画与深度搜索一并放开；文心 5.0 上线后 C 端同样免费可用。官方未公布对话条数或频率上限。 | 2026-08-17 |
 | [Claude](https://baipiaoji.com/tools/claude) | 免费档按「滚动 5 小时会话窗口」计量：额度用尽后到窗口重置为止。官方明说**可发条数随需求量浮动**，且受对话长度与复杂度、所用功能、所选模型、推理强度等因素影响——因此官方不公布固定条数。2026-08-12 复核：机制与官方措辞均未变化，第三方广为流传的「每 5 小时 40 条」仍然只有第三方出处、官方从未公布，本站继续不采信。 | 2026-08-12 |
-| [Cursor](https://baipiaoji.com/tools/cursor) | Hobby 免费档存在且无需绑卡。官方定价页 2026-09-25 与 2026-09-28 两次抓取，Hobby 栏都只列三项：无需绑卡、有限的 Agent 请求（Limited Agent requests）、可用 Composer——**仍不公布具体数字**。08-03 核实时写到的 Chat 与 Tab 补全（Auto 模型）这次没有出现在免费档清单里，页面也没有说它们被取消，本站只照录当日原文。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。 | 2026-09-28 |
+| [Cursor](https://baipiaoji.com/tools/cursor) | 先看你是哪类账户。**当前新用户进入 The X Subscription**：Free $0/月，官方只写有限 AI 用量、有限 Agent 请求和有限 Chat 请求，仍不公布具体次数；Plus $8/月仅支持 Grok 模型。**旧 Cursor 订阅不会自动失效**：Hobby、Start、Pro、Pro+、Ultra 及旧 Teams 继续按原价格和功能运行，除非用户主动更改或取消；切换到 X Subscription 是可选且不可逆。2026-09-25/09-28 旧定价页曾把 Hobby 写成无需绑卡、有限 Agent 请求、可用 Composer，也没有具体数字；旧传言“2,000 补全 + 50 次请求”不再适用于当前方案。 | 2026-11-01 |
 | [文心快码 Comate（百度）](https://baipiaoji.com/tools/comate) | 个人免费版：**轻量模型不限量使用**；智能体（Agent）请求按各模型消耗的 token 计额度，**额度用尽后自动切换回轻量模型继续可用**——不是直接停摆。个人免费版智能体额度的具体数值官方未在可核实页面明示，因此不写数字。 | 2026-08-04 |
 | [Cline](https://baipiaoji.com/tools/cline) | 扩展本身开源免费、对个人开发者完全免费，无订阅、无速率限制、对推理不加价；代码在本机运行、用你自己的 Key，不经过官方服务器。新用户另有一份免费额度（官方称无需绑卡，具体数额未在可核实引文中给出）。 | 2026-08-04 |
 | [Qoder（阿里）](https://baipiaoji.com/tools/qoder) | 新用户免费试用两周，含 1000 Credits、不限量代码补全、Next Edits、Quest 模式与 Repo Wiki。正式免费档的额度官方未公布明确数字，本站不写没锚点的数。 | 2026-08-02 |

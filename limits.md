@@ -221,10 +221,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## Cursor
 
-- 额度上限 / Quota: Hobby 免费档存在且无需绑卡。官方定价页 2026-09-25 与 2026-09-28 两次抓取，Hobby 栏都只列三项：无需绑卡、有限的 Agent 请求（Limited Agent requests）、可用 Composer——仍不公布具体数字。08-03 核实时写到的 Chat 与 Tab 补全（Auto 模型）这次没有出现在免费档清单里，页面也没有说它们被取消，本站只照录当日原文。网上流传的「2,000 补全 + 50 次请求」出自旧版定价结构，现已过时，不予采信。
-- 撞墙表现 / What happens at the wall: 触及隐性限额后 Agent 受限，升级 Individual 档解锁（页面同一栏可切换 Pro、Pro+、Ultra，静态文本当日只显示 Pro 的 $20/月）；官方 FAQ：每档都含一份模型用量，用完后可开 on-demand 按量续用、事后结算；实际余量以账户设置页显示为准。
-- 来源 / Source: Cursor 官方定价页 https://cursor.com/pricing（2026-09-28 直接抓取复核，Hobby 三项与 09-25 逐字相同；免费档仍不公布具体数额，旧数字已过时）
-- 核实于 / Checked: 2026-09-28
+- 额度上限 / Quota: 先看你是哪类账户。当前新用户进入 The X Subscription：Free $0/月，官方只写有限 AI 用量、有限 Agent 请求和有限 Chat 请求，仍不公布具体次数；Plus $8/月仅支持 Grok 模型。旧 Cursor 订阅不会自动失效：Hobby、Start、Pro、Pro+、Ultra 及旧 Teams 继续按原价格和功能运行，除非用户主动更改或取消；切换到 X Subscription 是可选且不可逆。2026-09-25/09-28 旧定价页曾把 Hobby 写成无需绑卡、有限 Agent 请求、可用 Composer，也没有具体数字；旧传言“2,000 补全 + 50 次请求”不再适用于当前方案。
+- 撞墙表现 / What happens at the wall: X Subscription 的 Cursor/Grok 共用额度池按周刷新；达到额度后可等待刷新、升级，或用预付 top-up 继续，Auto Top-up 默认关闭。Premium 及以上的第三方模型从首次请求起按 API 标价另扣预付余额，不包含在月费内。旧订阅则按账单月重置 Cursor Models / Other Models 两个池，超额后可启用月末后付的 on-demand；旧个人档需主动开启，旧 Teams 默认开启。先在 grok.com/dashboard（X）或 cursor.com 的 Spending（旧订阅）确认账户类型、下次重置和额外付费开关。
+- 来源 / Source: Cursor 官方定价页 https://cursor.com/pricing、旧订阅说明 https://cursor.com/docs/account/pricing/legacy-cursor-plans、额度说明 https://cursor.com/help/models-and-usage/usage-limits 与超额计费说明 https://cursor.com/help/account-and-billing/overages（2026-11-01 直接复核）
+- 核实于 / Checked: 2026-11-01
 - 详情页 / Page: https://baipiaoji.com/tools/cursor ｜ EN: https://baipiaoji.com/en/tools/cursor
 
 ## 文心快码 Comate（百度）
