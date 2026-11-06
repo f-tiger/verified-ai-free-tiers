@@ -975,10 +975,10 @@ Machine-readable for AI agents. Every row cites an official source and a check d
 
 ## Gemini CLI
 
-- 额度上限 / Quota: 用 Google 账号登录的免费档：每天 1,000 次模型请求，Flash 上限 60 次/分钟，默认走 Gemini Flash。官方文档同时明确两件容易被误读的事：这 1,000 次是 Pro 与 Flash 混合计的，不等于每天 1,000 次 Gemini 2.5 Pro 请求；而且一次提问可能触发几十次模型请求——「1,000 次」不是 1,000 轮对话。
-- 撞墙表现 / What happens at the wall: 额度用尽即被限流（官方 issue 里大量「Free tier limits have been reached」即此）。改用 API Key 认证时适用的是另一套额度规则，两者不能互相换算。要更高上限需接 Gemini Code Assist 付费档或按量计费的 Gemini API。
-- 来源 / Source: Gemini CLI 官方仓库配额文档与 Gemini API 速率限制页（github.com/google-gemini/gemini-cli/blob/main/docs/resources/quota-and-pricing.md、ai.google.dev/gemini-api/docs/rate-limits，经搜索索引引文核实）
-- 核实于 / Checked: 2026-08-05
+- 额度上限 / Quota: 用个人 Google 账号登录 Gemini Code Assist 免费档：每人每天最多 1,000 次模型请求。Gemini CLI 使用的各模型版本/系列合计扣额，且与 Code Assist agent mode 共用请求额度；一次提问可能产生多次模型请求，因此不是 1,000 轮对话，也不是 1,000 次 Pro 请求。具体模型由 CLI 决定。当前配额文档说明另有每分钟限制及高峰可用性限制，但未在此列出统一分钟数；不再把旧的 60 次/分钟或默认 Flash 当作现行保证。
+- 撞墙表现 / What happens at the wall: 达到每日请求上限后，Gemini CLI 与 agent mode 对任何模型都不能继续请求，直至额度重置。API Key 认证适用另一套模型/计费档额度，不能把 Google 登录的 1,000 次直接换算过去。个人 Google AI Pro、Ultra 提供更高 CLI 额度；组织 Code Assist 许可与按量计费的 Gemini API/Vertex AI 是不同购买路径，先按账号及认证方式核对官方规则，付费也不等于无限用量。
+- 来源 / Source: 直接读取 Gemini CLI 官方配额文档（github.com/google-gemini/gemini-cli/blob/main/docs/resources/quota-and-pricing.md）、Code Assist agent mode/CLI 共用规则（docs.cloud.google.com/gemini/docs/quotas）与官方方案页（geminicli.com/plans/）；API Key 额度另见（ai.google.dev/gemini-api/docs/rate-limits）
+- 核实于 / Checked: 2026-11-05
 - 详情页 / Page: https://baipiaoji.com/tools/gemini-cli ｜ EN: https://baipiaoji.com/en/tools/gemini-cli
 
 ## Kiro
