@@ -4,6 +4,7 @@
   "description": "Verified AI free tiers plus source-backed agent and MCP discovery monitoring.",
   "version": "1.13.0",
   "websiteUrl": "https://baipiaoji.com/agents/",
+  "license": "CC-BY-4.0",
   "remotes": [
     {
       "type": "streamable-http",
